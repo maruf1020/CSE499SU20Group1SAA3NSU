@@ -32,30 +32,30 @@ On this modern era and pandemic situation there is necessity of online learning 
 
                                                                                       
 ### Table of Contents
-1.Inroduction
-1.1Chapter Overview
-1.2The problem
-1.3Project Overview
-1.4Existing Solution
-1.5Project Scoope
-1.5.1 Contact Us
-1.5.2 About Us
-1.5.3 Offers
-1.5.4 Themes 
-1.5.5 Front Page
-2. Purpose
-3. Project Significance
-4. Background
-4.1 Platform Choice
-4.2 Softwate Choice
-4.3 Project Requirements
-4.3.4 Themes
-4.3.5 Front End
-5. User of a System
-5.1 Customer
-5.2 Administrator
-6. Project Summary
-7. Link
+##### 1.Inroduction
+##### 1.1Chapter Overview
+##### 1.2The problem
+##### 1.3Project Overview
+##### 1.4Existing Solution
+##### 1.5Project Scoope
+##### 1.5.1 Contact Us
+##### 1.5.2 About Us
+##### 1.5.3 Offers
+##### 1.5.4 Themes 
+##### 1.5.5 Front Page
+##### 2. Purpose
+##### 3. Project Significance
+##### 4. Background
+##### 4.1 Platform Choice
+##### 4.2 Softwate Choice
+##### 4.3 Project Requirements
+##### 4.3.4 Themes
+##### 4.3.5 Front End
+##### 5. User of a System
+##### 5.1 Customer
+##### 5.2 Administrator
+##### 6. Project Summary
+##### 7. Link
 
 
 
@@ -96,7 +96,7 @@ On this modern era and pandemic situation there is necessity of online learning 
 
 ### 7. Links:
 #### Project Repository: https://github.com/maruf1020/CSE499SU20Group1SAA3NSU
-#### Slack Channel: cse499su20gro-k1p3275.slack.com
+#### Slack Channel: https://app.slack.com/client/T017QGU1TD3/learning-slack
 #### Trello Work Time line: https://trello.com/invite/b/AX0naDJb/c79014bfdbf759eaca7358010d24b405/cse499su20group1saa3nsu 
 
 
