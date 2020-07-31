@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboard.dashboard');
+    return view('dashboard.login');
 });
-Route::get('/class', function () {
-    return view('dashboard.class');
+Route::get('/register', function () {
+    return view('dashboard.register');
+});
+Route::get('/dashboard', function () {
+    return view('dashboard.dashboard');
 });
