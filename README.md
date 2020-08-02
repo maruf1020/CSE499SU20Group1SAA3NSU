@@ -1,5 +1,14 @@
-
-This reposetory was created on 20 July 2010
+#### How to run the project:
+##### Setp 1: Follow the page for Installation laravel - https://laravel.com/docs/7.x/installation
+##### Step 2: Download the project on your device. 
+##### Step 3: Open "Shikkha" Folder from "project code" folder 
+##### Step 4: Run commmand line or git bash 
+##### Step 5: write the command "composer update"
+##### Step 6: write the command "composer dump-autoload" 
+##### Step 7: then write the command "php artisan key:generate"
+##### Step 8: then write the command "php artisan cache:clear"
+##### Step 9: then write the command "php artisan config:clear"
+##### Step 10: then write the command "php -S localhost:8000 -t public"
 
 
 [![N|Solid](http://www.northsouth.edu/newassets/images/nsu-photo/logo-4.png)]()
@@ -100,6 +109,7 @@ On this modern era and pandemic situation there is necessity of online learning 
 #### Trello Work Time line: https://trello.com/invite/b/AX0naDJb/c79014bfdbf759eaca7358010d24b405/cse499su20group1saa3nsu 
 
 
+This reposetory was created on 20 July 2010
 
 
            
