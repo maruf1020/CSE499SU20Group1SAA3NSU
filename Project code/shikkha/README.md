@@ -1,5 +1,17 @@
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
+#### How to run this project:
+##### Setp 1: Follow the page for Installation laravel - https://laravel.com/docs/7.x/installation
+##### Step 2: Download the project on your device. 
+##### Step 3: Open "Shikkha" Folder from "project code" folder 
+##### Step 4: Run commmand line or git bash 
+##### Step 5: write the command "composer update"
+##### Step 6: write the command "composer dump-autoload" 
+##### Step 7: then write the command "php artisan key:generate"
+##### Step 8: then write the command "php artisan cache:clear"
+##### Step 9: then write the command "php artisan config:clear"
+##### Step 10: then write the command "php -S localhost:8000 -t public"
+
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
