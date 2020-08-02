@@ -1,4 +1,4 @@
-#### How to run the project:
+#### How to run this project:
 ##### Setp 1: Follow the page for Installation laravel - https://laravel.com/docs/7.x/installation
 ##### Step 2: Download the project on your device. 
 ##### Step 3: Open "Shikkha" Folder from "project code" folder 
@@ -9,6 +9,9 @@
 ##### Step 8: then write the command "php artisan cache:clear"
 ##### Step 9: then write the command "php artisan config:clear"
 ##### Step 10: then write the command "php -S localhost:8000 -t public"
+
+
+
 
 
 [![N|Solid](http://www.northsouth.edu/newassets/images/nsu-photo/logo-4.png)]()
