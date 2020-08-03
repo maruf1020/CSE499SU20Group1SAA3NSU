@@ -22,3 +22,6 @@ Route::get('/register', function () {
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
 });
+Route::get('/attendence', function () {
+    return view('dashboard.faculty.attendence');
+});
