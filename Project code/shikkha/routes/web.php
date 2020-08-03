@@ -25,3 +25,6 @@ Route::get('/dashboard', function () {
 Route::get('/attendence', function () {
     return view('dashboard.faculty.attendence');
 });
+Route::get('/stream', function () {
+    return view('dashboard.student.stream');
+});
