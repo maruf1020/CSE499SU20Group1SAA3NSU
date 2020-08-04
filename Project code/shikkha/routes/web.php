@@ -31,3 +31,6 @@ Route::get('/stream', function () {
 Route::get('/assigned-course', function () {
     return view('dashboard.student.assigned-course');
 });
+Route::get('/class-time', function () {
+    return view('dashboard.student.class-time');
+});
