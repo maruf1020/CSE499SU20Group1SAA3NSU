@@ -15,8 +15,8 @@
 				<!--begin::Header-->
 				<div class="card-header flex-wrap border-0 pt-6 pb-0">
 					<div class="card-title justify-content-between ">
-						<h3 class="card-label">Assigned Course
-							<span class="d-block text-muted pt-2 font-size-sm">This semeseter all course shown here</span></h3>
+						<h3 class="card-label">Class Time
+							<span class="d-block text-muted pt-2 font-size-sm">Weekly Class time showen here</span></h3>
 					</div>
 					<div class="card-title justify-content-between ">
 						<h3 class="card-label">Course Duration
@@ -48,61 +48,61 @@
 									<th style="vertical-align: middle;">08:30 am - 10:00 am</th>
 									<td></td>
 									<td>CSE31</td>
-									<td>CSE31</td>
+									<td>CHE400</td>
 									<td></td>
 									<td>CSE31</td>
-									<td>CSE31</td>
+									<td></td>
+									<td>MAT500</td>
+								</tr>
+								<tr>
+									<th style="vertical-align: middle;">10:30 am - 12:00 pm</th>
+									<td></td>
+									<td>BIO598</td>
+									<td></td>
+									<td>ACT450</td>
+									<td></td>
+									<td>PHY660</td>
 									<td></td>
 								</tr>
 								<tr>
-									<th>10:30 am - 12:00 pm</th>
+									<th style="vertical-align: middle;">12:30 am - 02:00 pm</th>
 									<td></td>
+									<td>CSE31</td>
 									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td>CSE31</td>
+									<td>PHY660</td>
 									<td></td>
 									<td></td>
 								</tr>
 								<tr>
-									<th>12:30 am - 02:00 pm</th>
+									<th style="vertical-align: middle;">02:30 am - 04:00 pm</th>
 									<td></td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
+									<td></td>
+									<td>PHY660</td>
+									<td></td>
+									<td>ACT450</td>
+									<td>ACT459</td>
+									<td></td>
 								</tr>
 								<tr>
-									<th>02:30 am - 04:00 pm</th>
+									<th style="vertical-align: middle;">04:30 am - 06:00 pm</th>
 									<td></td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
+									<td>BIO598</td>
+									<td></td>
+									<td>BIO598</td>
+									<td></td>
+									<td>MAT500</td>
+									<td></td>
 								</tr>
 								<tr>
-									<th>04:30 am - 06:00 pm</th>
+									<th style="vertical-align: middle;">06:30 am - 08:00 pm</th>
+									<td>BIO598</td>
 									<td></td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-								</tr>
-								<tr>
-									<th>06:30 am - 08:00 pm</th>
+									<td>BIO598</td>
 									<td></td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
+									<td></td>
+									<td></td>
+									<td>BIO598</td>
 								</tr>
 							</tbody>
 						</table>
