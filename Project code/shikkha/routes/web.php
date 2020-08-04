@@ -28,3 +28,6 @@ Route::get('/attendence', function () {
 Route::get('/stream', function () {
     return view('dashboard.student.stream');
 });
+Route::get('/assigned-course', function () {
+    return view('dashboard.student.assigned-course');
+});

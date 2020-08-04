@@ -29,4 +29,10 @@
     visibility: visible;
 
   }
+  .timeline.timeline-5 .timeline-item .timeline-label{
+    width: 100px;
+  }
+  .timeline.timeline-5:before {
+    left: 120px;
+
   /* student stream page css end */
