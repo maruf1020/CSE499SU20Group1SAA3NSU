@@ -60,12 +60,63 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col">
+                            <!-- <div class="col">
                                 <span class="d-block font-weight-bold mb-4 text-center">Class Time</span>
                                 <span class="btn btn-light-success btn-sm font-weight-bold btn-upper btn-text mt-2">Saturday (4:20-5:50)</span>
                                 <span class="btn btn-light-success btn-sm font-weight-bold btn-upper btn-text mt-2">Sunday (4:20-5:50)</span>
                                 <span class="btn btn-light-success btn-sm font-weight-bold btn-upper btn-text mt-2">Wednesday (4:20-5:50)</span>
-                            </div>
+                            </div> -->
+                            <div class="timeline timeline-5 mt-3">
+													
+													<!--begin::Item-->
+													<div class="timeline-item align-items-start">
+														<!--begin::Label-->
+														<div class="timeline-label font-weight-bolder text-dark-75 font-size-lg text-right pr-3">Saturday</div>
+														<!--end::Label-->
+														<!--begin::Badge-->
+														<div class="timeline-badge">
+															<i class="fa fa-genderless text-info icon-xxl"></i>
+														</div>
+														<!--end::Badge-->
+														<!--begin::Desc-->
+														<div class="timeline-content font-weight-bolder text-dark-75">04:30 pm
+														</div>
+														<!--end::Desc-->
+													</div>
+													<!--end::Item-->													
+													<!--begin::Item-->
+													<div class="timeline-item align-items-start">
+														<!--begin::Label-->
+														<div class="timeline-label font-weight-bolder text-dark-75 font-size-lg text-right pr-3">Monday</div>
+														<!--end::Label-->
+														<!--begin::Badge-->
+														<div class="timeline-badge">
+															<i class="fa fa-genderless text-success icon-xxl"></i>
+														</div>
+														<!--end::Badge-->
+														<!--begin::Text-->
+														<div class="timeline-content text-dark-50">02:10 pm</div>
+														<!--end::Text-->
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="timeline-item align-items-start">
+														<!--begin::Label-->
+														<div class="timeline-label font-weight-bolder text-dark-75 font-size-lg text-right pr-3">Wednesday</div>
+														<!--end::Label-->
+														<!--begin::Badge-->
+														<div class="timeline-badge">
+															<i class="fa fa-genderless text-warning icon-xxl"></i>
+														</div>
+														<!--end::Badge-->
+														<!--begin::Desc-->
+														<div class="timeline-content font-weight-bolder text-dark-75">04:30 pm
+														</div>
+														<!--end::Desc-->
+													</div>
+													<!--end::Item-->
+													
+												</div>
                             {{-- <div class="col-lg-4">
                               <p>hi</p>
                             </div>
@@ -76,21 +127,17 @@
                     </div>
                     <div class="card-footer d-flex justify-content-between">
                         <div class="card-toolbar">
-                            <a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 tooltipicon">
-                                <i class="far fa-comments"></i>
-                                <span class="tooltipicontext">Course Discussion</span>
+                            <a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+                                <i class="far fa-comments"></i>                                
                             </a>
-                            <a href="#" class="btn btn-sm btn-icon btn-light-warning mr-2 tooltipicon">
-                                <i class="far fa-calendar-check"></i>
-                                <span class="tooltipicontext">Class work</span>
+                            <a href="#" class="btn btn-sm btn-icon btn-light-warning mr-2 " data-toggle="tooltip" title="" data-original-title="Class worke">
+                                <i class="far fa-calendar-check"></i>                                
                             </a>
-                            <a href="#" class="btn btn-sm btn-icon btn-light-info mr-2 tooltipicon">
-                                <i class="fas fa-folder"></i>
-                                <span class="tooltipicontext">Course Resource</span>
+                            <a href="#" class="btn btn-sm btn-icon btn-light-info mr-2 " data-toggle="tooltip" title="" data-original-title="Course Resource">
+                                <i class="fas fa-folder"></i>                                
                             </a>
-                            <a href="#" class="btn btn-sm btn-icon btn-light-danger mr-2 tooltipicon">
-                                <i class="flaticon2-bell-2"></i>
-                                <span class="tooltipicontext">Notifications</span>
+                            <a href="#" class="btn btn-sm btn-icon btn-light-danger mr-2 " data-toggle="tooltip" title="" data-original-title="Notifications">
+                                <i class="flaticon2-bell-2"></i>                                
                             </a>
 
                         </div>
