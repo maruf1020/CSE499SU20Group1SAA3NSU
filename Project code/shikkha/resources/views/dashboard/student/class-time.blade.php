@@ -28,8 +28,8 @@
 				<!--begin::Body-->
 				<div class="card-body">
 					<!--begin: Datatable-->
-					<div class="datatable-bordered datatable-head-custom">
-						<table class="table table-bordered">
+					<div class="datatable-bordered datatable-head-custom class-time">
+						<table class="table table-bordered text-center">
 							<thead>
 								<tr>
 									<th>Time/Day</th>
@@ -45,28 +45,28 @@
 							</thead>
 							<tbody>
 								<tr>
-									<th>08:30 am - 10:00 am</th>
-									<td>CSE311</td>
+									<th style="vertical-align: middle;">08:30 am - 10:00 am</th>
+									<td></td>
 									<td>CSE31</td>
 									<td>CSE31</td>
+									<td></td>
 									<td>CSE31</td>
 									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
+									<td></td>
 								</tr>
 								<tr>
 									<th>10:30 am - 12:00 pm</th>
-									<td>CSE311</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
-									<td>CSE31</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
 								</tr>
 								<tr>
 									<th>12:30 am - 02:00 pm</th>
-									<td>CSE311</td>
+									<td></td>
 									<td>CSE31</td>
 									<td>CSE31</td>
 									<td>CSE31</td>
@@ -76,7 +76,7 @@
 								</tr>
 								<tr>
 									<th>02:30 am - 04:00 pm</th>
-									<td>CSE311</td>
+									<td></td>
 									<td>CSE31</td>
 									<td>CSE31</td>
 									<td>CSE31</td>
@@ -86,7 +86,7 @@
 								</tr>
 								<tr>
 									<th>04:30 am - 06:00 pm</th>
-									<td>CSE311</td>
+									<td></td>
 									<td>CSE31</td>
 									<td>CSE31</td>
 									<td>CSE31</td>
@@ -96,7 +96,7 @@
 								</tr>
 								<tr>
 									<th>06:30 am - 08:00 pm</th>
-									<td>CSE311</td>
+									<td></td>
 									<td>CSE31</td>
 									<td>CSE31</td>
 									<td>CSE31</td>

@@ -34,5 +34,13 @@
   }
   .timeline.timeline-5:before {
     left: 120px;
+  }
 
   /* student stream page css end */
+
+/* class-time page css start*/
+
+.class-time .table td{
+  padding: 50px 20px !important;
+}
+/* class-time page css end*/
