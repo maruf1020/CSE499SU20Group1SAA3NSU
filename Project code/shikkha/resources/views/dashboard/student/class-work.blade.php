@@ -115,18 +115,19 @@
 														</div>
 														<!--end::Badge-->
 														<!--begin::Content-->
-														<div class="timeline-content d-flex">
-															<span class="mr-4 font-weight-bolder text-dark-75">Added QAssignment 4</span>
-															<span class="text-success">  (10.12.2020::10.00pm - </span>
-															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
-															<!--begin::Section-->
-															<div class="d-flex align-items-start mt-n2">																
-																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-success btn-sm font-weight-bold mr-2 ML-10">View</a>
-																<!--end::Symbol-->
-															</div>
-															<!--end::Section-->
-														</div>
+														<div class="timeline-content">
+																		<div class="d-flex align-items-center justify-content-between mb-3">
+																			<div class="mr-2">
+																				<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">New Assignment has been placed</a>
+																				<span class="text-muted ml-2">Today</span>
+																				<span class="label label-light-success font-weight-bolder label-inline ml-2">new</span>
+																			</div>
+																			<div>
+																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																			</div>
+																		</div>
+																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+																	</div>
 														<!--end::Content-->
 													</div>
 													<!--end::Item-->
@@ -137,22 +138,23 @@
 														<!--end::Label-->
 														<!--begin::Badge-->
 														<div class="timeline-badge">
-															<i class="fa fa-genderless text-danger icon-xxl"></i>
+															<i class="fa fa-genderless text-success icon-xxl"></i>
 														</div>
 														<!--end::Badge-->
 														<!--begin::Content-->
-														<div class="timeline-content d-flex">
-															<span class="mr-4 font-weight-bolder text-dark-75">Added Quiz 3</span>
-															<span class="text-success">  (10.12.2020::10.00pm - </span>
-															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
-															<!--begin::Section-->
-															<div class="d-flex align-items-start mt-n2">																
-																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-danger btn-sm font-weight-bold mr-2 ML-10">View</a>
-																<!--end::Symbol-->
-															</div>
-															<!--end::Section-->
-														</div>
+														<div class="timeline-content">
+																		<div class="d-flex align-items-center justify-content-between mb-3">
+																			<div class="mr-2">
+																				<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">New Assignment has been placed</a>
+																				<span class="text-muted ml-2">Today</span>
+																				<span class="label label-light-success font-weight-bolder label-inline ml-2">new</span>
+																			</div>
+																			<div>
+																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																			</div>
+																		</div>
+																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+																	</div>
 														<!--end::Content-->
 													</div>
 													<!--end::Item-->
@@ -163,22 +165,23 @@
 														<!--end::Label-->
 														<!--begin::Badge-->
 														<div class="timeline-badge">
-															<i class="fa fa-genderless text-info icon-xxl"></i>
+															<i class="fa fa-genderless text-success icon-xxl"></i>
 														</div>
 														<!--end::Badge-->
 														<!--begin::Content-->
-														<div class="timeline-content d-flex">
-															<span class="mr-4 font-weight-bolder text-dark-75">Modified Assignment 1</span>
-															<span class="text-success">  (10.12.2020::10.00pm - </span>
-															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
-															<!--begin::Section-->
-															<div class="d-flex align-items-start mt-n2">																
-																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-info btn-sm font-weight-bold mr-2 ML-10">View</a>
-																<!--end::Symbol-->
-															</div>
-															<!--end::Section-->
-														</div>
+														<div class="timeline-content">
+																		<div class="d-flex align-items-center justify-content-between mb-3">
+																			<div class="mr-2">
+																				<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">New Assignment has been placed</a>
+																				<span class="text-muted ml-2">Today</span>
+																				<span class="label label-light-success font-weight-bolder label-inline ml-2">new</span>
+																			</div>
+																			<div>
+																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																			</div>
+																		</div>
+																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+																	</div>
 														<!--end::Content-->
 													</div>
 													<!--end::Item-->
@@ -189,22 +192,23 @@
 														<!--end::Label-->
 														<!--begin::Badge-->
 														<div class="timeline-badge">
-															<i class="fa fa-genderless text-danger icon-xxl"></i>
+															<i class="fa fa-genderless text-success icon-xxl"></i>
 														</div>
 														<!--end::Badge-->
 														<!--begin::Content-->
-														<div class="timeline-content d-flex">
-															<span class="mr-4 font-weight-bolder text-dark-75">Added Assignment 6</span>
-															<span class="text-success">  (10.12.2020::10.00pm - </span>
-															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
-															<!--begin::Section-->
-															<div class="d-flex align-items-start mt-n2">																
-																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-danger btn-sm font-weight-bold mr-2 ML-10">View</a>
-																<!--end::Symbol-->
-															</div>
-															<!--end::Section-->
-														</div>
+														<div class="timeline-content">
+																		<div class="d-flex align-items-center justify-content-between mb-3">
+																			<div class="mr-2">
+																				<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">New Assignment has been placed</a>
+																				<span class="text-muted ml-2">Today</span>
+																				<span class="label label-light-success font-weight-bolder label-inline ml-2">new</span>
+																			</div>
+																			<div>
+																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																			</div>
+																		</div>
+																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+																	</div>
 														<!--end::Content-->
 													</div>
 													<!--end::Item-->
@@ -219,18 +223,19 @@
 														</div>
 														<!--end::Badge-->
 														<!--begin::Content-->
-														<div class="timeline-content d-flex">
-															<span class="mr-4 font-weight-bolder text-dark-75">New Assignment</span>
-															<span class="text-success">  (10.12.2020::10.00pm - </span>
-															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
-															<!--begin::Section-->
-															<div class="d-flex align-items-start mt-n2">																
-																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-success btn-sm font-weight-bold mr-2 ML-10">View</a>
-																<!--end::Symbol-->
-															</div>
-															<!--end::Section-->
-														</div>
+														<div class="timeline-content">
+																		<div class="d-flex align-items-center justify-content-between mb-3">
+																			<div class="mr-2">
+																				<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">New Assignment has been placed</a>
+																				<span class="text-muted ml-2">Today</span>
+																				<span class="label label-light-success font-weight-bolder label-inline ml-2">new</span>
+																			</div>
+																			<div>
+																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																			</div>
+																		</div>
+																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+																	</div>
 														<!--end::Content-->
 													</div>
 													<!--end::Item-->
@@ -245,18 +250,19 @@
 														</div>
 														<!--end::Badge-->
 														<!--begin::Content-->
-														<div class="timeline-content d-flex">
-															<span class="mr-4 font-weight-bolder text-dark-75">Video lecture 14</span>
-															<span class="text-success">  (10.12.2020::10.00pm - </span>
-															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
-															<!--begin::Section-->
-															<div class="d-flex align-items-start mt-n2">																
-																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-warning btn-sm font-weight-bold mr-2 ML-10">View</a>
-																<!--end::Symbol-->
-															</div>
-															<!--end::Section-->
-														</div>
+														<div class="timeline-content">
+																		<div class="d-flex align-items-center justify-content-between mb-3">
+																			<div class="mr-2">
+																				<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">New Assignment has been placed</a>
+																				<span class="text-muted ml-2">Today</span>
+																				<span class="label label-light-warning font-weight-bolder label-inline ml-2">panding</span>
+																			</div>
+																			<div>
+																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																			</div>
+																		</div>
+																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+																	</div>
 														<!--end::Content-->
 													</div>
 													<!--end::Item-->
@@ -267,22 +273,23 @@
 														<!--end::Label-->
 														<!--begin::Badge-->
 														<div class="timeline-badge">
-															<i class="fa fa-genderless text-danger icon-xxl"></i>
+															<i class="fa fa-genderless text-warning icon-xxl"></i>
 														</div>
 														<!--end::Badge-->
 														<!--begin::Content-->
-														<div class="timeline-content d-flex">
-															<span class="mr-4 font-weight-bolder text-dark-75">Video lecture 13</span>
-															<span class="text-success">  (10.12.2020::10.00pm - </span>
-															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
-															<!--begin::Section-->
-															<div class="d-flex align-items-start mt-n2">																
-																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-danger btn-sm font-weight-bold mr-2 ML-10">View</a>
-																<!--end::Symbol-->
-															</div>
-															<!--end::Section-->
-														</div>
+														<div class="timeline-content">
+																		<div class="d-flex align-items-center justify-content-between mb-3">
+																			<div class="mr-2">
+																				<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">New Assignment has been placed</a>
+																				<span class="text-muted ml-2">Today</span>
+																				<span class="label label-light-warning font-weight-bolder label-inline ml-2">panding</span>
+																			</div>
+																			<div>
+																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																			</div>
+																		</div>
+																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+																	</div>
 														<!--end::Content-->
 													</div>
 													<!--end: Item-->
@@ -293,22 +300,23 @@
 														<!--end::Label-->
 														<!--begin::Badge-->
 														<div class="timeline-badge">
-															<i class="fa fa-genderless text-info icon-xxl"></i>
+															<i class="fa fa-genderless text-danger icon-xxl"></i>
 														</div>
 														<!--end::Badge-->
 														<!--begin::Content-->
-														<div class="timeline-content d-flex">
-															<span class="mr-4 font-weight-bolder text-dark-75">Video lecture 12</span>
-															<span class="text-success">  (10.12.2020::10.00pm - </span>
-															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
-															<!--begin::Section-->
-															<div class="d-flex align-items-start mt-n2">																
-																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-info btn-sm font-weight-bold mr-2 ML-10">View</a>
-																<!--end::Symbol-->
-															</div>
-															<!--end::Section-->
-														</div>
+														<div class="timeline-content">
+																		<div class="d-flex align-items-center justify-content-between mb-3">
+																			<div class="mr-2">
+																				<a href="#" class="text-dark-75 text-hover-primary font-weight-bold">New Assignment has been placed</a>
+																				<span class="text-muted ml-2">12.12.2020</span>
+																				<span class="label label-light-danger font-weight-bolder label-inline ml-2">Missing</span>
+																			</div>
+																			<div>
+																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																			</div>
+																		</div>
+																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+																	</div>
 														<!--end::Content-->
 													</div>
 													<!--end::Item-->
