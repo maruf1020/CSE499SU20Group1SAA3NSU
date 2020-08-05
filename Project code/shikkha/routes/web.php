@@ -37,3 +37,6 @@ Route::get('/class-time', function () {
 Route::get('/class-work', function () {
     return view('dashboard.student.class-work');
 });
+Route::get('/course-resource', function () {
+    return view('dashboard.student.course-resource');
+});
