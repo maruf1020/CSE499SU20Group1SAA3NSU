@@ -58,3 +58,10 @@ Route::get('/faculty-evaluation-internal', function () {
 Route::get('/results', function () {
     return view('dashboard.student.result');
 });
+Route::get('/notifications', function () {
+    return view('dashboard.student.notifications');
+});
+Route::get('/message', function () {
+    return view('dashboard.student.message');
+});
+
