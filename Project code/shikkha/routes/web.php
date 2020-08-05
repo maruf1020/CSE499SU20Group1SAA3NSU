@@ -34,3 +34,6 @@ Route::get('/assigned-course', function () {
 Route::get('/class-time', function () {
     return view('dashboard.student.class-time');
 });
+Route::get('/class-work', function () {
+    return view('dashboard.student.class-work');
+});
