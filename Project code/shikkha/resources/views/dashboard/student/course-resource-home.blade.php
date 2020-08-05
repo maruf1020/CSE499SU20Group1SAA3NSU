@@ -30,9 +30,9 @@
 
 				<!--begin::Body-->
 				<div class="card-body">
-				<div class="d-flex flex-column flex-grow-1">											
+				<div class="d-flex flex-column flex-grow-1">
 											<!--begin::Row-->
-											<div class="row">	
+											<div class="row">
 												<!--begin::Col-->
 												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
 													<!--begin::Card-->
@@ -42,17 +42,17 @@
 																<h3 class="card-label">
 																	CSE311
 																	<small>09</small>
-																	
+
 																</h3>
 															</div>
 															<div class="d-flex justify-content-between stream-button">
-																<a href="#" class="btn btn-light-success font-weight-bold">Open</a>
+																<a href="course-resource" class="btn btn-light-success font-weight-bold">Open</a>
 															</div>
 														</div>
 														<div class="card-body">
 																network and computer systems administrators
 														</div>
-															
+
 													</div>
 													<!--end:: Card-->
 												</div>
@@ -66,7 +66,7 @@
 																<h3 class="card-label">
 																	CSE311
 																	<small>09</small>
-																	
+
 																</h3>
 															</div>
 															<div class="d-flex justify-content-between stream-button">
@@ -76,11 +76,11 @@
 														<div class="card-body">
 																network and computer systems administrators
 														</div>
-															
+
 													</div>
 													<!--end:: Card-->
 												</div>
-												<!--end::Col-->	
+												<!--end::Col-->
 												<!--begin::Col-->
 												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
 													<!--begin::Card-->
@@ -90,7 +90,7 @@
 																<h3 class="card-label">
 																	CSE311
 																	<small>09</small>
-																	
+
 																</h3>
 															</div>
 															<div class="d-flex justify-content-between stream-button">
@@ -100,11 +100,11 @@
 														<div class="card-body">
 																network and computer systems administrators
 														</div>
-															
+
 													</div>
 													<!--end:: Card-->
 												</div>
-												<!--end::Col-->	
+												<!--end::Col-->
 												<!--begin::Col-->
 												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
 													<!--begin::Card-->
@@ -114,7 +114,7 @@
 																<h3 class="card-label">
 																	CSE311
 																	<small>09</small>
-																	
+
 																</h3>
 															</div>
 															<div class="d-flex justify-content-between stream-button">
@@ -124,11 +124,11 @@
 														<div class="card-body">
 																network and computer systems administrators
 														</div>
-															
+
 													</div>
 													<!--end:: Card-->
 												</div>
-												<!--end::Col-->	
+												<!--end::Col-->
 												<!--begin::Col-->
 												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
 													<!--begin::Card-->
@@ -138,7 +138,7 @@
 																<h3 class="card-label">
 																	CSE311
 																	<small>09</small>
-																	
+
 																</h3>
 															</div>
 															<div class="d-flex justify-content-between stream-button">
@@ -148,11 +148,11 @@
 														<div class="card-body">
 																network and computer systems administrators
 														</div>
-															
+
 													</div>
 													<!--end:: Card-->
 												</div>
-												<!--end::Col-->	
+												<!--end::Col-->
 												<!--begin::Col-->
 												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
 													<!--begin::Card-->
@@ -162,7 +162,7 @@
 																<h3 class="card-label">
 																	CSE311
 																	<small>09</small>
-																	
+
 																</h3>
 															</div>
 															<div class="d-flex justify-content-between stream-button">
@@ -172,30 +172,30 @@
 														<div class="card-body">
 																network and computer systems administrators
 														</div>
-															
+
 													</div>
 													<!--end:: Card-->
 												</div>
-												<!--end::Col-->	
-																												
+												<!--end::Col-->
+
 											</div>
-											<!--end::Row-->																					
+											<!--end::Row-->
 										</div>
 				</div>
 
 
 				<!-- Content::stard  -->
-				
+
 				<!-- content::end  -->
-					
+
 
 				</div>
-					
+
 
 				<!--end::Body-->
 
 
-				
+
 			</div>
 			<!--end::Card-->
 		</div>
