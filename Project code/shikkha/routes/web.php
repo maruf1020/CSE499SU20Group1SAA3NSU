@@ -40,3 +40,6 @@ Route::get('/class-work', function () {
 Route::get('/course-resource', function () {
     return view('dashboard.student.course-resource');
 });
+Route::get('/course-resource-home', function () {
+    return view('dashboard.student.course-resource-home');
+});
