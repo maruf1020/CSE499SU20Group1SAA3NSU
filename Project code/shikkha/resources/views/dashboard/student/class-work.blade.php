@@ -57,17 +57,10 @@
 																<li class="navi-item">
 																	<a href="#" class="navi-link">
 																		<span class="navi-text">
-																			<span class="label label-xl label-inline label-light-success">This week</span>
+																			<span class="label label-xl label-inline label-light-success">Completed</span>
 																		</span>
 																	</a>
-																</li>
-																<li class="navi-item">
-																	<a href="#" class="navi-link">
-																		<span class="navi-text">
-																			<span class="label label-xl label-inline label-light-danger">This month</span>
-																		</span>
-																	</a>
-																</li>
+																</li>																
 																<li class="navi-item">
 																	<a href="#" class="navi-link">
 																		<span class="navi-text">
@@ -124,10 +117,12 @@
 														<!--begin::Content-->
 														<div class="timeline-content d-flex">
 															<span class="mr-4 font-weight-bolder text-dark-75">Added QAssignment 4</span>
+															<span class="text-success">  (10.12.2020::10.00pm - </span>
+															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
 															<!--begin::Section-->
 															<div class="d-flex align-items-start mt-n2">																
 																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-success btn-sm font-weight-bold mr-2">View</a>
+																<a href="#" class="btn btn-light-success btn-sm font-weight-bold mr-2 ML-10">View</a>
 																<!--end::Symbol-->
 															</div>
 															<!--end::Section-->
@@ -148,10 +143,12 @@
 														<!--begin::Content-->
 														<div class="timeline-content d-flex">
 															<span class="mr-4 font-weight-bolder text-dark-75">Added Quiz 3</span>
+															<span class="text-success">  (10.12.2020::10.00pm - </span>
+															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
 															<!--begin::Section-->
 															<div class="d-flex align-items-start mt-n2">																
 																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-danger btn-sm font-weight-bold mr-2">View</a>
+																<a href="#" class="btn btn-light-danger btn-sm font-weight-bold mr-2 ML-10">View</a>
 																<!--end::Symbol-->
 															</div>
 															<!--end::Section-->
@@ -172,10 +169,12 @@
 														<!--begin::Content-->
 														<div class="timeline-content d-flex">
 															<span class="mr-4 font-weight-bolder text-dark-75">Modified Assignment 1</span>
+															<span class="text-success">  (10.12.2020::10.00pm - </span>
+															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
 															<!--begin::Section-->
 															<div class="d-flex align-items-start mt-n2">																
 																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-info btn-sm font-weight-bold mr-2">View</a>
+																<a href="#" class="btn btn-light-info btn-sm font-weight-bold mr-2 ML-10">View</a>
 																<!--end::Symbol-->
 															</div>
 															<!--end::Section-->
@@ -196,10 +195,12 @@
 														<!--begin::Content-->
 														<div class="timeline-content d-flex">
 															<span class="mr-4 font-weight-bolder text-dark-75">Added Assignment 6</span>
+															<span class="text-success">  (10.12.2020::10.00pm - </span>
+															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
 															<!--begin::Section-->
 															<div class="d-flex align-items-start mt-n2">																
 																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-danger btn-sm font-weight-bold mr-2">View</a>
+																<a href="#" class="btn btn-light-danger btn-sm font-weight-bold mr-2 ML-10">View</a>
 																<!--end::Symbol-->
 															</div>
 															<!--end::Section-->
@@ -220,10 +221,12 @@
 														<!--begin::Content-->
 														<div class="timeline-content d-flex">
 															<span class="mr-4 font-weight-bolder text-dark-75">New Assignment</span>
+															<span class="text-success">  (10.12.2020::10.00pm - </span>
+															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
 															<!--begin::Section-->
 															<div class="d-flex align-items-start mt-n2">																
 																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-success btn-sm font-weight-bold mr-2">View</a>
+																<a href="#" class="btn btn-light-success btn-sm font-weight-bold mr-2 ML-10">View</a>
 																<!--end::Symbol-->
 															</div>
 															<!--end::Section-->
@@ -244,10 +247,12 @@
 														<!--begin::Content-->
 														<div class="timeline-content d-flex">
 															<span class="mr-4 font-weight-bolder text-dark-75">Video lecture 14</span>
+															<span class="text-success">  (10.12.2020::10.00pm - </span>
+															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
 															<!--begin::Section-->
 															<div class="d-flex align-items-start mt-n2">																
 																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-warning btn-sm font-weight-bold mr-2">View</a>
+																<a href="#" class="btn btn-light-warning btn-sm font-weight-bold mr-2 ML-10">View</a>
 																<!--end::Symbol-->
 															</div>
 															<!--end::Section-->
@@ -268,10 +273,12 @@
 														<!--begin::Content-->
 														<div class="timeline-content d-flex">
 															<span class="mr-4 font-weight-bolder text-dark-75">Video lecture 13</span>
+															<span class="text-success">  (10.12.2020::10.00pm - </span>
+															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
 															<!--begin::Section-->
 															<div class="d-flex align-items-start mt-n2">																
 																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-danger btn-sm font-weight-bold mr-2">View</a>
+																<a href="#" class="btn btn-light-danger btn-sm font-weight-bold mr-2 ML-10">View</a>
 																<!--end::Symbol-->
 															</div>
 															<!--end::Section-->
@@ -292,10 +299,12 @@
 														<!--begin::Content-->
 														<div class="timeline-content d-flex">
 															<span class="mr-4 font-weight-bolder text-dark-75">Video lecture 12</span>
+															<span class="text-success">  (10.12.2020::10.00pm - </span>
+															<span class="text-danger"> 20.12.2020::10.00pm)  </span>
 															<!--begin::Section-->
 															<div class="d-flex align-items-start mt-n2">																
 																<!--begin::Symbol-->
-																<a href="#" class="btn btn-light-info btn-sm font-weight-bold mr-2">View</a>
+																<a href="#" class="btn btn-light-info btn-sm font-weight-bold mr-2 ML-10">View</a>
 																<!--end::Symbol-->
 															</div>
 															<!--end::Section-->
