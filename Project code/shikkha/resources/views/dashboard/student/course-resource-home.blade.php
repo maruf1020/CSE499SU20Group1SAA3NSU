@@ -36,553 +36,148 @@
 												<!--begin::Col-->
 												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
 													<!--begin::Card-->
-													<div class="card card-custom gutter-b card-stretch">
-														<div class="card-header border-0">
-															<h3 class="card-title"></h3>
-															<div class="card-toolbar">
-																<div class="dropdown dropdown-inline" data-toggle="tooltip" title="" data-placement="left" data-original-title="Quick actions">
-																	<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																		<i class="ki ki-bold-more-hor"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																		<!--begin::Navigation-->
-																		<ul class="navi navi-hover py-5">
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="far fa-eye"></i>
-																					</span>
-																					<span class="navi-text">View</span>
-																				</a>
-																			</li>
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="fas fa-cloud-download-alt"></i>
-																					</span>
-																					<span class="navi-text">Download</span>
-																				</a>
-																			</li>																			
-																		</ul>
-																		<!--end::Navigation-->
-																	</div>
-																</div>
+													<div class="card card-custom gutter-b">
+														<div class="card-header">
+															<div class="card-title">
+																<h3 class="card-label">
+																	CSE311
+																	<small>09</small>
+																	
+																</h3>
+															</div>
+															<div class="d-flex justify-content-between stream-button">
+																<a href="#" class="btn btn-light-success font-weight-bold">Open</a>
 															</div>
 														</div>
 														<div class="card-body">
-															<div class="d-flex flex-column align-items-center">
-																<!--begin: Icon-->
-																<img alt="" class="max-h-65px" src="assets/media/svg/files/pdf.svg">
-																<!--end: Icon-->
-																<!--begin: Tite-->
-																<a href="#" class="text-dark-75 font-weight-bold mt-15 font-size-lg">Technical Requiremnts.pdf</a>
-																<!--end: Tite-->
-															</div>
+																network and computer systems administrators
 														</div>
+															
 													</div>
 													<!--end:: Card-->
 												</div>
-												<!--end::Col-->		
+												<!--end::Col-->
 												<!--begin::Col-->
 												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
 													<!--begin::Card-->
-													<div class="card card-custom gutter-b card-stretch">
-														<div class="card-header border-0">
-															<h3 class="card-title"></h3>
-															<div class="card-toolbar">
-																<div class="dropdown dropdown-inline" data-toggle="tooltip" title="" data-placement="left" data-original-title="Quick actions">
-																	<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																		<i class="ki ki-bold-more-hor"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																		<!--begin::Navigation-->
-																		<ul class="navi navi-hover py-5">
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="far fa-eye"></i>
-																					</span>
-																					<span class="navi-text">View</span>
-																				</a>
-																			</li>
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="fas fa-cloud-download-alt"></i>
-																					</span>
-																					<span class="navi-text">Download</span>
-																				</a>
-																			</li>																			
-																		</ul>
-																		<!--end::Navigation-->
-																	</div>
-																</div>
+													<div class="card card-custom gutter-b">
+														<div class="card-header">
+															<div class="card-title">
+																<h3 class="card-label">
+																	CSE311
+																	<small>09</small>
+																	
+																</h3>
+															</div>
+															<div class="d-flex justify-content-between stream-button">
+																<a href="#" class="btn btn-light-success font-weight-bold">Open</a>
 															</div>
 														</div>
 														<div class="card-body">
-															<div class="d-flex flex-column align-items-center">
-																<!--begin: Icon-->
-																<img alt="" class="max-h-65px" src="assets/media/svg/files/mp4.svg">
-																<!--end: Icon-->
-																<!--begin: Tite-->
-																<a href="#" class="text-dark-75 font-weight-bold mt-15 font-size-lg">Technical Requiremnts.pdf</a>
-																<!--end: Tite-->
-															</div>
+																network and computer systems administrators
 														</div>
+															
 													</div>
 													<!--end:: Card-->
 												</div>
-												<!--end::Col-->		
+												<!--end::Col-->	
 												<!--begin::Col-->
 												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
 													<!--begin::Card-->
-													<div class="card card-custom gutter-b card-stretch">
-														<div class="card-header border-0">
-															<h3 class="card-title"></h3>
-															<div class="card-toolbar">
-																<div class="dropdown dropdown-inline" data-toggle="tooltip" title="" data-placement="left" data-original-title="Quick actions">
-																	<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																		<i class="ki ki-bold-more-hor"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																		<!--begin::Navigation-->
-																		<ul class="navi navi-hover py-5">
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="far fa-eye"></i>
-																					</span>
-																					<span class="navi-text">View</span>
-																				</a>
-																			</li>
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="fas fa-cloud-download-alt"></i>
-																					</span>
-																					<span class="navi-text">Download</span>
-																				</a>
-																			</li>																			
-																		</ul>
-																		<!--end::Navigation-->
-																	</div>
-																</div>
+													<div class="card card-custom gutter-b">
+														<div class="card-header">
+															<div class="card-title">
+																<h3 class="card-label">
+																	CSE311
+																	<small>09</small>
+																	
+																</h3>
+															</div>
+															<div class="d-flex justify-content-between stream-button">
+																<a href="#" class="btn btn-light-success font-weight-bold">Open</a>
 															</div>
 														</div>
 														<div class="card-body">
-															<div class="d-flex flex-column align-items-center">
-																<!--begin: Icon-->
-																<img alt="" class="max-h-65px" src="assets/media/svg/files/mp4.svg">
-																<!--end: Icon-->
-																<!--begin: Tite-->
-																<a href="#" class="text-dark-75 font-weight-bold mt-15 font-size-lg">Technical Requiremnts.pdf</a>
-																<!--end: Tite-->
-															</div>
+																network and computer systems administrators
 														</div>
+															
 													</div>
 													<!--end:: Card-->
 												</div>
-												<!--end::Col-->		
+												<!--end::Col-->	
 												<!--begin::Col-->
 												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
 													<!--begin::Card-->
-													<div class="card card-custom gutter-b card-stretch">
-														<div class="card-header border-0">
-															<h3 class="card-title"></h3>
-															<div class="card-toolbar">
-																<div class="dropdown dropdown-inline" data-toggle="tooltip" title="" data-placement="left" data-original-title="Quick actions">
-																	<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																		<i class="ki ki-bold-more-hor"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																		<!--begin::Navigation-->
-																		<ul class="navi navi-hover py-5">
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="far fa-eye"></i>
-																					</span>
-																					<span class="navi-text">View</span>
-																				</a>
-																			</li>
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="fas fa-cloud-download-alt"></i>
-																					</span>
-																					<span class="navi-text">Download</span>
-																				</a>
-																			</li>																			
-																		</ul>
-																		<!--end::Navigation-->
-																	</div>
-																</div>
+													<div class="card card-custom gutter-b">
+														<div class="card-header">
+															<div class="card-title">
+																<h3 class="card-label">
+																	CSE311
+																	<small>09</small>
+																	
+																</h3>
+															</div>
+															<div class="d-flex justify-content-between stream-button">
+																<a href="#" class="btn btn-light-success font-weight-bold">Open</a>
 															</div>
 														</div>
 														<div class="card-body">
-															<div class="d-flex flex-column align-items-center">
-																<!--begin: Icon-->
-																<img alt="" class="max-h-65px" src="assets/media/svg/files/mp4.svg">
-																<!--end: Icon-->
-																<!--begin: Tite-->
-																<a href="#" class="text-dark-75 font-weight-bold mt-15 font-size-lg">Technical Requiremnts.pdf</a>
-																<!--end: Tite-->
-															</div>
+																network and computer systems administrators
 														</div>
+															
 													</div>
 													<!--end:: Card-->
 												</div>
-												<!--end::Col-->		
+												<!--end::Col-->	
 												<!--begin::Col-->
 												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
 													<!--begin::Card-->
-													<div class="card card-custom gutter-b card-stretch">
-														<div class="card-header border-0">
-															<h3 class="card-title"></h3>
-															<div class="card-toolbar">
-																<div class="dropdown dropdown-inline" data-toggle="tooltip" title="" data-placement="left" data-original-title="Quick actions">
-																	<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																		<i class="ki ki-bold-more-hor"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																		<!--begin::Navigation-->
-																		<ul class="navi navi-hover py-5">
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="far fa-eye"></i>
-																					</span>
-																					<span class="navi-text">View</span>
-																				</a>
-																			</li>
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="fas fa-cloud-download-alt"></i>
-																					</span>
-																					<span class="navi-text">Download</span>
-																				</a>
-																			</li>																			
-																		</ul>
-																		<!--end::Navigation-->
-																	</div>
-																</div>
+													<div class="card card-custom gutter-b">
+														<div class="card-header">
+															<div class="card-title">
+																<h3 class="card-label">
+																	CSE311
+																	<small>09</small>
+																	
+																</h3>
+															</div>
+															<div class="d-flex justify-content-between stream-button">
+																<a href="#" class="btn btn-light-success font-weight-bold">Open</a>
 															</div>
 														</div>
 														<div class="card-body">
-															<div class="d-flex flex-column align-items-center">
-																<!--begin: Icon-->
-																<img alt="" class="max-h-65px" src="assets/media/svg/files/zip.svg">
-																<!--end: Icon-->
-																<!--begin: Tite-->
-																<a href="#" class="text-dark-75 font-weight-bold mt-15 font-size-lg">Technical Requiremnts.pdf</a>
-																<!--end: Tite-->
-															</div>
+																network and computer systems administrators
 														</div>
+															
 													</div>
 													<!--end:: Card-->
 												</div>
-												<!--end::Col-->		
+												<!--end::Col-->	
 												<!--begin::Col-->
 												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
 													<!--begin::Card-->
-													<div class="card card-custom gutter-b card-stretch">
-														<div class="card-header border-0">
-															<h3 class="card-title"></h3>
-															<div class="card-toolbar">
-																<div class="dropdown dropdown-inline" data-toggle="tooltip" title="" data-placement="left" data-original-title="Quick actions">
-																	<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																		<i class="ki ki-bold-more-hor"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																		<!--begin::Navigation-->
-																		<ul class="navi navi-hover py-5">
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="far fa-eye"></i>
-																					</span>
-																					<span class="navi-text">View</span>
-																				</a>
-																			</li>
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="fas fa-cloud-download-alt"></i>
-																					</span>
-																					<span class="navi-text">Download</span>
-																				</a>
-																			</li>																			
-																		</ul>
-																		<!--end::Navigation-->
-																	</div>
-																</div>
+													<div class="card card-custom gutter-b">
+														<div class="card-header">
+															<div class="card-title">
+																<h3 class="card-label">
+																	CSE311
+																	<small>09</small>
+																	
+																</h3>
+															</div>
+															<div class="d-flex justify-content-between stream-button">
+																<a href="#" class="btn btn-light-success font-weight-bold">Open</a>
 															</div>
 														</div>
 														<div class="card-body">
-															<div class="d-flex flex-column align-items-center">
-																<!--begin: Icon-->
-																<img alt="" class="max-h-65px" src="assets/media/svg/files/zip.svg">
-																<!--end: Icon-->
-																<!--begin: Tite-->
-																<a href="#" class="text-dark-75 font-weight-bold mt-15 font-size-lg">Technical Requiremnts.pdf</a>
-																<!--end: Tite-->
-															</div>
+																network and computer systems administrators
 														</div>
+															
 													</div>
 													<!--end:: Card-->
 												</div>
-												<!--end::Col-->		
-												<!--begin::Col-->
-												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-													<!--begin::Card-->
-													<div class="card card-custom gutter-b card-stretch">
-														<div class="card-header border-0">
-															<h3 class="card-title"></h3>
-															<div class="card-toolbar">
-																<div class="dropdown dropdown-inline" data-toggle="tooltip" title="" data-placement="left" data-original-title="Quick actions">
-																	<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																		<i class="ki ki-bold-more-hor"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																		<!--begin::Navigation-->
-																		<ul class="navi navi-hover py-5">
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="far fa-eye"></i>
-																					</span>
-																					<span class="navi-text">View</span>
-																				</a>
-																			</li>
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="fas fa-cloud-download-alt"></i>
-																					</span>
-																					<span class="navi-text">Download</span>
-																				</a>
-																			</li>																			
-																		</ul>
-																		<!--end::Navigation-->
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="card-body">
-															<div class="d-flex flex-column align-items-center">
-																<!--begin: Icon-->
-																<img alt="" class="max-h-65px" src="assets/media/svg/files/pdf.svg">
-																<!--end: Icon-->
-																<!--begin: Tite-->
-																<a href="#" class="text-dark-75 font-weight-bold mt-15 font-size-lg">Technical Requiremnts.pdf</a>
-																<!--end: Tite-->
-															</div>
-														</div>
-													</div>
-													<!--end:: Card-->
-												</div>
-												<!--end::Col-->		
-												<!--begin::Col-->
-												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-													<!--begin::Card-->
-													<div class="card card-custom gutter-b card-stretch">
-														<div class="card-header border-0">
-															<h3 class="card-title"></h3>
-															<div class="card-toolbar">
-																<div class="dropdown dropdown-inline" data-toggle="tooltip" title="" data-placement="left" data-original-title="Quick actions">
-																	<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																		<i class="ki ki-bold-more-hor"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																		<!--begin::Navigation-->
-																		<ul class="navi navi-hover py-5">
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="far fa-eye"></i>
-																					</span>
-																					<span class="navi-text">View</span>
-																				</a>
-																			</li>
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="fas fa-cloud-download-alt"></i>
-																					</span>
-																					<span class="navi-text">Download</span>
-																				</a>
-																			</li>																			
-																		</ul>
-																		<!--end::Navigation-->
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="card-body">
-															<div class="d-flex flex-column align-items-center">
-																<!--begin: Icon-->
-																<img alt="" class="max-h-65px" src="assets/media/svg/files/pdf.svg">
-																<!--end: Icon-->
-																<!--begin: Tite-->
-																<a href="#" class="text-dark-75 font-weight-bold mt-15 font-size-lg">Technical Requiremnts.pdf</a>
-																<!--end: Tite-->
-															</div>
-														</div>
-													</div>
-													<!--end:: Card-->
-												</div>
-												<!--end::Col-->		
-												<!--begin::Col-->
-												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-													<!--begin::Card-->
-													<div class="card card-custom gutter-b card-stretch">
-														<div class="card-header border-0">
-															<h3 class="card-title"></h3>
-															<div class="card-toolbar">
-																<div class="dropdown dropdown-inline" data-toggle="tooltip" title="" data-placement="left" data-original-title="Quick actions">
-																	<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																		<i class="ki ki-bold-more-hor"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																		<!--begin::Navigation-->
-																		<ul class="navi navi-hover py-5">
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="far fa-eye"></i>
-																					</span>
-																					<span class="navi-text">View</span>
-																				</a>
-																			</li>
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="fas fa-cloud-download-alt"></i>
-																					</span>
-																					<span class="navi-text">Download</span>
-																				</a>
-																			</li>																			
-																		</ul>
-																		<!--end::Navigation-->
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="card-body">
-															<div class="d-flex flex-column align-items-center">
-																<!--begin: Icon-->
-																<img alt="" class="max-h-65px" src="assets/media/svg/files/doc.svg">
-																<!--end: Icon-->
-																<!--begin: Tite-->
-																<a href="#" class="text-dark-75 font-weight-bold mt-15 font-size-lg">Technical Requiremnts.pdf</a>
-																<!--end: Tite-->
-															</div>
-														</div>
-													</div>
-													<!--end:: Card-->
-												</div>
-												<!--end::Col-->		
-												<!--begin::Col-->
-												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-													<!--begin::Card-->
-													<div class="card card-custom gutter-b card-stretch">
-														<div class="card-header border-0">
-															<h3 class="card-title"></h3>
-															<div class="card-toolbar">
-																<div class="dropdown dropdown-inline" data-toggle="tooltip" title="" data-placement="left" data-original-title="Quick actions">
-																	<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																		<i class="ki ki-bold-more-hor"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																		<!--begin::Navigation-->
-																		<ul class="navi navi-hover py-5">
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="far fa-eye"></i>
-																					</span>
-																					<span class="navi-text">View</span>
-																				</a>
-																			</li>
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="fas fa-cloud-download-alt"></i>
-																					</span>
-																					<span class="navi-text">Download</span>
-																				</a>
-																			</li>																			
-																		</ul>
-																		<!--end::Navigation-->
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="card-body">
-															<div class="d-flex flex-column align-items-center">
-																<!--begin: Icon-->
-																<img alt="" class="max-h-65px" src="assets/media/svg/files/pdf.svg">
-																<!--end: Icon-->
-																<!--begin: Tite-->
-																<a href="#" class="text-dark-75 font-weight-bold mt-15 font-size-lg">Technical Requiremnts.pdf</a>
-																<!--end: Tite-->
-															</div>
-														</div>
-													</div>
-													<!--end:: Card-->
-												</div>
-												<!--end::Col-->		
-												<!--begin::Col-->
-												<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-													<!--begin::Card-->
-													<div class="card card-custom gutter-b card-stretch">
-														<div class="card-header border-0">
-															<h3 class="card-title"></h3>
-															<div class="card-toolbar">
-																<div class="dropdown dropdown-inline" data-toggle="tooltip" title="" data-placement="left" data-original-title="Quick actions">
-																	<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																		<i class="ki ki-bold-more-hor"></i>
-																	</a>
-																	<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																		<!--begin::Navigation-->
-																		<ul class="navi navi-hover py-5">
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="far fa-eye"></i>
-																					</span>
-																					<span class="navi-text">View</span>
-																				</a>
-																			</li>
-																			<li class="navi-item">
-																				<a href="#" class="navi-link">
-																					<span class="navi-icon">
-																						<i class="fas fa-cloud-download-alt"></i>
-																					</span>
-																					<span class="navi-text">Download</span>
-																				</a>
-																			</li>																			
-																		</ul>
-																		<!--end::Navigation-->
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="card-body">
-															<div class="d-flex flex-column align-items-center">
-																<!--begin: Icon-->
-																<img alt="" class="max-h-65px" src="assets/media/svg/files/doc.svg">
-																<!--end: Icon-->
-																<!--begin: Tite-->
-																<a href="#" class="text-dark-75 font-weight-bold mt-15 font-size-lg">Technical Requiremnts.pdf</a>
-																<!--end: Tite-->
-															</div>
-														</div>
-													</div>
-													<!--end:: Card-->
-												</div>
-												<!--end::Col-->							
+												<!--end::Col-->	
+																												
 											</div>
 											<!--end::Row-->																					
 										</div>
