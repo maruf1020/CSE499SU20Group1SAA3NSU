@@ -43,3 +43,18 @@ Route::get('/course-resource', function () {
 Route::get('/course-resource-home', function () {
     return view('dashboard.student.course-resource-home');
 });
+Route::get('/attendence', function () {
+    return view('dashboard.student.attendence-home');
+});
+Route::get('/attendence-internal', function () {
+    return view('dashboard.student.attendence-internal');
+});
+Route::get('/faculty-evaluation', function () {
+    return view('dashboard.student.faculty-evaluation-home');
+});
+Route::get('/faculty-evaluation-internal', function () {
+    return view('dashboard.student.faculty-evaluation-internal');
+});
+Route::get('/results', function () {
+    return view('dashboard.student.result');
+});

@@ -15,8 +15,8 @@
 				<!--begin::Header-->
 				<div class="card-header flex-wrap border-0 pt-6 pb-0">
 					<div class="card-title justify-content-between ">
-						<h3 class="card-label">Assigned Course
-							<span class="d-block text-muted pt-2 font-size-sm">This semeseter all course shown here</span></h3>
+						<h3 class="card-label">Cse499A Attendence
+							<span class="d-block text-muted pt-2 font-size-sm">This semeseter attendence shown here</span></h3>
 					</div>
 					<div class="card-title justify-content-between ">
 						<h3 class="card-label">Course Duration
@@ -32,55 +32,43 @@
 						<table class="table table-bordered">
 							<thead>
 								<tr>
-									<th scope="col">SL No#</th>
-									<th scope="col">Course Title</th>
-									<th scope="col">Course Name</th>
-									<th scope="col">Faculty Name</th>
-									<th scope="col">Class Attended</th>
-									<th scope="col">Total Class</th>
+									<th scope="col">Lecture No#</th>
+									<th scope="col">Lecture Date</th>
+									<th scope="col">Attended</th>
 								</tr>
 
 							</thead>
 							<tbody>
 								<tr>
 									<th>1</th>
-									<td>Cse413</td>
-									<td>Verlog Design and simulation</td>
-									<td>Nablel Mohhamad</td>
-									<td>5</td>
-									<td>15</td>
+									<td>2020-07-02 08:45:15</td>
+									<td><span  class="btn btn-success ">Yes</span></td>
+
+
 								</tr>
 								<tr>
 									<th>2</th>
-									<td>Cse425</td>
-									<td>Web design</td>
-									<td>Nablel Mohhamad</td>
-									<td>5</td>
-									<td>15</td>
+									<td>2020-07-02 08:45:15</td>
+									<td><span  class="btn btn-danger ">No</span></td>
+
 								</tr>
 								<tr>
 									<th>3</th>
-									<td>Ben215</td>
-									<td>Bangla Language</td>
-									<td>Nablel Mohhamad</td>
-									<td>5</td>
-									<td>15</td>
+									<td>2020-07-02 08:45:15</td>
+									<td><span type="button" class="btn btn-danger ">No</span></td>
+
 								</tr>
 								<tr>
 									<th>4</th>
-									<td>Geo101</td>
-									<td>Geography</td>
-									<td>Nablel Mohhamad</td>
-									<td>5</td>
-									<td>15</td>
+									<td>2020-07-02 08:45:15</td>
+									<td><span type="button" class="btn btn-danger ">No</span></td>
+
 								</tr>
 								<tr>
 									<th>5</th>
-									<td>His101</td>
-									<td>History</td>
-									<td>Nablel Mohhamad</td>
-									<td>5</td>
-									<td>15</td>
+									<td>2020-07-02 08:45:15</td>
+									<td><span type="button" class="btn btn-danger ">No</span></td>
+
 								</tr>
 							</tbody>
 						</table>

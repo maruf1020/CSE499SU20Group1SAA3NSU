@@ -33,68 +33,181 @@
 							<thead>
 								<tr>
 									<th scope="col">SL No#</th>
-									<th scope="col">Course Title</th>
-									<th scope="col">Course Name</th>
-									<th scope="col">Faculty Name</th>
-									<th scope="col">Class Attended</th>
-									<th scope="col">Total Class</th>
+									<th scope="col">Questions</th>
+									<th scope="col"></th>
+
 								</tr>
 
 							</thead>
 							<tbody>
 								<tr>
 									<th>1</th>
-									<td>Cse413</td>
-									<td>Verlog Design and simulation</td>
-									<td>Nablel Mohhamad</td>
-									<td>5</td>
-									<td>15</td>
+									<td>Are this course efficient ?</td>
+									<td>
+										<div class="form-group">
+											<div class="radio-inline">
+												<label class="radio radio-success">
+													<input type="radio" name="value" /> Excellent
+													<span></span>
+												</label>
+												<label class="radio radio-primary">
+													<input type="radio" name="value" /> Good
+													<span></span>
+												</label>
+												<label class="radio radio-warning">
+													<input type="radio" name="value" /> Average
+													<span></span>
+												</label>
+												<label class="radio radio-danger">
+													<input type="radio" name="value" /> Poor
+													<span></span>
+												</label>
+												<label class="radio radio-dark">
+													<input type="radio" name="value" /> Worst
+													<span></span>
+												</label>
+											</div>
+										</div>
+									</td>
+
 								</tr>
 								<tr>
 									<th>2</th>
-									<td>Cse425</td>
-									<td>Web design</td>
-									<td>Nablel Mohhamad</td>
-									<td>5</td>
-									<td>15</td>
+									<td>Does the course properly arranged ?</td>
+									<td>
+										<div class="form-group">
+											<div class="radio-inline">
+												<label class="radio radio-success">
+													<input type="radio" name="value4" value="Excellent"/> Excellent
+													<span></span>
+												</label>
+												<label class="radio radio-primary">
+													<input type="radio" name="value4" /> Good
+													<span></span>
+												</label>
+												<label class="radio radio-warning">
+													<input type="radio" name="value4" /> Average
+													<span></span>
+												</label>
+												<label class="radio radio-danger">
+													<input type="radio" name="value4" /> Poor
+													<span></span>
+												</label>
+												<label class="radio radio-dark">
+													<input type="radio" name="value4" /> Worst
+													<span></span>
+												</label>
+											</div>
+										</div>
+									</td>
+
 								</tr>
 								<tr>
 									<th>3</th>
-									<td>Ben215</td>
-									<td>Bangla Language</td>
-									<td>Nablel Mohhamad</td>
-									<td>5</td>
-									<td>15</td>
+									<td>The teacher is co-operative with the Students</td>
+									<td>
+										<div class="form-group">
+											<div class="radio-inline">
+												<label class="radio radio-success">
+													<input type="radio" name="value3" /> Excellent
+													<span></span>
+												</label>
+												<label class="radio radio-primary">
+													<input type="radio" name="value3" /> Good
+													<span></span>
+												</label>
+												<label class="radio radio-warning">
+													<input type="radio" name="value3" /> Average
+													<span></span>
+												</label>
+												<label class="radio radio-danger">
+													<input type="radio" name="value3" /> Poor
+													<span></span>
+												</label>
+												<label class="radio radio-dark">
+													<input type="radio" name="value3" /> Worst
+													<span></span>
+												</label>
+											</div>
+										</div>
+									</td>
+
 								</tr>
 								<tr>
 									<th>4</th>
-									<td>Geo101</td>
-									<td>Geography</td>
-									<td>Nablel Mohhamad</td>
-									<td>5</td>
-									<td>15</td>
+									<td>Does the course offers a great education cirteria ?</td>
+									<td>
+										<div class="form-group">
+											<div class="radio-inline">
+												<label class="radio radio-success">
+													<input type="radio" name="value2" /> Excellent
+													<span></span>
+												</label>
+												<label class="radio radio-primary">
+													<input type="radio" name="value2" /> Good
+													<span></span>
+												</label>
+												<label class="radio radio-warning">
+													<input type="radio" name="value2" /> Average
+													<span></span>
+												</label>
+												<label class="radio radio-danger">
+													<input type="radio" name="value2" /> Poor
+													<span></span>
+												</label>
+												<label class="radio radio-dark">
+													<input type="radio" name="value2" /> Worst
+													<span></span>
+												</label>
+											</div>
+										</div>
+									</td>
+
 								</tr>
 								<tr>
 									<th>5</th>
-									<td>His101</td>
-									<td>History</td>
-									<td>Nablel Mohhamad</td>
-									<td>5</td>
-									<td>15</td>
+									<td>All over expereience </td>
+									<td>
+										<div class="form-group">
+											<div class="radio-inline">
+												<label class="radio radio-success">
+													<input type="radio" name="value1" /> Excellent
+													<span></span>
+												</label>
+												<label class="radio radio-primary">
+													<input type="radio" name="value1" /> Good
+													<span></span>
+												</label>
+												<label class="radio radio-warning">
+													<input type="radio" name="value1" /> Average
+													<span></span>
+												</label>
+												<label class="radio radio-danger">
+													<input type="radio" name="value1" /> Poor
+													<span></span>
+												</label>
+												<label class="radio radio-dark">
+													<input type="radio" name="value1" /> Worst
+													<span></span>
+												</label>
+											</div>
+										</div>
+									</td>
+
 								</tr>
 							</tbody>
 						</table>
 					</div>
 					<!--end: Datatable-->
 
-				<!--end::Body-->
+					<!--end::Body-->
+				</div>
+				<!--end::Card-->
 			</div>
-			<!--end::Card-->
+			<!--end::Container-->
 		</div>
-		<!--end::Container-->
+		<!--end::Entry-->
 	</div>
-	<!--end::Entry-->
-</div>
-<!--end::Content-->
+	<!--end::Content-->
 
-@endsection
+	@endsection
