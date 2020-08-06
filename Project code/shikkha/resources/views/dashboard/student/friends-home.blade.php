@@ -31,49 +31,95 @@
 				<!--begin::Body-->
 				<!-- Content::stard  -->
 				<div class="card-body">
-				<div class="d-flex flex-column flex-grow-1">
-											<!--begin::Row-->
-											<div class="row">
-												<div class="card" style="width:15rem; height:10rem">
-													<img src="..." class="card-img-top" alt="...">													
-												</div>	
-												<div class="card" style="width:15rem; height:10rem">
-													<img src="..." class="card-img-top" alt="...">													
-												</div>
-												<div class="card" style="width:15rem; height:10rem">
-													<img src="..." class="card-img-top" alt="...">													
-												</div>											
+					<div class="d-flex flex-column flex-grow-1">
+						<!--begin::Row-->
+						<div class="row">
+							<!--begin::Col-->
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+								<!--begin::Card-->
+								<div class="card card-custom gutter-b">
 
-											</div>
-											<!--end::Row-->
-										</div>
+									<div class="card-body friends-body text-center">
+										<a href="#">
+											<h3 class="card-label friends-card-title">
+												Add Friend
+											</h3>
+										</a>
+
+									</div>
+
+								</div>
+								<!--end:: Card-->
+							</div>
+							<!--end::Col-->
+							<!--begin::Col-->
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+								<!--begin::Card-->
+								<div class="card card-custom gutter-b">
+
+									<div class="card-body friends-body text-center">
+										<a href="#">
+											<h3 class="card-label friends-card-title">
+												Add Friend
+											</h3>
+										</a>
+
+									</div>
+
+								</div>
+								<!--end:: Card-->
+							</div>
+							<!--end::Col-->
+							<!--begin::Col-->
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+								<!--begin::Card-->
+								<div class="card card-custom gutter-b">
+
+									<div class="card-body friends-body text-center">
+										<a href="#">
+											<h3 class="card-label friends-card-title">
+												Add Friend
+											</h3>
+										</a>
+
+									</div>
+
+								</div>
+								<!--end:: Card-->
+							</div>
+							<!--end::Col-->
+
+
+
+
+						</div>
+						<!--end::Row-->
+					</div>
 				</div>
-				<!-- Content::stard  -->
-
-				
-
-				
-
-
-				<!-- Content::stard  -->
-
-				<!-- content::end  -->
-
-
-				</div>
-
-
-				<!--end::Body-->
 
 
 
 			</div>
-			<!--end::Card-->
+			<!-- Content::stard  -->
+
+
+
+
+			<!-- Content::stard  -->
+
+			<!-- content::end  -->
+
+
 		</div>
-		<!--end::Container-->
+
+
+		<!--end::Body-->
+
+
+
 	</div>
-	<!--end::Entry-->
+	<!--end::Card-->
 </div>
-<!--end::Content-->
+<!--end::Container-->
 
 @endsection
