@@ -111,6 +111,9 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="{{ asset('assets/js/pages/widgets.js') }}"></script>
 		<!--end::Page Scripts-->
+		<!-- began::for single message page -->
+		<script src="assets/js/pages/custom/chat/chat.js"></script>
+		<!-- end::for single message page -->
 
 	</body>
 	<!--end::Body-->
