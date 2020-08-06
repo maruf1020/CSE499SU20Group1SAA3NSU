@@ -64,4 +64,9 @@ Route::get('/notifications', function () {
 Route::get('/message', function () {
     return view('dashboard.student.message');
 });
-
+Route::get('/course-mate', function () {
+    return view('dashboard.student.course-mate');
+});
+Route::get('/course-mate-internal', function () {
+    return view('dashboard.student.course-mate-internal');
+});
