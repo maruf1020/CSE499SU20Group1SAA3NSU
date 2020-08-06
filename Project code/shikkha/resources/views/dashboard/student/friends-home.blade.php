@@ -4,8 +4,6 @@
 
 <!--begin::Content-->
 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-
-
 	<!--begin::Entry-->
 	<div class="d-flex flex-column-fluid">
 		<!--begin::Container-->
@@ -24,10 +22,6 @@
 					</div>
 				</div>
 				<!--end::Header-->
-
-
-
-
 				<!--begin::Body-->
 				<!-- Content::stard  -->
 				<div class="card-body">
@@ -38,16 +32,13 @@
 							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
 								<!--begin::Card-->
 								<div class="card card-custom gutter-b">
-
 									<div class="card-body friends-body text-center">
-										<a href="#">
+										<a href="all-friends">
 											<h3 class="card-label friends-card-title">
-												Add Friend
+												All Friend
 											</h3>
 										</a>
-
 									</div>
-
 								</div>
 								<!--end:: Card-->
 							</div>
@@ -58,14 +49,12 @@
 								<div class="card card-custom gutter-b">
 
 									<div class="card-body friends-body text-center">
-										<a href="#">
+										<a href="add-friends">
 											<h3 class="card-label friends-card-title">
 												Add Friend
 											</h3>
 										</a>
-
 									</div>
-
 								</div>
 								<!--end:: Card-->
 							</div>
@@ -76,47 +65,26 @@
 								<div class="card card-custom gutter-b">
 
 									<div class="card-body friends-body text-center">
-										<a href="#">
+										<a href="friends-request">
 											<h3 class="card-label friends-card-title">
-												Add Friend
+												Friend Request
 											</h3>
 										</a>
-
 									</div>
-
 								</div>
 								<!--end:: Card-->
 							</div>
 							<!--end::Col-->
-
-
-
-
 						</div>
 						<!--end::Row-->
 					</div>
 				</div>
-
-
-
 			</div>
 			<!-- Content::stard  -->
-
-
-
-
 			<!-- Content::stard  -->
-
 			<!-- content::end  -->
-
-
 		</div>
-
-
 		<!--end::Body-->
-
-
-
 	</div>
 	<!--end::Card-->
 </div>
