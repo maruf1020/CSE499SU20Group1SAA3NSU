@@ -53,4 +53,9 @@
 .bal.timeline.timeline-5:before {
   left: 150px !important;
 }
-/* result page css start*/
+/* result page css end*/
+
+/* classmate  page css start*/
+.classmate-body{
+  background: #f3f3f3;
+}
