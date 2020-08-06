@@ -70,3 +70,15 @@ Route::get('/course-mate', function () {
 Route::get('/course-mate-internal', function () {
     return view('dashboard.student.course-mate-internal');
 });
+Route::get('/friends-home', function () {
+    return view('dashboard.student.friends-home');
+});
+Route::get('/add-friends', function () {
+    return view('dashboard.student.add-friends');
+});
+Route::get('/all-friends', function () {
+    return view('dashboard.student.all-friends');
+});
+Route::get('/friends-request', function () {
+    return view('dashboard.student.friends-request');
+});
