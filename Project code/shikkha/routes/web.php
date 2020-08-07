@@ -91,3 +91,15 @@ Route::get('/todo', function () {
 Route::get('/notes', function () {
     return view('dashboard.student.notes');
 });
+Route::get('/offer-course', function () {
+    return view('dashboard.student.offer-course');
+});
+Route::get('/pre-advising', function () {
+    return view('dashboard.student.pre-advising');
+});
+Route::get('/advising', function () {
+    return view('dashboard.student.advising');
+});
+Route::get('/request-course', function () {
+    return view('dashboard.student.request-course');
+});
