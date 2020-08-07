@@ -113,7 +113,12 @@
 		<!--end::Page Scripts-->
 		<!-- began::for single message page -->
 		<script src="assets/js/pages/custom/chat/chat.js"></script>
-		<!-- end::for single message page -->
+		<!-- end::for single message page -->		
+		<!--begin::For calender-->
+		<!-- <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>		 -->
+		<script src="assets/js/pages/features/calendar/basic.js"></script>
+		<!--end::For calender-->
+
 
 	</body>
 	<!--end::Body-->
