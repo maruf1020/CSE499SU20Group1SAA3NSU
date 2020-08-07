@@ -75,10 +75,10 @@
 												<a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">Luca Doncic</a>
 												<span class="text-muted font-weight-bold">
 													<div class="text-center mt-5">
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Message">
 															<i class="far fa-comments"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Mail">
 															<i class="far fa-envelope"></i>
 														</a>
 													</div>
@@ -123,10 +123,10 @@
 												<a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">Luca Doncic</a>
 												<span class="text-muted font-weight-bold">
 													<div class="text-center mt-5">
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Message">
 															<i class="far fa-comments"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Mail">
 															<i class="far fa-envelope"></i>
 														</a>
 													</div>
@@ -171,10 +171,10 @@
 												<a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">Luca Doncic</a>
 												<span class="text-muted font-weight-bold">
 													<div class="text-center mt-5">
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Message">
 															<i class="far fa-comments"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Mail">
 															<i class="far fa-envelope"></i>
 														</a>
 													</div>
@@ -219,10 +219,10 @@
 												<a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">Luca Doncic</a>
 												<span class="text-muted font-weight-bold">
 													<div class="text-center mt-5">
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Message">
 															<i class="far fa-comments"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Mail">
 															<i class="far fa-envelope"></i>
 														</a>
 													</div>
@@ -267,10 +267,10 @@
 												<a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">Luca Doncic</a>
 												<span class="text-muted font-weight-bold">
 													<div class="text-center mt-5">
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Message">
 															<i class="far fa-comments"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Mail">
 															<i class="far fa-envelope"></i>
 														</a>
 													</div>
@@ -315,10 +315,10 @@
 												<a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">Luca Doncic</a>
 												<span class="text-muted font-weight-bold">
 													<div class="text-center mt-5">
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Message">
 															<i class="far fa-comments"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Mail">
 															<i class="far fa-envelope"></i>
 														</a>
 													</div>
@@ -363,10 +363,10 @@
 												<a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">Luca Doncic</a>
 												<span class="text-muted font-weight-bold">
 													<div class="text-center mt-5">
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Message">
 															<i class="far fa-comments"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Mail">
 															<i class="far fa-envelope"></i>
 														</a>
 													</div>
@@ -411,10 +411,10 @@
 												<a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">Luca Doncic</a>
 												<span class="text-muted font-weight-bold">
 													<div class="text-center mt-5">
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Message">
 															<i class="far fa-comments"></i>
 														</a>
-														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Course Discussion">
+														<a href="#" class="btn btn-sm btn-icon btn-light-primary mr-2 " data-toggle="tooltip" title="" data-original-title="Mail">
 															<i class="far fa-envelope"></i>
 														</a>
 													</div>

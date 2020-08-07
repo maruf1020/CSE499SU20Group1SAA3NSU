@@ -82,3 +82,12 @@ Route::get('/all-friends', function () {
 Route::get('/friends-request', function () {
     return view('dashboard.student.friends-request');
 });
+Route::get('/calendar', function () {
+    return view('dashboard.student.calendar');
+});
+Route::get('/todo', function () {
+    return view('dashboard.student.todo');
+});
+Route::get('/notes', function () {
+    return view('dashboard.student.notes');
+});
