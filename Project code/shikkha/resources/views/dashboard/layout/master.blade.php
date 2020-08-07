@@ -117,7 +117,7 @@
 		<!--begin::For calender-->
 		<!-- <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>		 -->
 		<script src="assets/js/pages/features/calendar/basic.js"></script>
-		<!--end::For calender-->
+		<!--end::For calender-->		
 
 
 	</body>
