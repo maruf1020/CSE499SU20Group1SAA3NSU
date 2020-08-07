@@ -15,7 +15,7 @@
 				<!--begin::Header-->
 				<div class="card-header flex-wrap border-0 pt-6 pb-0">
 					<div class="card-title justify-content-between ">
-						<h3 class="card-label">Assigned Course
+						<h3 class="card-label">Offer Course
 							<span class="d-block text-muted pt-2 font-size-sm">This semeseter all course shown here</span></h3>
 					</div>
 					<div class="card-title justify-content-between ">
