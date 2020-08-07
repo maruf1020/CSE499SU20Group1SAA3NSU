@@ -25,7 +25,6 @@
                         <span class="d-block text-muted pt-2 font-size-sm">10.11.2020- 10.11.2021</span>
                     </h3>
                 </div>
-
             </div>
             <!--end::Header-->
             <!--begin::Body-->
