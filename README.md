@@ -1,14 +1,16 @@
 #### How to run this project:
 ##### Setp 1: Follow the page for Installation laravel - https://laravel.com/docs/7.x/installation
 ##### Step 2: Download the project on your device. 
-##### Step 3: Open "Shikkha" Folder from "project code" folder 
-##### Step 4: Run commmand line or git bash 
-##### Step 5: write the command "composer update"
-##### Step 6: write the command "composer dump-autoload" 
-##### Step 7: then write the command "php artisan key:generate"
-##### Step 8: then write the command "php artisan cache:clear"
-##### Step 9: then write the command "php artisan config:clear"
-##### Step 10: then write the command "php -S localhost:8000 -t public"
+##### Step 3: Rename the file ".env.example" to ".env"
+##### Step 4: Open "Shikkha" Folder from "project code" folder 
+##### Step 5: Run commmand line or git bash 
+##### Step 6: write the command "composer update"
+##### Step 7: write the command "composer dump-autoload" 
+##### Step 8: then write the command "php artisan key:generate"
+##### Step 9: then write the command "php artisan cache:clear"
+##### Step 10: then write the command "php artisan config:clear"
+##### Step 11: then write the command "php -S localhost:8000 -t public"
+##### Step 12: Open browser and open the url -> "localhost:8000" or "localhost:8000/dashboard"
 
 
 
