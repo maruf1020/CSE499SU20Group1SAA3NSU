@@ -68,8 +68,9 @@
     background-position: center;
     padding: 70px 70px !important;
 }
-.friends-card-title{
-  color: white;
+
+.friends-card-title {
+    color: white;
 }
 
 /* pre-advisinge page css start*/
@@ -78,4 +79,55 @@
     height: 100px;
     width: 140px;
 }
+
+.course-search {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.search-title-text {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.all-course ul {
+    font-size: 1.4rem;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-y: scroll;
+    height: 43rem;
+    margin-top: 9px;
+    border-top: 1px solid #efefef;
+}
+
+/* .advising-course .all-course  ul li{
+  display: inline-block;
+  width: 33%;
+  background: #4CAF50;
+  text-align: center;
+  margin: 1rem .5rem;
+  padding: 2.2rem 1rem;
+} */
+.all-course ul li {
+    display: inline-block;
+    width: 33%;
+    background: #4CAF50;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 2.2rem 1rem;
+    text-align: center;
+    margin: 1rem .5rem;
+}
+#tableBody td {
+  vertical-align: middle;
+  list-style: none;
+}
+
 /* pre-advising page css end*/
