@@ -117,7 +117,10 @@
 		<!--begin::For calender-->
 		<!-- <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>		 -->
 		<script src="assets/js/pages/features/calendar/basic.js"></script>
-		<!--end::For calender-->		
+		<!--end::For calender-->
+		<!--begin::For pre-advising-->		
+		<script src="assets/js/custom/pre-advising.js"></script>
+		<!--end::For pre-advising-->		
 
 
 	</body>

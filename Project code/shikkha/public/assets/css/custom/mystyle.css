@@ -71,3 +71,11 @@
 .friends-card-title{
   color: white;
 }
+
+/* pre-advisinge page css start*/
+.pre-advising .table td {
+    /* padding: 30px 40px !important; */
+    height: 100px;
+    width: 140px;
+}
+/* pre-advising page css end*/
