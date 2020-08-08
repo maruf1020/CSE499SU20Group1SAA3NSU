@@ -1,3 +1,5 @@
+"use strict";
+
 var KTCalendarBasic = function() {
 
     return {
@@ -161,3 +163,7 @@ var KTCalendarBasic = function() {
         }
     };
 }();
+
+jQuery(document).ready(function() {
+    KTCalendarBasic.init();
+});
