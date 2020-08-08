@@ -101,7 +101,7 @@
     padding: 0;
     text-align: center;
     overflow-y: scroll;
-    height: 43rem;
+    height: 41.5rem;
     margin-top: 9px;
     border-top: 1px solid #efefef;
 }
@@ -117,17 +117,26 @@
 .all-course ul li {
     display: inline-block;
     width: 33%;
-    background: #4CAF50;
+    background: rgb(0, 123, 255, 0.7);
+    
     text-align: center;
     text-decoration: none;
     color: white;
     padding: 2.2rem 1rem;
     text-align: center;
     margin: 1rem .5rem;
+    border: 1px solid #007bff;
 }
-#tableBody td {
-  vertical-align: middle;
-  list-style: none;
+#tableBody td li{
+    vertical-align: middle;
+    list-style: none;
+    display: inline-block;    
+    background: rgb(253, 126, 20, 0.7);    
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 2rem 1.6rem;       
+    border: 1px solid #fd7e14;
 }
 
 /* pre-advising page css end*/

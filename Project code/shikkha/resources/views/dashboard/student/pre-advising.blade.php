@@ -16,10 +16,49 @@
             <!--begin::Header-->
             <div class="card-header flex-wrap border-0 pt-6 pb-0">
                 <div class="card-title justify-content-between ">
-                    <h3 class="card-label">Pre Advising
-                        <span class="d-block text-muted pt-2 font-size-sm">You can do pre-advising here</span>
-                    </h3>
-                </div>
+                <h3 class="card-label">Pre-advising
+                    <span class="d-block text-muted pt-2 font-size-sm">You can do Pre-advising here</span>
+                </h3>
+                <div class="d-flex align-items-center ml-18">
+                    <!--begin::Pic-->
+                <a href="#" class="symbol symbol-45 symbol-light mr-3">
+                    <div class="symbol-label">
+                         <img
+                            src="assets/media/svg/avatars/001-boy.svg"
+                            class="h-75 align-self-end"
+                            alt=""></div>
+                </a>
+                <!--end::Pic-->
+                <!--begin::Pic-->
+                <a href="#" class="symbol symbol-45 symbol-light mr-3">
+                    <div class="symbol-label">
+                        <img
+                            src="assets/media/svg/avatars/028-girl-16.svg"
+                            class="h-75 align-self-end"
+                            alt=""></div>
+                </a>
+                <!--end::Pic-->
+                <!--begin: Pic-->
+                <a href="#" class="symbol symbol-45 symbol-light mr-3">
+                    <div class="symbol-label">
+                        <img
+                            src="assets/media/svg/avatars/024-boy-9.svg"
+                            class="h-75 align-self-end"
+                            alt=""></div>
+                </a>
+                <!--end::Pic-->
+                <!--begin::Pic-->
+                <a href="#" class="symbol symbol-45 symbol-light">
+                    <div class="symbol-label">
+                        <img
+                            src="assets/media/svg/avatars/005-girl-2.svg"
+                            class="h-75 align-self-end"
+                            alt=""></div>
+                </a>
+                        <!--end::Pic-->
+            </div>
+        </div>
+                                
                 <div class="card-title justify-content-between ">
                   <button type="button" class="btn btn-lg  btn-success">Save</button>
                   <button type="button" class="btn btn-lg  btn-danger ml-2">Cancel</button>
@@ -33,83 +72,85 @@
                 <!--advising start -->
                 <div class="row">
                     <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6">
-                        <div class="advising-calender datatable-bordered datatable-head-custom pre-advising">
-                            <table border="1px " class="advising-table">
-                                <tbody id="tableBody" class="table table-bordered text-center">
-                                    <tr>
-                                        <td>Time/Day</td>
-                                        <td>Saturday</td>
-                                        <td>Sunday</td>
-                                        <td>Monday</td>
-                                        <td>Tuesday</td>
-                                        <td>Wednesday</td>
-                                        <td>Thursday</td>
-                                        <td>Friday</td>
-                                    </tr>
+                        <div class="card card-custom gutter-b">
+                            <div class="advising-calender datatable-bordered datatable-head-custom pre-advising">
+                                <table border="1px " class="advising-table">
+                                    <tbody id="tableBody" class="table table-bordered text-center">
+                                        <tr>
+                                            <td>Time/Day</td>
+                                            <td>Saturday</td>
+                                            <td>Sunday</td>
+                                            <td>Monday</td>
+                                            <td>Tuesday</td>
+                                            <td>Wednesday</td>
+                                            <td>Thursday</td>
+                                            <td>Friday</td>
+                                        </tr>
 
-                                    <tr>
-                                        <td>08:00am-09:30am</td>
-                                        <td id="sat08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="sun08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="mon08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="tue08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="wed08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="thu08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="fri08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>09:40am-11:10am</td>
-                                        <td id="sat09" value="fgfg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="sun09" value="fg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="mon09" value="fg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="tue09" value="fg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="wed09" value="fg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="thu09" value="fg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="fri09" value="fgfg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>11:20am-12:50pm</td>
-                                        <td id="sat11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="sun11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="mon11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="tue11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="wed11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="thu11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="fri11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>01:00pm-02:30pm</td>
-                                        <td id="sat01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="sun01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="mon01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="tue01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="wed01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="thu01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="fri01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>02:40pm-04:10pm</td>
-                                        <td id="sat02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="sun02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="mon02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="tue02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="wed02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="thu02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="fri02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>04:20pm-05:50pm</td>
-                                        <td id="sat04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="sun04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="mon04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="tue04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="wed04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="thu04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                        <td id="fri04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                        <tr>
+                                            <td>08:00am-09:30am</td>
+                                            <td id="sat08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="sun08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="mon08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="tue08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="wed08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="thu08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="fri08" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:40am-11:10am</td>
+                                            <td id="sat09" value="fgfg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="sun09" value="fg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="mon09" value="fg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="tue09" value="fg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="wed09" value="fg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="thu09" value="fg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="fri09" value="fgfg" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11:20am-12:50pm</td>
+                                            <td id="sat11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="sun11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="mon11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="tue11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="wed11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="thu11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="fri11" value="s" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01:00pm-02:30pm</td>
+                                            <td id="sat01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="sun01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="mon01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="tue01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="wed01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="thu01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="fri01" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>02:40pm-04:10pm</td>
+                                            <td id="sat02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="sun02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="mon02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="tue02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="wed02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="thu02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="fri02" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>04:20pm-05:50pm</td>
+                                            <td id="sat04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="sun04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="mon04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="tue04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="wed04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="thu04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                            <td id="fri04" value="" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>    
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                         <!-- advising course list start  -->
@@ -141,10 +182,10 @@
                                 </div>
 
 
-                                {{-- <div class="search">
+                                <!-- <div class="search">
                                     <form class="" action="index.html" method="post">
                                         <input type="text" id="myInput" onkeyup="myFunction()" name="" placeholder="Search.."></form>
-                                </div> --}}
+                                </div> -->
                                 <div class="search-title">
 
                                         <h3 class="card-label search-title-text">
