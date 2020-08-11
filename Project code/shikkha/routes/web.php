@@ -103,3 +103,6 @@ Route::get('/advising', function () {
 Route::get('/request-course', function () {
     return view('dashboard.student.request-course');
 });
+Route::get('/stream-home', function () {
+    return view('dashboard.student.stream-home');
+});
