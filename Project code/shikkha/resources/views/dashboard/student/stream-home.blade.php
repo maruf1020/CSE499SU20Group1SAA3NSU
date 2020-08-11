@@ -207,6 +207,7 @@
 							<!--begin: Items-->
 						</div>
 					</div>
+					<!-- start::make a post  -->
 					<div class="card card-custom gutter-b border border-1">
 						<div class="form-group mb-1 m-10">
 							<label for="exampleTextarea">Example textarea</label>
@@ -236,42 +237,169 @@
 							</div>
 						</div>
 					</div>
+					<!-- END::make a post   -->
+					<!-- start::view old post  -->					
 					<div class="card card-custom gutter-b border border-1">
 						<div class="card-header">
 							<div class="card-title">
-									<div class="symbol symbol-circle symbol-40 mr-3">
-										<img alt="Pic" src="assets/media/users/300_12.jpg">
-									</div>
-									<div>
-										<a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Syed Athar Bin Amir</a>
-										<span class="text-muted font-size-sm">Aug 3</span>
-									</div>
-									{{-- <h3 class="card-label">
-										Syed Athar Bin Amir
-
-										<small>Aug 3</small>
-									</h3> --}}
-								<div class="card-toolbar">
-									<a href="#" class="btn btn-sm btn-success font-weight-bold">
-										<i class="flaticon2-cube"></i> Reports
-									</a>
+								<div class="symbol symbol-circle symbol-40 mr-3">
+									<img alt="Pic" src="assets/media/users/300_12.jpg">
+								</div>
+								<div>
+									<a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Syed Athar Bin Amir</a>
+									<span class="text-muted font-size-sm">Aug 3</span>
+								</div>						
+							</div>
+							<div class="d-flex align-items-center justify-content-between flex-wrap mb-1 mt-10">								
+								<div class="my-lg-0 my-1 mr-10">
+									<button type="reset" class="btn btn-light-danger mr-2">Report</button>									
 								</div>
 							</div>
-							<div class="card-body">
+							<div class="card-body pt-5 pb-5">
 								<p>Weekly update format:
 
 									- Email sent to the instructor by Sunday Midnight. Update should include tasks undertaken, in progress, and completed over the week. This does not have a set format, but all group members must be cc-ed in it.
 
 									Those of you who failed to submit a proposal should email me ASAP explaining the circumstances for the delay, and complete and submit your proposals by tomorrow (4/8/2020).</p>
+							</div>							
+						</div>
+						<!--end: Data table-->
+						<div class="form-group mb-5 mt-5 ml-10 mr-10">							
+							<textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+						</div>
+						<div class="d-flex align-items-center justify-content-between flex-wrap mb-10">
+							<div class="mr-3">
+								
 							</div>
-							<div class="card-footer d-flex justify-content-between">
-								<a href="#" class="btn btn-light-primary font-weight-bold">Manage</a>
-								<a href="#" class="btn btn-outline-secondary font-weight-bold">Learn more</a>
+							<div class="my-lg-0 my-1 mr-10">
+								<button type="reset" class="btn btn-light-primary mr-2">Submit</button>
+								<button type="reset" class="btn btn-primary">Cancel</button>
+
 							</div>
 						</div>
-
-						<!--end: Data table-->
 					</div>
+					<!-- END::view old post  -->
+					<!-- start::view old post with file  -->					
+					<div class="card card-custom gutter-b border border-1">
+						<div class="card-header">
+							<div class="card-title">
+								<div class="symbol symbol-circle symbol-40 mr-3">
+									<img alt="Pic" src="assets/media/users/300_12.jpg">
+								</div>
+								<div>
+									<a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Syed Athar Bin Amir</a>
+									<span class="text-muted font-size-sm">Aug 3</span>
+								</div>						
+							</div>
+							<div class="d-flex align-items-center justify-content-between flex-wrap mb-1 mt-10">								
+								<div class="my-lg-0 my-1 mr-10">
+									<button type="reset" class="btn btn-light-danger mr-2">Report</button>									
+								</div>
+							</div>
+							<div class="card-body pt-5 pb-5">
+							<div class="d-flex align-items-center justify-content-between mb-10">
+								<div class="d-flex align-items-center mr-2 pr-5 border">
+									<div class="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
+										<div class="symbol-label">
+											<img src="assets/media/svg/files/pdf.svg" alt="" class="h-50">
+										</div>
+									</div>
+									<div>
+										<a href="#" class="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder">Data analysis part II </a>
+										<div class="font-size-sm text-muted font-weight-bold mt-1">PDF</div>
+									</div>
+								</div>														
+							</div>
+								<p>Weekly update format:
+
+									- Email sent to the instructor by Sunday Midnight. Update should include tasks undertaken, in progress, and completed over the week. This does not have a set format, but all group members must be cc-ed in it.
+
+									Those of you who failed to submit a proposal should email me ASAP explaining the circumstances for the delay, and complete and submit your proposals by tomorrow (4/8/2020).</p>
+							</div>							
+						</div>
+						<!--end: Data table-->
+						<div class="form-group mb-5 mt-5 ml-10 mr-10">							
+							<textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+						</div>
+						<div class="d-flex align-items-center justify-content-between flex-wrap mb-10">
+							<div class="mr-3">
+								
+							</div>
+							<div class="my-lg-0 my-1 mr-10">
+								<button type="reset" class="btn btn-light-primary mr-2">Submit</button>
+								<button type="reset" class="btn btn-primary">Cancel</button>
+
+							</div>
+						</div>
+					</div>
+					<!-- END::view old post with file -->
+					<!-- start::view old post with file  -->					
+					<div class="card card-custom gutter-b border border-1">
+						<div class="card-header">
+							<div class="card-title">
+								<div class="symbol symbol-circle symbol-40 mr-3">
+									<img alt="Pic" src="assets/media/users/300_12.jpg">
+								</div>
+								<div>
+									<a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Syed Athar Bin Amir</a>
+									<span class="text-muted font-size-sm">Aug 3</span>
+								</div>						
+							</div>
+							<div class="d-flex align-items-center justify-content-between flex-wrap mb-1 mt-10">								
+								<div class="my-lg-0 my-1 mr-10">
+									<button type="reset" class="btn btn-light-danger mr-2">Report</button>									
+								</div>
+							</div>
+							<div class="card-body pt-5 pb-5">
+							<div class="d-flex align-items-center justify-content-between mb-10">
+								<div class="d-flex align-items-center mr-2 pr-5 border">
+									<div class="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
+										<div class="symbol-label">
+											<img src="assets/media/svg/files/pdf.svg" alt="" class="h-50">
+										</div>
+									</div>
+									<div>
+										<a href="#" class="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder">Data analysis part II </a>
+										<div class="font-size-sm text-muted font-weight-bold mt-1">PDF</div>
+									</div>
+								</div>														
+							</div>
+							<div class="d-flex align-items-center justify-content-between mb-10">
+								<div class="d-flex align-items-center mr-2 pr-5 border">
+									<div class="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
+										<div class="symbol-label">
+											<img src="assets/media/svg/files/pdf.svg" alt="" class="h-50">
+										</div>
+									</div>
+									<div>
+										<a href="#" class="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder">Data analysis part II </a>
+										<div class="font-size-sm text-muted font-weight-bold mt-1">PDF</div>
+									</div>
+								</div>														
+							</div>
+								<p>Weekly update format:
+
+									- Email sent to the instructor by Sunday Midnight. Update should include tasks undertaken, in progress, and completed over the week. This does not have a set format, but all group members must be cc-ed in it.
+
+									Those of you who failed to submit a proposal should email me ASAP explaining the circumstances for the delay, and complete and submit your proposals by tomorrow (4/8/2020).</p>
+							</div>							
+						</div>
+						<!--end: Data table-->
+						<div class="form-group mb-5 mt-5 ml-10 mr-10">							
+							<textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+						</div>
+						<div class="d-flex align-items-center justify-content-between flex-wrap mb-10">
+							<div class="mr-3">
+								
+							</div>
+							<div class="my-lg-0 my-1 mr-10">
+								<button type="reset" class="btn btn-light-primary mr-2">Submit</button>
+								<button type="reset" class="btn btn-primary">Cancel</button>
+
+							</div>
+						</div>
+					</div>
+					<!-- END::view old post with file -->
 					<!--end::Body-->
 				</div>
 				<!--end::Card-->
