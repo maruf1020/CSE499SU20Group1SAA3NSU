@@ -11,9 +11,9 @@
 		<!--begin::Container-->
 		<div class="container">
 			<!--begin::Card-->
-			<div class="card card-custom">
+			<div class="">
 				<!--begin::Header-->
-				<div class="card-header flex-wrap border-0 pt-6 pb-0">
+				<!-- <div class="card-header flex-wrap border-0 pt-6 pb-0">
 					<div class="card-title justify-content-between ">
 						<h3 class="card-label">Assigned Course
 							<span class="d-block text-muted pt-2 font-size-sm">This semester all course shown here</span></h3>
@@ -23,7 +23,7 @@
 							<span class="d-block text-muted pt-2 font-size-sm">10.11.2020- 10.11.2021</span></h3>
 					</div>
 
-				</div>
+				</div> -->
 				<!--end::Header-->
 				<!--begin::Body-->
 				<div class="card-body">
@@ -76,7 +76,7 @@
 											<!--end::Contacts-->
 										</div>
 										<div class="my-lg-0 my-1">
-											<a href="#" class="btn btn-sm btn-light-success font-weight-bolder text-uppercase mr-3">Join Class</a>
+											<a href="#" class="btn btn-sm btn-light-success font-weight-bolder text-uppercase mr-3">Conference</a>
 											<!-- <a href="#" class="btn btn-sm btn-info font-weight-bolder text-uppercase">New Task</a> -->
 										</div>
 									</div>
@@ -232,7 +232,7 @@
 							</div>
 							<div class="my-lg-0 my-1 mr-10">
 								<button type="reset" class="btn btn-light-primary mr-2">Submit</button>
-								<button type="reset" class="btn btn-primary">Cancel</button>
+								<button type="reset" class="btn btn-danger">Cancel</button>
 
 							</div>
 						</div>
@@ -241,16 +241,16 @@
 					<!-- start::view old post  -->					
 					<div class="card card-custom gutter-b border border-1">
 						<div class="card-header">
-							<div class="card-title">
+							<div class="card-title mt-10">
 								<div class="symbol symbol-circle symbol-40 mr-3">
-									<img alt="Pic" src="assets/media/users/300_12.jpg">
+									<img alt="Pic" src="assets/media/users/100_12.jpg">
 								</div>
 								<div>
-									<a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Syed Athar Bin Amir</a>
+									<a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Barkatullah Hossain</a>
 									<span class="text-muted font-size-sm">Aug 3</span>
 								</div>						
 							</div>
-							<div class="d-flex align-items-center justify-content-between flex-wrap mb-1 mt-10">								
+							<div class="d-flex align-items-center justify-content-between flex-wrap mb-1 mt-5">								
 								<div class="my-lg-0 my-1 mr-10">
 									<button type="reset" class="btn btn-light-danger mr-2">Report</button>									
 								</div>
@@ -273,7 +273,7 @@
 							</div>
 							<div class="my-lg-0 my-1 mr-10">
 								<button type="reset" class="btn btn-light-primary mr-2">Submit</button>
-								<button type="reset" class="btn btn-primary">Cancel</button>
+								<button type="reset" class="btn btn-danger">Cancel</button>
 
 							</div>
 						</div>
@@ -282,16 +282,16 @@
 					<!-- start::view old post with file  -->					
 					<div class="card card-custom gutter-b border border-1">
 						<div class="card-header">
-							<div class="card-title">
+							<div class="card-title mt-10">
 								<div class="symbol symbol-circle symbol-40 mr-3">
-									<img alt="Pic" src="assets/media/users/300_12.jpg">
+									<img alt="Pic" src="assets/media/users/75_1.jpg">
 								</div>
 								<div>
 									<a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Syed Athar Bin Amir</a>
 									<span class="text-muted font-size-sm">Aug 3</span>
 								</div>						
 							</div>
-							<div class="d-flex align-items-center justify-content-between flex-wrap mb-1 mt-10">								
+							<div class="d-flex align-items-center justify-content-between flex-wrap mb-1 mt-5">								
 								<div class="my-lg-0 my-1 mr-10">
 									<button type="reset" class="btn btn-light-danger mr-2">Report</button>									
 								</div>
@@ -327,7 +327,7 @@
 							</div>
 							<div class="my-lg-0 my-1 mr-10">
 								<button type="reset" class="btn btn-light-primary mr-2">Submit</button>
-								<button type="reset" class="btn btn-primary">Cancel</button>
+								<button type="reset" class="btn btn-danger">Cancel</button>
 
 							</div>
 						</div>
@@ -336,47 +336,88 @@
 					<!-- start::view old post with file  -->					
 					<div class="card card-custom gutter-b border border-1">
 						<div class="card-header">
-							<div class="card-title">
+							<div class="card-title mt-10">
 								<div class="symbol symbol-circle symbol-40 mr-3">
-									<img alt="Pic" src="assets/media/users/300_12.jpg">
+									<img alt="Pic" src="assets/media/users/75_1.jpg">
 								</div>
 								<div>
 									<a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Syed Athar Bin Amir</a>
 									<span class="text-muted font-size-sm">Aug 3</span>
 								</div>						
 							</div>
-							<div class="d-flex align-items-center justify-content-between flex-wrap mb-1 mt-10">								
+							<div class="d-flex align-items-center justify-content-between flex-wrap mb-1 mt-5">								
 								<div class="my-lg-0 my-1 mr-10">
 									<button type="reset" class="btn btn-light-danger mr-2">Report</button>									
 								</div>
 							</div>
 							<div class="card-body pt-5 pb-5">
-							<div class="d-flex align-items-center justify-content-between mb-10">
-								<div class="d-flex align-items-center mr-2 pr-5 border">
-									<div class="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
-										<div class="symbol-label">
-											<img src="assets/media/svg/files/pdf.svg" alt="" class="h-50">
+							<div class="row">
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mb-10">
+									<div class="d-flex align-items-center mr-2 pr-5 border">
+										<div class="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
+											<div class="symbol-label">
+												<img src="assets/media/svg/files/pdf.svg" alt="" class="h-50">
+											</div>
 										</div>
-									</div>
-									<div>
-										<a href="#" class="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder">Data analysis part II </a>
-										<div class="font-size-sm text-muted font-weight-bold mt-1">PDF</div>
-									</div>
-								</div>														
-							</div>
-							<div class="d-flex align-items-center justify-content-between mb-10">
-								<div class="d-flex align-items-center mr-2 pr-5 border">
-									<div class="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
-										<div class="symbol-label">
-											<img src="assets/media/svg/files/pdf.svg" alt="" class="h-50">
+										<div>
+											<a href="#" class="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder">Data analysis part II </a>
+											<div class="font-size-sm text-muted font-weight-bold mt-1">PDF</div>
 										</div>
-									</div>
-									<div>
-										<a href="#" class="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder">Data analysis part II </a>
-										<div class="font-size-sm text-muted font-weight-bold mt-1">PDF</div>
-									</div>
-								</div>														
-							</div>
+									</div>														
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mb-10">
+									<div class="d-flex align-items-center mr-2 pr-5 border">
+										<div class="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
+											<div class="symbol-label">
+												<img src="assets/media/svg/files/doc.svg" alt="" class="h-50">
+											</div>
+										</div>
+										<div>
+											<a href="#" class="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder">Data analysis part II </a>
+											<div class="font-size-sm text-muted font-weight-bold mt-1">PDF</div>
+										</div>
+									</div>														
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mb-10">
+									<div class="d-flex align-items-center mr-2 pr-5 border">
+										<div class="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
+											<div class="symbol-label">
+												<img src="assets/media/svg/files/doc.svg" alt="" class="h-50">
+											</div>
+										</div>
+										<div>
+											<a href="#" class="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder">Data analysis part II </a>
+											<div class="font-size-sm text-muted font-weight-bold mt-1">PDF</div>
+										</div>
+									</div>														
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mb-10">
+									<div class="d-flex align-items-center mr-2 pr-5 border">
+										<div class="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
+											<div class="symbol-label">
+												<img src="assets/media/svg/files/pdf.svg" alt="" class="h-50">
+											</div>
+										</div>
+										<div>
+											<a href="#" class="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder">Data analysis part II </a>
+											<div class="font-size-sm text-muted font-weight-bold mt-1">PDF</div>
+										</div>
+									</div>														
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mb-10">
+									<div class="d-flex align-items-center mr-2 pr-5 border">
+										<div class="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
+											<div class="symbol-label">
+												<img src="assets/media/svg/files/pdf.svg" alt="" class="h-50">
+											</div>
+										</div>
+										<div>
+											<a href="#" class="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder">Data analysis part II </a>
+											<div class="font-size-sm text-muted font-weight-bold mt-1">PDF</div>
+										</div>
+									</div>														
+								</div>								
+							</div>	
 								<p>Weekly update format:
 
 									- Email sent to the instructor by Sunday Midnight. Update should include tasks undertaken, in progress, and completed over the week. This does not have a set format, but all group members must be cc-ed in it.
@@ -394,7 +435,7 @@
 							</div>
 							<div class="my-lg-0 my-1 mr-10">
 								<button type="reset" class="btn btn-light-primary mr-2">Submit</button>
-								<button type="reset" class="btn btn-primary">Cancel</button>
+								<button type="reset" class="btn btn-Danger">Cancel</button>
 
 							</div>
 						</div>
