@@ -73,10 +73,10 @@
 														</div>
 														<!--end::Contacts-->
 													</div>
-													<!-- <div class="my-lg-0 my-1">
-														<a href="#" class="btn btn-sm btn-light-success font-weight-bolder text-uppercase mr-3">Reports</a>
-														<a href="#" class="btn btn-sm btn-info font-weight-bolder text-uppercase">New Task</a>
-													</div> -->
+													<div class="my-lg-0 my-1">
+														<a href="#" class="btn btn-sm btn-light-success font-weight-bolder text-uppercase mr-3">Join Class</a>
+														<!-- <a href="#" class="btn btn-sm btn-info font-weight-bolder text-uppercase">New Task</a> -->
+													</div>
 												</div>
 												<!--end: Title-->
 												<!--begin: Content-->
@@ -111,7 +111,7 @@
 										<!--begin: Items-->
 										<div class="d-flex align-items-center flex-wrap">
 											<!--begin: Item-->
-											<div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
+											<!-- <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
 												<span class="mr-4">
 													<i class="flaticon-piggy-bank icon-2x text-muted font-weight-bold"></i>
 												</span>
@@ -120,29 +120,16 @@
 													<span class="font-weight-bolder font-size-h5">
 													<span class="text-dark-50 font-weight-bold">$</span>249,500</span>
 												</div>
-											</div>
+											</div> -->
 											<!--end: Item-->
 											<!--begin: Item-->
 											<div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
 												<span class="mr-4">
-													<i class="flaticon-confetti icon-2x text-muted font-weight-bold"></i>
+													<i class="flaticon-file-2 icon-2x text-muted font-weight-bold"></i>
 												</span>
-												<div class="d-flex flex-column text-dark-75">
-													<span class="font-weight-bolder font-size-sm">Expenses</span>
-													<span class="font-weight-bolder font-size-h5">
-													<span class="text-dark-50 font-weight-bold">$</span>164,700</span>
-												</div>
-											</div>
-											<!--end: Item-->
-											<!--begin: Item-->
-											<div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
-												<span class="mr-4">
-													<i class="flaticon-pie-chart icon-2x text-muted font-weight-bold"></i>
-												</span>
-												<div class="d-flex flex-column text-dark-75">
-													<span class="font-weight-bolder font-size-sm">Net</span>
-													<span class="font-weight-bolder font-size-h5">
-													<span class="text-dark-50 font-weight-bold">$</span>782,300</span>
+												<div class="d-flex flex-column flex-lg-fill">
+													<span class="text-dark-75 font-weight-bolder font-size-sm">Notifications</span>
+													<a href="#" class="text-primary font-weight-bolder">View</a>
 												</div>
 											</div>
 											<!--end: Item-->
@@ -152,7 +139,29 @@
 													<i class="flaticon-file-2 icon-2x text-muted font-weight-bold"></i>
 												</span>
 												<div class="d-flex flex-column flex-lg-fill">
-													<span class="text-dark-75 font-weight-bolder font-size-sm">73 Tasks</span>
+													<span class="text-dark-75 font-weight-bolder font-size-sm">73 total Tasks</span>
+													<a href="#" class="text-primary font-weight-bolder">View</a>
+												</div>
+											</div>
+											<!--end: Item-->
+											<!--begin: Item-->
+											<div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
+												<span class="mr-4">
+													<i class="flaticon-file-2 icon-2x text-muted font-weight-bold"></i>
+												</span>
+												<div class="d-flex flex-column flex-lg-fill">
+													<span class="text-dark-75 font-weight-bolder font-size-sm">3 new Tasks</span>
+													<a href="#" class="text-primary font-weight-bolder">View</a>
+												</div>
+											</div>
+											<!--end: Item-->
+											<!--begin: Item-->
+											<div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
+												<span class="mr-4">
+													<i class="flaticon-file-2 icon-2x text-muted font-weight-bold"></i>
+												</span>
+												<div class="d-flex flex-column flex-lg-fill">
+													<span class="text-dark-75 font-weight-bolder font-size-sm">4 Pending Tasks</span>
 													<a href="#" class="text-primary font-weight-bolder">View</a>
 												</div>
 											</div>
@@ -164,15 +173,12 @@
 												</span>
 												<div class="d-flex flex-column">
 													<span class="text-dark-75 font-weight-bolder font-size-sm">648 Comments</span>
-													<a href="#" class="text-primary font-weight-bolder">View</a>
+													<!-- <a href="#" class="text-primary font-weight-bolder">View</a> -->
 												</div>
 											</div>
 											<!--end: Item-->
 											<!--begin: Item-->
-											<div class="d-flex align-items-center flex-lg-fill my-1">
-												<span class="mr-4">
-													<i class="flaticon-network icon-2x text-muted font-weight-bold"></i>
-												</span>
+											<div class="d-flex align-items-center flex-lg-fill my-1">												
 												<div class="symbol-group symbol-hover">
 													<div class="symbol symbol-30 symbol-circle" data-toggle="tooltip" title="" data-original-title="Mark Stone">
 														<img alt="Pic" src="assets/media/users/300_25.jpg">
@@ -199,6 +205,36 @@
 										<!--begin: Items-->
 									</div>
 								</div>
+								<div class="card card-custom gutter-b">
+									<div class="form-group mb-1 m-10">
+										<label for="exampleTextarea">Example textarea</label>
+										<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+									</div>
+									<!-- <div class="form-group form-group-last row">	
+										<div class="dropzone dropzone-multi" id="kt_dropzone_4">
+											<div class="dropzone-panel mb-lg-0 mb-2 ml-10">
+												<a class="dropzone-select btn btn-light-primary font-weight-bold btn-sm dz-clickable">Attach files</a>
+												<a class="dropzone-upload btn btn-light-primary font-weight-bold btn-sm">Upload All</a>
+												<a class="dropzone-remove-all btn btn-light-primary font-weight-bold btn-sm">Remove All</a>
+											</div>
+											<div class="dropzone-items"></div>
+											<div class="dz-default dz-message">
+												<button class="dz-button" type="button">Drop files here to upload</button>
+											</div>
+										</div>
+									</div> -->
+									<div class="d-flex align-items-center justify-content-between flex-wrap mb-10">
+										<div class="mr-3">
+										<input type="file" class="ml-10">
+										</div>
+										<div class="my-lg-0 my-1 mr-10">
+											<button type="reset" class="btn btn-light-primary mr-2">Submit</button>
+											<button type="reset" class="btn btn-primary">Cancel</button>
+														
+										</div>
+									</div>
+								</div>
+								
 					<!--end: Data table-->
 				</div>
 				<!--end::Body-->
