@@ -210,8 +210,42 @@
 					<!-- start::make a post  -->
 					<div class="card card-custom gutter-b border border-1">
 						<div class="form-group mb-1 m-10">
-							<label for="exampleTextarea">Example textarea</label>
-							<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+							<!-- START::text editor with js tools  -->
+							<!-- <div class="card card-custom">
+									<div class="card-header">
+										<h3 class="card-title">
+											Write whatever you want to share with everyone...
+										</h3>
+									</div>
+									<div class="card-body m-10" style="border: 1px solid;">
+										<div name="kt-ckeditor-1" id="kt-ckeditor-1">
+											<p>Simple text</p>
+           									<h1>here is some simple text design for us </h1>											
+										</div>
+									</div>
+								</div> -->
+								<!-- class="card card-custom -->
+								<div class="">									
+									<!--begin::Form-->
+									<form>
+										<div class="">												
+											<div class="summernote" id="kt_summernote_1">
+												<p>
+													<span style="color: rgb(206, 0, 0);">Write</span>
+													<span style="color: rgb(231, 148, 57);">whatever</span>													
+													<span style="color: rgb(239, 198, 49);">you</span>													
+													<span style="color: rgb(107, 165, 74);">want</span>
+													<span style="color: rgb(165, 74, 123);">to</span>													
+													<span style="color: rgb(99, 74, 165);">share</span>
+													<span style="color: rgb(165, 74, 123);">with</span>													
+													<span style="color: rgb(57, 132, 198);">us...</span>
+												</p>																						
+											</div>	
+										</div>										
+									</form>
+									<!--end::Form-->
+								</div>
+								<!-- END::text editor with js tools  -->
 						</div>
 						<!-- <div class="form-group form-group-last row">
 										<div class="dropzone dropzone-multi" id="kt_dropzone_4">
@@ -228,7 +262,7 @@
 									</div> -->
 						<div class="d-flex align-items-center justify-content-between flex-wrap mb-10">
 							<div class="mr-3">
-								<input type="file" class="ml-10">
+								<input type="file" class="ml-10">								
 							</div>
 							<div class="my-lg-0 my-1 mr-10">
 								<button type="reset" class="btn btn-light-primary mr-2">Submit</button>

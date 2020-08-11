@@ -120,7 +120,14 @@
 		<!--end::For calender-->
 		<!--begin::For pre-advising-->		
 		<script src="assets/js/custom/pre-advising.js"></script>
-		<!--end::For pre-advising-->		
+		<!--end::For pre-advising-->	
+		<!--begin::used by stream home page-->
+		<!-- 1st 2 are ckeditor and last one is Summernote WYSIWYG editor  -->
+		<script src="assets/plugins/custom/ckeditor/ckeditor-inline.bundle.js"></script> 	
+		<script src="assets/js/pages/crud/forms/editors/ckeditor-inline.js"></script>
+		<script src="assets/js/pages/crud/forms/editors/summernote.js"></script>
+		<!--end::used by stream home page-->
+		
 
 
 	</body>
