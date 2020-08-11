@@ -279,7 +279,7 @@
 							<a href="#" class="font-weight-bolder text-primary ml-2">6 Comments</a>
 						</div>
 						<!-- starts::comments  -->
-						<div class="accordion accordion-light accordion-light-borderless accordion-svg-toggle" id="faq">													
+						<div class="accordion accordion-light accordion-light-borderless accordion-svg-toggle ml-10" id="faq">													
 													<!--begin::Item-->
 													<div class="card border-top-0">
 														<!--begin::Header-->
@@ -306,7 +306,7 @@
 														</div>
 														<!--end::Body-->
 													</div>
-													<!--end::Item-->													
+													<!--end::Item-->	
 												</div>
 						<!-- END:: comments  -->
 						<div class="form-group mb-5 mt-5 ml-10 mr-10">							
