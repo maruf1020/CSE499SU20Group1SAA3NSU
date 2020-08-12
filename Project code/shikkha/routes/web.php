@@ -106,3 +106,6 @@ Route::get('/request-course', function () {
 Route::get('/stream-home', function () {
     return view('dashboard.student.stream-home');
 });
+Route::get('/class-work-view', function () {
+    return view('dashboard.student.class-work-view');
+});

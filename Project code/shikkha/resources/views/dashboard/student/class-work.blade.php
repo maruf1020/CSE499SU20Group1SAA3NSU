@@ -184,7 +184,7 @@
 																				<span class="label label-light-success font-weight-bolder label-inline ml-2">new</span>
 																			</div>
 																			<div>
-																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																				<a href="class-work-view" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
 																			</div>
 																		</div>
 																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
@@ -211,7 +211,7 @@
 																				<span class="label label-light-success font-weight-bolder label-inline ml-2">new</span>
 																			</div>
 																			<div>
-																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																				<a href="class-work-view" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
 																			</div>
 																		</div>
 																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
@@ -238,7 +238,7 @@
 																				<span class="label label-light-success font-weight-bolder label-inline ml-2">new</span>
 																			</div>
 																			<div>
-																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																				<a href="class-work-view" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
 																			</div>
 																		</div>
 																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
@@ -265,7 +265,7 @@
 																				<span class="label label-light-success font-weight-bolder label-inline ml-2">new</span>
 																			</div>
 																			<div>
-																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																				<a href="class-work-view" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
 																			</div>
 																		</div>
 																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
@@ -292,7 +292,7 @@
 																				<span class="label label-light-success font-weight-bolder label-inline ml-2">new</span>
 																			</div>
 																			<div>
-																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																				<a href="class-work-view" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
 																			</div>
 																		</div>
 																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
@@ -319,7 +319,7 @@
 																				<span class="label label-light-warning font-weight-bolder label-inline ml-2">panding</span>
 																			</div>
 																			<div>
-																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																				<a href="class-work-view" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
 																			</div>
 																		</div>
 																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
@@ -346,7 +346,7 @@
 																				<span class="label label-light-warning font-weight-bolder label-inline ml-2">panding</span>
 																			</div>
 																			<div>
-																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																				<a href="class-work-view" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
 																			</div>
 																		</div>
 																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
@@ -373,7 +373,7 @@
 																				<span class="label label-light-danger font-weight-bolder label-inline ml-2">Missing</span>
 																			</div>
 																			<div>
-																				<a href="#" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
+																				<a href="class-work-view" class="btn btn-light-primary btn-sm font-weight-bold mr-2 ML-10">View</a>
 																			</div>
 																		</div>
 																		<p class="p-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
