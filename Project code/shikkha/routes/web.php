@@ -109,3 +109,6 @@ Route::get('/stream-home', function () {
 Route::get('/class-work-view', function () {
     return view('dashboard.student.class-work-view');
 });
+Route::get('/exam', function () {
+    return view('dashboard.student.exam');
+});

@@ -24,6 +24,9 @@
 		<link href="{{ asset('assets/css/themes/layout/aside/dark.css') }}"rel="stylesheet" type="text/css" />
 		<!--end::Layout Themes-->
 		<link rel="shortcut icon" href="{{ asset('assets/media/logos/favicon.ico') }}" />
+		<!-- Start::exam page karban board drag and drop css  -->
+		<link href="assets/plugins/custom/kanban/kanban.bundle.css" rel="stylesheet" type="text/css" />
+		<!-- End::exam page karban board drag and drop css  -->
 		<!--begin::Custom css-->
 		<link href="{{ asset('assets/css/custom/mystyle.css') }}"rel="stylesheet" type="text/css" />
 		<!--begin::Custom css-->
@@ -127,6 +130,15 @@
 		<script src="assets/js/pages/crud/forms/editors/ckeditor-inline.js"></script>
 		<script src="assets/js/pages/crud/forms/editors/summernote.js"></script>
 		<!--end::used by stream home page-->
+		<!--Start::used by exam page-->
+		<script src="assets/js/custom/exam-timer.js"></script>
+		<!--end::used by exam page-->
+		<!-- START::exam page karban board drag and drop js  -->
+		<script src="assets/js/custom/kanban.bundle.js"></script>
+		<script src="assets/js/custom/kanban-board.js"></script
+		<!-- End::exam page karban board drag and drop js  -->
+
+		
 		
 
 

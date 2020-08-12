@@ -76,7 +76,7 @@
 											<!--end::Contacts-->
 										</div>
 										<div class="my-lg-0 my-1 mr-7">
-											<a href="#" class="btn btn-sm btn-success font-weight-bolder text-uppercase mr-3">Do the task</a>
+											<a href="exam" class="btn btn-sm btn-success font-weight-bolder text-uppercase mr-3">Do the task</a>
 											<!-- <a href="#" class="btn btn-sm btn-info font-weight-bolder text-uppercase">New Task</a> -->
 										</div>
 									</div>
