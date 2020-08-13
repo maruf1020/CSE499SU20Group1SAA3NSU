@@ -1,0 +1,93 @@
+@extends('dashboard.layout.master')
+
+@section('section')
+
+<!--begin::Content-->
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+
+
+	<!--begin::Entry-->
+	<div class="d-flex flex-column-fluid">
+		<!--begin::Container-->
+		<div class="container">
+			<!--begin::Card-->
+			<div class="card card-custom">
+				<!--begin::Header-->
+				<div class="card-header flex-wrap border-0 pt-6 pb-0">
+					<div class="card-title justify-content-between ">
+						<h3 class="card-label">Change Password
+							<span class="d-block text-muted pt-2 font-size-sm">Change your password here</span></h3>
+					</div>
+					<div class="card-title justify-content-between ">
+						<div class="card-toolbar">
+							<a href="recovery-password" class="btn btn-success font-weight-bold mr-2">Next Step</a>						
+						</div>
+					</div>
+
+				</div>
+				<!--end::Header-->
+				<!--begin::Body-->
+				<div class="card-body">
+					<!--begin: Datatable-->
+					<form class="form">
+						<div class="card-body">
+							<!--begin::Alert-->
+							<div class="alert alert-custom alert-light-danger fade show mb-10" role="alert">
+								<div class="alert-icon">
+									<span class="svg-icon svg-icon-3x svg-icon-danger">
+										<!--begin::Svg Icon | path:assets/media/svg/icons/Code/Info-circle.svg-->
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											width="24px"
+											height="24px"
+											viewBox="0 0 24 24"
+											version="1.1">
+											<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+												<rect x="0" y="0" width="24" height="24"></rect>
+												<circle fill="#000000" opacity="0.3" cx="12" cy="12" r="10"></circle>
+												<rect fill="#000000" x="11" y="10" width="2" height="7" rx="1"></rect>
+												<rect fill="#000000" x="11" y="7" width="2" height="2" rx="1"></rect>
+											</g>
+										</svg>
+										<!--end::Svg Icon-->
+									</span>
+								</div>
+								<div class="alert-text font-weight-bold">Configure user passwords to expire
+									periodically. Users will need warning that their passwords are going to expire,
+									<br>or they might inadvertently get locked out of the system!</div>
+									<div class="alert-close">
+										<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+											<span aria-hidden="true">
+												<i class="ki ki-close"></i>
+											</span>
+										</button>
+									</div>
+								</div>
+								<!--end::Alert-->
+								<div class="col-xl-8 col-lg-8">									
+									
+										<div class="form-group row">
+											<label class="col-xl-4 col-lg-4 col-form-label text-alert">Enter Your Email or Phone Number</label>
+											<div class="col-lg-8 col-xl-6">
+												<input
+													type="text"
+													class="form-control form-control-lg form-control-solid"
+													value=""
+													placeholder=""></div>
+											</div>
+										</div>
+									</form>					
+					<!--end: Datatable-->
+
+				<!--end::Body-->
+			</div>
+			<!--end::Card-->
+		</div>
+		<!--end::Container-->
+	</div>
+	<!--end::Entry-->
+</div>
+<!--end::Content-->
+
+@endsection

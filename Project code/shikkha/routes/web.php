@@ -112,3 +112,12 @@ Route::get('/class-work-view', function () {
 Route::get('/exam', function () {
     return view('dashboard.student.exam');
 });
+Route::get('/change-password', function () {
+    return view('dashboard.student.change-password');
+});
+Route::get('/recovery-password', function () {
+    return view('dashboard.student.recovery-password');
+});
+Route::get('/recovery-password-send-mail', function () {
+    return view('dashboard.student.recovery-password-send-mail');
+});
