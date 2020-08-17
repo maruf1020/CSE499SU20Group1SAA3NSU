@@ -91,7 +91,7 @@
 					<!--begin::Content-->
 					@yield('section')
 					<!--end::Content-->
-				
+
 				</div>
 				<!--end::Wrapper-->
 			</div>
@@ -116,17 +116,17 @@
 		<!--end::Page Scripts-->
 		<!-- began::for single message page -->
 		<script src="assets/js/pages/custom/chat/chat.js"></script>
-		<!-- end::for single message page -->		
+		<!-- end::for single message page -->
 		<!--begin::For calender-->
 		<!-- <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>		 -->
 		<script src="assets/js/pages/features/calendar/basic.js"></script>
 		<!--end::For calender-->
-		<!--begin::For pre-advising-->		
+		<!--begin::For pre-advising-->
 		<script src="assets/js/custom/pre-advising.js"></script>
-		<!--end::For pre-advising-->	
+		<!--end::For pre-advising-->
 		<!--begin::used by stream home page-->
 		<!-- 1st 2 are ckeditor and last one is Summernote WYSIWYG editor  -->
-		<script src="assets/plugins/custom/ckeditor/ckeditor-inline.bundle.js"></script> 	
+		<script src="assets/plugins/custom/ckeditor/ckeditor-inline.bundle.js"></script>
 		<script src="assets/js/pages/crud/forms/editors/ckeditor-inline.js"></script>
 		<script src="assets/js/pages/crud/forms/editors/summernote.js"></script>
 		<!--end::used by stream home page-->
@@ -138,8 +138,8 @@
 		<script src="assets/js/custom/kanban-board.js"></script
 		<!-- End::exam page karban board drag and drop js  -->
 
-		
-		
+
+
 
 
 	</body>
