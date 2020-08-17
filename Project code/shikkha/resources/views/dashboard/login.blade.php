@@ -42,12 +42,14 @@
 						</div>
 						<!--end::Login Header-->
 						<!--begin::Login Sign in form-->
+
 						<div class="login-signin">
 							<div class="mb-20">
 								<h3>Sign In To Shikkha</h3>
 								<p class="opacity-60 font-weight-bold">Enter your details to login to your account:</p>
 							</div>
-							<form class="form">
+							<form class="form" method="post" action="{{ url('/login') }}">
+								@csrf
 								<div class="form-group">
 									<input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8 mb-5" type="text" placeholder="Email" name="username" autocomplete="off" />
 								</div>
@@ -61,7 +63,7 @@
 									<a href="javascript:;" id="kt_login_forgot" class="text-white font-weight-bold">Forget Password ?</a>
 								</div>
 								<div class="form-group text-center mt-10">
-									<button id="kt_login_signin_submit" class="btn btn-pill btn-outline-white font-weight-bold opacity-90 px-15 py-3">Sign In</button>
+									<button type="submit"  class="btn btn-pill btn-outline-white font-weight-bold opacity-90 px-15 py-3">Sign In</button>
 								</div>
 							</form>
 							<div class="mt-10">

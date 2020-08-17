@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard.login');
-});
+Route::get('/','loginController@index');
+Route::Post('/login','loginController@loginApproval');
+
 Route::get('/register', function () {
     return view('dashboard.register');
 });
@@ -124,4 +124,3 @@ Route::get('/recovery-password-send-mail', function () {
 Route::get('/personal-information', function () {
     return view('dashboard.student.personal-information');
 });
-
