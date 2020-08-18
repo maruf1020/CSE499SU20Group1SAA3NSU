@@ -124,3 +124,6 @@ Route::get('/recovery-password-send-mail', function () {
 Route::get('/personal-information', function () {
     return view('dashboard.student.personal-information');
 });
+Route::get('/personal-information', function () {
+    return view('dashboard.student.personal-information');
+});
