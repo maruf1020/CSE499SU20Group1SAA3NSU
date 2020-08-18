@@ -3,7 +3,7 @@
 	<!--begin::Head-->
 	<head><base href="">
 		<meta charset="utf-8" />
-		<title>Metronic | Dashboard</title>
+		<title>Shikkhaa | Dashboard</title>
 		<meta name="description" content="Updates and statistics" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<!--begin::Fonts-->
@@ -23,7 +23,7 @@
 		<link href="{{ asset('assets/css/themes/layout/brand/dark.css') }}"rel="stylesheet" type="text/css" />
 		<link href="{{ asset('assets/css/themes/layout/aside/dark.css') }}"rel="stylesheet" type="text/css" />
 		<!--end::Layout Themes-->
-		<link rel="shortcut icon" href="{{ asset('assets/media/logos/favicon.ico') }}" />
+		<link rel="shortcut icon" href="{{ asset('assets/media/logos/favicon.png') }}" />
 		<!-- Start::exam page karban board drag and drop css  -->
 		<link href="assets/plugins/custom/kanban/kanban.bundle.css" rel="stylesheet" type="text/css" />
 		<!-- End::exam page karban board drag and drop css  -->
