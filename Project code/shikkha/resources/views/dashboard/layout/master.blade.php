@@ -3,7 +3,7 @@
 	<!--begin::Head-->
 	<head><base href="">
 		<meta charset="utf-8" />
-		<title>Metronic | Dashboard</title>
+		<title>Shikkhaa | Dashboard</title>
 		<meta name="description" content="Updates and statistics" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<!--begin::Fonts-->
@@ -23,7 +23,10 @@
 		<link href="{{ asset('assets/css/themes/layout/brand/dark.css') }}"rel="stylesheet" type="text/css" />
 		<link href="{{ asset('assets/css/themes/layout/aside/dark.css') }}"rel="stylesheet" type="text/css" />
 		<!--end::Layout Themes-->
-		<link rel="shortcut icon" href="{{ asset('assets/media/logos/favicon.ico') }}" />
+		<link rel="shortcut icon" href="{{ asset('assets/media/logos/favicon.png') }}" />
+		<!-- Start::exam page karban board drag and drop css  -->
+		<link href="assets/plugins/custom/kanban/kanban.bundle.css" rel="stylesheet" type="text/css" />
+		<!-- End::exam page karban board drag and drop css  -->
 		<!--begin::Custom css-->
 		<link href="{{ asset('assets/css/custom/mystyle.css') }}"rel="stylesheet" type="text/css" />
 		<!--begin::Custom css-->
@@ -88,7 +91,7 @@
 					<!--begin::Content-->
 					@yield('section')
 					<!--end::Content-->
-				
+
 				</div>
 				<!--end::Wrapper-->
 			</div>
@@ -113,14 +116,30 @@
 		<!--end::Page Scripts-->
 		<!-- began::for single message page -->
 		<script src="assets/js/pages/custom/chat/chat.js"></script>
-		<!-- end::for single message page -->		
+		<!-- end::for single message page -->
 		<!--begin::For calender-->
 		<!-- <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>		 -->
 		<script src="assets/js/pages/features/calendar/basic.js"></script>
 		<!--end::For calender-->
-		<!--begin::For pre-advising-->		
+		<!--begin::For pre-advising-->
 		<script src="assets/js/custom/pre-advising.js"></script>
-		<!--end::For pre-advising-->		
+		<!--end::For pre-advising-->
+		<!--begin::used by stream home page-->
+		<!-- 1st 2 are ckeditor and last one is Summernote WYSIWYG editor  -->
+		<script src="assets/plugins/custom/ckeditor/ckeditor-inline.bundle.js"></script>
+		<script src="assets/js/pages/crud/forms/editors/ckeditor-inline.js"></script>
+		<script src="assets/js/pages/crud/forms/editors/summernote.js"></script>
+		<!--end::used by stream home page-->
+		<!--Start::used by exam page-->
+		<script src="assets/js/custom/exam-timer.js"></script>
+		<!--end::used by exam page-->
+		<!-- START::exam page karban board drag and drop js  -->
+		<script src="assets/js/custom/kanban.bundle.js"></script>
+		<script src="assets/js/custom/kanban-board.js"></script
+		<!-- End::exam page karban board drag and drop js  -->
+
+
+
 
 
 	</body>

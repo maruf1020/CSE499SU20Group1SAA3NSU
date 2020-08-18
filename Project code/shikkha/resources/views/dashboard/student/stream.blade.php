@@ -20,7 +20,7 @@
 
                         <div class="card-footer d-flex justify-content-between stream-button">
                             <a href="#" class="btn btn-success font-weight-bold mr-2">Conference</a>
-                            <a href="#" class="btn btn-info font-weight-bold mr-2">Steam</a>
+                            <a href="stream-home" class="btn btn-info font-weight-bold mr-2">stream</a>
                         </div>
 
 
@@ -145,7 +145,7 @@
 
                         <div class="card-footer d-flex justify-content-between stream-button">
                             <a href="#" class="btn btn-success font-weight-bold mr-2">Conference</a>
-                            <a href="#" class="btn btn-info font-weight-bold mr-2">Steam</a>
+                            <a href="stream-home" class="btn btn-info font-weight-bold mr-2">stream</a>
                         </div>
 
 
@@ -270,7 +270,7 @@
 
                         <div class="card-footer d-flex justify-content-between stream-button">
                             <a href="#" class="btn btn-success font-weight-bold mr-2">Conference</a>
-                            <a href="#" class="btn btn-info font-weight-bold mr-2">Steam</a>
+                            <a href="stream-home" class="btn btn-info font-weight-bold mr-2">stream</a>
                         </div>
 
 
@@ -396,7 +396,7 @@
 
                         <div class="card-footer d-flex justify-content-between stream-button">
                             <a href="#" class="btn btn-success font-weight-bold mr-2">Conference</a>
-                            <a href="#" class="btn btn-info font-weight-bold mr-2">Steam</a>
+                            <a href="stream-home" class="btn btn-info font-weight-bold mr-2">stream</a>
                         </div>
 
 
@@ -521,7 +521,7 @@
 
                         <div class="card-footer d-flex justify-content-between stream-button">
                             <a href="#" class="btn btn-success font-weight-bold mr-2">Conference</a>
-                            <a href="#" class="btn btn-info font-weight-bold mr-2">Steam</a>
+                            <a href="stream-home" class="btn btn-info font-weight-bold mr-2">stream</a>
                         </div>
 
 
@@ -646,7 +646,7 @@
 
                         <div class="card-footer d-flex justify-content-between stream-button">
                             <a href="#" class="btn btn-success font-weight-bold mr-2">Conference</a>
-                            <a href="#" class="btn btn-info font-weight-bold mr-2">Steam</a>
+                            <a href="stream-home" class="btn btn-info font-weight-bold mr-2">stream</a>
                         </div>
 
 

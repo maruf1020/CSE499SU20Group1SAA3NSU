@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard.login');
-});
+Route::get('/','loginController@index');
+Route::Post('/login','loginController@loginApproval');
+
 Route::get('/register', function () {
     return view('dashboard.register');
 });
@@ -102,4 +102,25 @@ Route::get('/advising', function () {
 });
 Route::get('/request-course', function () {
     return view('dashboard.student.request-course');
+});
+Route::get('/stream-home', function () {
+    return view('dashboard.student.stream-home');
+});
+Route::get('/class-work-view', function () {
+    return view('dashboard.student.class-work-view');
+});
+Route::get('/exam', function () {
+    return view('dashboard.student.exam');
+});
+Route::get('/change-password', function () {
+    return view('dashboard.student.change-password');
+});
+Route::get('/recovery-password', function () {
+    return view('dashboard.student.recovery-password');
+});
+Route::get('/recovery-password-send-mail', function () {
+    return view('dashboard.student.recovery-password-send-mail');
+});
+Route::get('/personal-information', function () {
+    return view('dashboard.student.personal-information');
 });
