@@ -103,3 +103,9 @@ Route::get('/advising', function () {
 Route::get('/request-course', function () {
     return view('dashboard.student.request-course');
 });
+
+
+// faculty routes
+Route::get('/request-course', function () {
+    return view('dashboard.faculty.request-course');
+});
