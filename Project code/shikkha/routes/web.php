@@ -127,3 +127,18 @@ Route::get('/personal-information', function () {
 Route::get('/personal-information', function () {
     return view('dashboard.student.personal-information');
 });
+
+
+// faculty route start
+Route::get('/faculty-stream', function () {
+    return view('dashboard.faculty.faculty-stream');
+});
+Route::get('/faculty-stream-home', function () {
+    return view('dashboard.faculty.faculty-stream-home');
+});
+Route::get('/faculty-assigned-course', function () {
+    return view('dashboard.faculty.faculty-assigned-course');
+});
+Route::get('/faculty-class-time', function () {
+    return view('dashboard.faculty.faculty-class-time');
+});
