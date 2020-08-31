@@ -129,6 +129,8 @@ Route::get('/personal-information', function () {
 });
 
 
+
+
 // faculty route start
 Route::get('/faculty-stream', function () {
     return view('dashboard.faculty.faculty-stream');
@@ -141,4 +143,31 @@ Route::get('/faculty-assigned-course', function () {
 });
 Route::get('/faculty-class-time', function () {
     return view('dashboard.faculty.faculty-class-time');
+});
+Route::get('/faculty-attendence', function () {
+    return view('dashboard.faculty.faculty-attendence');
+});
+Route::get('/Faculty-calendar', function () {
+    return view('dashboard.faculty.Faculty-calendar');
+});
+Route::get('/faculty-conference', function () {
+    return view('dashboard.faculty.faculty-conference');
+});
+Route::get('/faculty-course-selection', function () {
+    return view('dashboard.faculty.faculty-course-selection');
+});
+Route::get('/faculty-message', function () {
+    return view('dashboard.faculty.faculty-message');
+});
+Route::get('/faculty-notifications', function () {
+    return view('dashboard.faculty.faculty-notifications');
+});
+Route::get('/faculty-personal-information', function () {
+    return view('dashboard.faculty.faculty-personal-information');
+});
+Route::get('/faculty-pre-course-selection', function () {
+    return view('dashboard.faculty.faculty-pre-course-selection');
+});
+Route::get('/faculty-class-time', function () {
+    return view('dashboard.faculty.faculty-todo');
 });
