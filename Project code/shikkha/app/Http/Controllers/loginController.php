@@ -20,16 +20,25 @@ class loginController extends Controller
       $email=request()->username;
       $password=request()->password;
       if ($email==$student && $loginPassword==$password) {
+        $user=1;
+        session()->put('user',$user);
         return view('dashboard.dashboard');
+
       }
       elseif ($email==$instructor && $loginPassword==$password) {
-        // code...
+        $user=2;
+        session()->put('user',$user);
+        return view('dashboard.dashboard');
       }
       elseif ($email==$institution && $loginPassword==$password) {
-        // code...
+        $user=3;
+        session()->put('user',$user);
+        return view('dashboard.dashboard');
       }
       elseif ($email==$admin && $loginPassword==$password) {
-        // code...
+        $user=4;
+        session()->put('user',$user);
+        return view('dashboard.dashboard');
       }
       else {
         return back();

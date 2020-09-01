@@ -124,3 +124,50 @@ Route::get('/recovery-password-send-mail', function () {
 Route::get('/personal-information', function () {
     return view('dashboard.student.personal-information');
 });
+Route::get('/personal-information', function () {
+    return view('dashboard.student.personal-information');
+});
+
+
+
+
+// faculty route start
+Route::get('/faculty-stream', function () {
+    return view('dashboard.faculty.faculty-stream');
+});
+Route::get('/faculty-stream-home', function () {
+    return view('dashboard.faculty.faculty-stream-home');
+});
+Route::get('/faculty-assigned-course', function () {
+    return view('dashboard.faculty.faculty-assigned-course');
+});
+Route::get('/faculty-class-time', function () {
+    return view('dashboard.faculty.faculty-class-time');
+});
+Route::get('/faculty-attendence', function () {
+    return view('dashboard.faculty.faculty-attendence');
+});
+Route::get('/Faculty-calendar', function () {
+    return view('dashboard.faculty.Faculty-calendar');
+});
+Route::get('/faculty-conference', function () {
+    return view('dashboard.faculty.faculty-conference');
+});
+Route::get('/faculty-course-selection', function () {
+    return view('dashboard.faculty.faculty-course-selection');
+});
+Route::get('/faculty-message', function () {
+    return view('dashboard.faculty.faculty-message');
+});
+Route::get('/faculty-notifications', function () {
+    return view('dashboard.faculty.faculty-notifications');
+});
+Route::get('/faculty-personal-information', function () {
+    return view('dashboard.faculty.faculty-personal-information');
+});
+Route::get('/faculty-pre-course-selection', function () {
+    return view('dashboard.faculty.faculty-pre-course-selection');
+});
+Route::get('/faculty-class-time', function () {
+    return view('dashboard.faculty.faculty-todo');
+});
