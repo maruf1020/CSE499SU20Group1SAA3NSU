@@ -1,3 +1,4 @@
+<!-- have to change some uppercase in Faculty word to faculty  -->
 <div class="aside aside-left aside-fixed d-flex flex-column flex-row-auto" id="kt_aside">
     <!--begin::Brand-->
     <div class="brand flex-column-auto" id="kt_brand">
@@ -57,7 +58,7 @@
 
                 {{-- menu tile for individual area  start--}}
                 <li class="menu-section">
-                    <h4 class="menu-text">Faculty Information</h4>
+                    <h4 class="menu-text">faculty Information</h4>
                     <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
                 </li>
                 {{-- menu tile for individual area  end--}}
@@ -368,7 +369,7 @@
                         <ul class="menu-subnav">
 
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="Faculty-calendar" class="menu-link menu-toggle">
+                                <a href="faculty-calendar" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
@@ -377,7 +378,7 @@
 
                             </li>
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="Faculty-todo" class="menu-link menu-toggle">
+                                <a href="faculty-todo" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
