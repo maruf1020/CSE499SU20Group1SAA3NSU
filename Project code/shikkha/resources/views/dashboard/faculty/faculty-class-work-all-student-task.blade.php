@@ -48,7 +48,7 @@
 									<td>Md. Maruf Billah</td>
 									<td class="text-center"><span class="label label-danger label-inline mr-2">Unsubmitted</span></td>
 									<td>null</td>
-									<td><a href="#" class="btn btn-success font-weight-bold mr-2">View</a></td>
+									<td><a href="faculty-class-work-task-view" class="btn btn-success font-weight-bold mr-2">View</a></td>
 								</tr>
 								<tr>
 									<th>2</th>
@@ -56,7 +56,7 @@
 									<td>Barkatullah Hossain</td>
 									<td class="text-center"><span class="label label-warning label-inline mr-2">Submitted</span></td>
 									<td>null</td>
-									<td><a href="#" class="btn btn-success font-weight-bold mr-2">View</a></td>
+									<td><a href="faculty-class-work-task-view" class="btn btn-success font-weight-bold mr-2">View</a></td>
 								</tr>
 								<tr>
 									<th>3</th>
@@ -64,7 +64,7 @@
 									<td>Shuvo iftekharul</td>
 									<td class="text-center"><span class="label label-success label-inline mr-2">Checked</span></td>
 									<td>5</td>
-									<td><a href="#" class="btn btn-success font-weight-bold mr-2">View</a></td>
+									<td><a href="faculty-class-work-task-view" class="btn btn-success font-weight-bold mr-2">View</a></td>
 								</tr>
 								<tr>
 									<th>4</th>
@@ -72,7 +72,7 @@
 									<td>Zakariya molla</td>
 									<td class="text-center"><span class="label label-danger label-inline mr-2">Unsubmitted</span></td>
 									<td>null</td>
-									<td><a href="#" class="btn btn-success font-weight-bold mr-2">View</a></td>
+									<td><a href="faculty-class-work-task-view" class="btn btn-success font-weight-bold mr-2">View</a></td>
 								</tr>
 								<tr>
 									<th>5</th>
@@ -80,7 +80,7 @@
 									<td>Misti talukdar</td>
 									<td class="text-center"><span class="label label-danger label-inline mr-2">Unsubmitted</span></td>
 									<td>null</td>
-									<td><a href="#" class="btn btn-success font-weight-bold mr-2">View</a></td>
+									<td><a href="faculty-class-work-task-view" class="btn btn-success font-weight-bold mr-2">View</a></td>
 								</tr>
 							</tbody>
 						</table>

@@ -180,6 +180,6 @@ Route::get('/faculty-class-work-all-task', function () {
 Route::get('/faculty-class-work-all-student-task', function () {
     return view('dashboard.faculty.faculty-class-work-all-student-task');
 });
-
-
-
+Route::get('/faculty-class-work-task-view', function () {
+    return view('dashboard.faculty.faculty-class-work-task-view');
+});
