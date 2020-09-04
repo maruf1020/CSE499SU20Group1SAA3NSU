@@ -183,3 +183,13 @@ Route::get('/faculty-class-work-all-student-task', function () {
 Route::get('/faculty-class-work-task-view', function () {
     return view('dashboard.faculty.faculty-class-work-task-view');
 });
+Route::get('/faculty-class-work-task-view', function () {
+    return view('dashboard.faculty.faculty-class-work-task-view');
+});
+Route::get('/faculty-course-resource-home', function () {
+    return view('dashboard.faculty.faculty-course-resource-home');
+});
+Route::get('/faculty-course-resource', function () {
+    return view('dashboard.faculty.faculty-course-resource');
+});
+
