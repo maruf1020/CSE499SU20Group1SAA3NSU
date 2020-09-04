@@ -126,7 +126,7 @@
 										<i class="flaticon-file-2 icon-2x text-muted font-weight-bold"></i>
 									</span>
 									<div class="d-flex flex-column flex-lg-fill">
-										<span class="text-dark-75 font-weight-bolder font-size-sm">Notifications</span>
+										<span class="text-dark-75 font-weight-bolder font-size-sm">Question</span>
 										<a href="#" class="text-primary font-weight-bolder">View</a>
 									</div>
 								</div>
@@ -137,7 +137,7 @@
 										<i class="flaticon-file-2 icon-2x text-muted font-weight-bold"></i>
 									</span>
 									<div class="d-flex flex-column flex-lg-fill">
-										<span class="text-dark-75 font-weight-bolder font-size-sm">73 total Tasks</span>
+										<span class="text-dark-75 font-weight-bolder font-size-sm">Answer</span>
 										<a href="#" class="text-primary font-weight-bolder">View</a>
 									</div>
 								</div>
@@ -148,57 +148,25 @@
 										<i class="flaticon-file-2 icon-2x text-muted font-weight-bold"></i>
 									</span>
 									<div class="d-flex flex-column flex-lg-fill">
-										<span class="text-dark-75 font-weight-bolder font-size-sm">3 new Tasks</span>
-										<a href="#" class="text-primary font-weight-bolder">View</a>
+										<span class="text-dark-75 font-weight-bolder font-size-sm">Marks</span>
+										<a href="#" class="text-primary font-weight-bolder">10/10</a>
 									</div>
 								</div>
 								<!--end: Item-->
 								<!--begin: Item-->
 								<div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
-									<span class="mr-4">
-										<i class="flaticon-file-2 icon-2x text-muted font-weight-bold"></i>
-									</span>
+
 									<div class="d-flex flex-column flex-lg-fill">
-										<span class="text-dark-75 font-weight-bolder font-size-sm">4 Pending Tasks</span>
-										<a href="#" class="text-primary font-weight-bolder">View</a>
-									</div>
-								</div>
-								<!--end: Item-->
-								<!--begin: Item-->
-								<div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
-									<span class="mr-4">
-										<i class="flaticon-chat-1 icon-2x text-muted font-weight-bold"></i>
-									</span>
-									<div class="d-flex flex-column">
-										<span class="text-dark-75 font-weight-bolder font-size-sm">648 Comments</span>
-										<!-- <a href="#" class="text-primary font-weight-bolder">View</a> -->
-									</div>
-								</div>
-								<!--end: Item-->
-								<!--begin: Item-->
-								<div class="d-flex align-items-center flex-lg-fill my-1">
-									<div class="symbol-group symbol-hover">
-										<div class="symbol symbol-30 symbol-circle" data-toggle="tooltip" title="" data-original-title="Mark Stone">
-											<img alt="Pic" src="assets/media/users/300_25.jpg">
-										</div>
-										<div class="symbol symbol-30 symbol-circle" data-toggle="tooltip" title="" data-original-title="Charlie Stone">
-											<img alt="Pic" src="assets/media/users/300_19.jpg">
-										</div>
-										<div class="symbol symbol-30 symbol-circle" data-toggle="tooltip" title="" data-original-title="Luca Doncic">
-											<img alt="Pic" src="assets/media/users/300_22.jpg">
-										</div>
-										<div class="symbol symbol-30 symbol-circle" data-toggle="tooltip" title="" data-original-title="Nick Mana">
-											<img alt="Pic" src="assets/media/users/300_23.jpg">
-										</div>
-										<div class="symbol symbol-30 symbol-circle" data-toggle="tooltip" title="" data-original-title="Teresa Fox">
-											<img alt="Pic" src="assets/media/users/300_18.jpg">
-										</div>
-										<div class="symbol symbol-30 symbol-circle symbol-light">
-											<span class="symbol-label font-weight-bold">5+</span>
+										<span class="text-dark-75 font-weight-bolder font-size-sm">Give Marks</span>
+										<div class="form-group">
+											<input type="number" class="form-control mt-2" id="exampleInputPassword1" placeholder="Number" />
+											<button type="reset" class="btn btn-primary mt-2">Submit</button>
 										</div>
 									</div>
 								</div>
 								<!--end: Item-->
+
+
 							</div>
 							<!--begin: Items-->
 						</div>
@@ -214,8 +182,8 @@
 							</div>
 						</div>
 						<div class="card-body">
-							<embed src="assets/media/pdf/myfile.pdf" type="application/pdf" width="100%" style="height:100vh">
-							</embed>
+							<embed src="assets/media/pdf/myfile.pdf" type="application/pdf" height="300px" width="100%" class="responsive">
+							<a href="study/sample.pdf">download</a>
 						</div>
 					</div>
 					<!--begin: pdf view end-->
