@@ -171,3 +171,8 @@ Route::get('/faculty-pre-course-selection', function () {
 Route::get('/faculty-class-time', function () {
     return view('dashboard.faculty.faculty-todo');
 });
+Route::get('/faculty-make-question', function () {
+    return view('dashboard.faculty.faculty-make-question');
+});
+
+
