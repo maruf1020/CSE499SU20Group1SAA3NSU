@@ -47,30 +47,30 @@
 								<tr>
 									<th style="vertical-align: middle;">08:30 am - 10:00 am</th>
 									<td></td>
-									<td>CSE31</td>
-									<td>CHE400</td>
+									<td>CSE31.2</td>
 									<td></td>
-									<td>CSE31</td>
 									<td></td>
-									<td>MAT500</td>
+									<td></td>
+									<td></td>
+									<td></td>
 								</tr>
 								<tr>
 									<th style="vertical-align: middle;">10:30 am - 12:00 pm</th>
 									<td></td>
-									<td>BIO598</td>
+									<td>BIO598.2</td>
 									<td></td>
-									<td>ACT450</td>
+									<td>ACT450.1</td>
 									<td></td>
-									<td>PHY660</td>
+									<td>PHY660.2</td>
 									<td></td>
 								</tr>
 								<tr>
 									<th style="vertical-align: middle;">12:30 am - 02:00 pm</th>
 									<td></td>
-									<td>CSE31</td>
+									<td>CSE31.3</td>
 									<td></td>
-									<td>CSE31</td>
-									<td>PHY660</td>
+									<td>CSE312.7</td>
+									<td></td>
 									<td></td>
 									<td></td>
 								</tr>
@@ -78,31 +78,31 @@
 									<th style="vertical-align: middle;">02:30 am - 04:00 pm</th>
 									<td></td>
 									<td></td>
-									<td>PHY660</td>
 									<td></td>
-									<td>ACT450</td>
-									<td>ACT459</td>
+									<td></td>
+									<td></td>
+									<td></td>
 									<td></td>
 								</tr>
 								<tr>
 									<th style="vertical-align: middle;">04:30 am - 06:00 pm</th>
 									<td></td>
-									<td>BIO598</td>
 									<td></td>
-									<td>BIO598</td>
+									<td></td>
+									<td></td>
 									<td></td>
 									<td>MAT500</td>
 									<td></td>
 								</tr>
 								<tr>
 									<th style="vertical-align: middle;">06:30 am - 08:00 pm</th>
-									<td>BIO598</td>
-									<td></td>
-									<td>BIO598</td>
 									<td></td>
 									<td></td>
 									<td></td>
-									<td>BIO598</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>BIO598.7</td>
 								</tr>
 							</tbody>
 						</table>

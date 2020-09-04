@@ -168,11 +168,18 @@ Route::get('/faculty-personal-information', function () {
 Route::get('/faculty-pre-course-selection', function () {
     return view('dashboard.faculty.faculty-pre-course-selection');
 });
-Route::get('/faculty-class-time', function () {
-    return view('dashboard.faculty.faculty-todo');
-});
 Route::get('/faculty-make-question', function () {
     return view('dashboard.faculty.faculty-make-question');
 });
+Route::get('/faculty-class-work', function () {
+    return view('dashboard.faculty.faculty-class-work');
+});
+Route::get('/faculty-class-work-all-task', function () {
+    return view('dashboard.faculty.faculty-class-work-all-task');
+});
+Route::get('/faculty-class-work-all-student-task', function () {
+    return view('dashboard.faculty.faculty-class-work-all-student-task');
+});
+
 
 
