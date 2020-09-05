@@ -147,8 +147,11 @@ Route::get('/faculty-class-time', function () {
 Route::get('/faculty-attendence', function () {
     return view('dashboard.faculty.faculty-attendence');
 });
-Route::get('/Faculty-calendar', function () {
-    return view('dashboard.faculty.Faculty-calendar');
+Route::get('/faculty-calendar', function () {
+    return view('dashboard.faculty.faculty-calendar');
+});
+Route::get('/faculty-todo', function () {
+    return view('dashboard.faculty.faculty-todo');
 });
 Route::get('/faculty-conference', function () {
     return view('dashboard.faculty.faculty-conference');
