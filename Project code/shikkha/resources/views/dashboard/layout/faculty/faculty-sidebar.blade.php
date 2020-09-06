@@ -253,7 +253,7 @@
 
                             </li>
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="javascript:;" class="menu-link menu-toggle">
+                                <a href="faculty-grade" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
@@ -262,7 +262,7 @@
 
                             </li>
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="javascript:;" class="menu-link menu-toggle">
+                                <a href="faculty-check-cgpa" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
@@ -271,7 +271,7 @@
 
                             </li>
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="javascript:;" class="menu-link menu-toggle">
+                                <a href="faculty-evaluation" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>

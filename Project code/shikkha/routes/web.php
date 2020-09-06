@@ -198,7 +198,18 @@ Route::get('/faculty-pre-course-request', function () {
 Route::get('/faculty-course-request', function () {
     return view('dashboard.faculty.faculty-course-request');
 });
-
-
-                            
-                            
+Route::get('/faculty-grade', function () {
+    return view('dashboard.faculty.faculty-grade');
+});
+Route::get('/faculty-individual-grade', function () {
+    return view('dashboard.faculty.faculty-individual-grade');
+});
+Route::get('/faculty-check-cgpa', function () {
+    return view('dashboard.faculty.faculty-check-cgpa');
+});
+Route::get('/faculty-individual-cgpa', function () {
+    return view('dashboard.faculty.faculty-individual-cgpa');
+});
+Route::get('/faculty-evaluation', function () {
+    return view('dashboard.faculty.faculty-evaluation');
+});
