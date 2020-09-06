@@ -213,3 +213,9 @@ Route::get('/faculty-individual-cgpa', function () {
 Route::get('/faculty-evaluation', function () {
     return view('dashboard.faculty.faculty-evaluation');
 });
+Route::get('/faculty-evaluation-course-list', function () {
+    return view('dashboard.faculty.faculty-evaluation-course-list');
+});
+Route::get('/faculty-view-evaluation-internal', function () {
+    return view('dashboard.faculty.faculty-view-evaluation-internal');
+});
