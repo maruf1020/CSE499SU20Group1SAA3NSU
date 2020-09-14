@@ -147,14 +147,14 @@ Route::get('/faculty-class-time', function () {
 Route::get('/faculty-attendence', function () {
     return view('dashboard.faculty.faculty-attendence');
 });
-Route::get('/Faculty-calendar', function () {
-    return view('dashboard.faculty.Faculty-calendar');
+Route::get('/faculty-calendar', function () {
+    return view('dashboard.faculty.faculty-calendar');
+});
+Route::get('/faculty-todo', function () {
+    return view('dashboard.faculty.faculty-todo');
 });
 Route::get('/faculty-conference', function () {
     return view('dashboard.faculty.faculty-conference');
-});
-Route::get('/faculty-course-selection', function () {
-    return view('dashboard.faculty.faculty-course-selection');
 });
 Route::get('/faculty-message', function () {
     return view('dashboard.faculty.faculty-message');
@@ -165,9 +165,57 @@ Route::get('/faculty-notifications', function () {
 Route::get('/faculty-personal-information', function () {
     return view('dashboard.faculty.faculty-personal-information');
 });
-Route::get('/faculty-pre-course-selection', function () {
-    return view('dashboard.faculty.faculty-pre-course-selection');
+Route::get('/faculty-make-question', function () {
+    return view('dashboard.faculty.faculty-make-question');
 });
-Route::get('/faculty-class-time', function () {
-    return view('dashboard.faculty.faculty-todo');
+Route::get('/faculty-class-work', function () {
+    return view('dashboard.faculty.faculty-class-work');
+});
+Route::get('/faculty-class-work-all-task', function () {
+    return view('dashboard.faculty.faculty-class-work-all-task');
+});
+Route::get('/faculty-class-work-all-student-task', function () {
+    return view('dashboard.faculty.faculty-class-work-all-student-task');
+});
+Route::get('/faculty-class-work-task-view', function () {
+    return view('dashboard.faculty.faculty-class-work-task-view');
+});
+Route::get('/faculty-class-work-task-view', function () {
+    return view('dashboard.faculty.faculty-class-work-task-view');
+});
+Route::get('/faculty-course-resource-home', function () {
+    return view('dashboard.faculty.faculty-course-resource-home');
+});
+Route::get('/faculty-course-resource', function () {
+    return view('dashboard.faculty.faculty-course-resource');
+});
+Route::get('/faculty-offer-courses', function () {
+    return view('dashboard.faculty.faculty-offer-courses');
+});
+Route::get('/faculty-pre-course-request', function () {
+    return view('dashboard.faculty.faculty-pre-course-request');
+});
+Route::get('/faculty-course-request', function () {
+    return view('dashboard.faculty.faculty-course-request');
+});
+Route::get('/faculty-grade', function () {
+    return view('dashboard.faculty.faculty-grade');
+});
+Route::get('/faculty-individual-grade', function () {
+    return view('dashboard.faculty.faculty-individual-grade');
+});
+Route::get('/faculty-check-cgpa', function () {
+    return view('dashboard.faculty.faculty-check-cgpa');
+});
+Route::get('/faculty-individual-cgpa', function () {
+    return view('dashboard.faculty.faculty-individual-cgpa');
+});
+Route::get('/faculty-evaluation', function () {
+    return view('dashboard.faculty.faculty-evaluation');
+});
+Route::get('/faculty-evaluation-course-list', function () {
+    return view('dashboard.faculty.faculty-evaluation-course-list');
+});
+Route::get('/faculty-view-evaluation-internal', function () {
+    return view('dashboard.faculty.faculty-view-evaluation-internal');
 });
