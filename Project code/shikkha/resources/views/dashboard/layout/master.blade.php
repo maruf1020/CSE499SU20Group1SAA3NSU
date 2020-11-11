@@ -81,8 +81,8 @@
 		<!--begin::Page-->
 		<div class="d-flex flex-row flex-column-fluid page">
 			<!--begin::Aside-->
-			@php
-			
+			{{-- @php
+
 			$access=session()->get('user');
 			@endphp
 			@if ($access==1)
@@ -95,7 +95,24 @@
 			@include('dashboard.layout.admin.admin-sidebar')
 			@else
 			@include('dashboard.layout.student.student-sidebar')
+			@endif --}}
+
+			@php
+			$role=Auth::user()->role;
+			@endphp
+			@if ($role==1)
+			@include('dashboard.layout.student.student-sidebar')
+			@elseif ($role==2)
+			@include('dashboard.layout.faculty.faculty-sidebar')
+			@elseif ($role==3)
+			@include('dashboard.layout.institution.institution-sidebar')
+			@elseif ($role==0)
+			@include('dashboard.layout.admin.admin-sidebar')
+			@else
+			@include('dashboard.layout.student.student-sidebar')
 			@endif
+
+
 			<!--end::Aside-->
 			<!--begin::Wrapper-->
 			<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
