@@ -32,7 +32,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-// Forntend  url list
+// // Forntend  url list
 // Route::get('/register', function () {
 //     return view('dashboard.register');
 // });
@@ -144,10 +144,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/personal-information', function () {
 //     return view('dashboard.student.personal-information');
 // });
-//
-//
-//
-//
+
+
+
+
 // // faculty route start
 // Route::get('/faculty-stream', function () {
 //     return view('dashboard.faculty.faculty-stream');
@@ -236,3 +236,23 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/faculty-view-evaluation-internal', function () {
 //     return view('dashboard.faculty.faculty-view-evaluation-internal');
 // });
+
+
+
+//admin
+Route::get('/admin-personal-information', function () {
+    return view('dashboard.admin.admin-personal-information');
+});
+
+Route::get('/admin-change-password', function () {
+    return view('dashboard.admin.admin-change-password');
+});
+Route::get('/admin-pricing', function () {
+    return view('dashboard.admin.admin-pricing');
+});
+Route::get('/admin-institutions', function () {
+    return view('dashboard.admin.admin-institutions');
+});
+Route::get('/admin-verified-institutions', function () {
+    return view('dashboard.admin.admin-verified-institutions');
+});
