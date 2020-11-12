@@ -18,7 +18,12 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'Auth\LoginController@index')->name('home');
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
+// Route::get('/mail', 'HomeController@test');
+Route::get('/mail', 'mailController@sendmail');
+
+
+Route::get('/personal-infomation', 'personalInfoController@index')->name('personal-infomation');
 
 
 
@@ -240,9 +245,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 //admin
-Route::get('/admin-personal-information', function () {
-    return view('dashboard.admin.admin-personal-information');
-});
+// Route::get('/admin-personal-information', function () {
+//     return view('dashboard.admin.admin-personal-information');
+// });
 
 Route::get('/admin-change-password', function () {
     return view('dashboard.admin.admin-change-password');

@@ -18,7 +18,7 @@
 									<h3 class="card-label font-weight-bolder text-dark">Personal Information</h3>
 									<span class="text-muted font-weight-bold font-size-sm mt-1">Update your personal informaiton</span>
 								</div>
-								<div class="card-toolbar">								
+								<div class="card-toolbar">
 									<button type="reset" class="btn btn-success mr-2">Save Changes</button>
 									<button type="reset" class="btn btn-secondary">Cancel</button>
 								</div>
@@ -26,15 +26,16 @@
 				<!--end::Header-->
 				<!--begin::Body-->
 				<div class="">
-					<!--begin: Datatable-->				
-													
+					<!--begin: Datatable-->
+
 					<div class="flex-row-fluid">
 										<!--begin::Card-->
 						<div class="card card-custom card-stretch">
 							<!--begin::Header-->
-							
+
 							<!--end::Header-->
 							<!--begin::Form-->
+							@foreach ($personalInfo as $key => $value)
 							<form class="form">
 								<!--begin::Body-->
 								<div class="card-body">
@@ -84,28 +85,24 @@
 												</div>
 											</div>
 											<div class="form-group row">
-												<label class="col-xl-3 col-lg-3 col-form-label text-right">First Name</label>
+												<label class="col-xl-3 col-lg-3 col-form-label text-right">Full Name</label>
 												<div class="col-lg-9 col-xl-6">
 													<input
 														class="form-control form-control-lg form-control-solid"
 														type="text"
-														value="Maruf"></div>
+														value="{{ $value->user->name }}"></div>
+
+
+
 												</div>
-												<div class="form-group row">
-													<label class="col-xl-3 col-lg-3 col-form-label text-right">Last Name</label>
-													<div class="col-lg-9 col-xl-6">
-														<input
-															class="form-control form-control-lg form-control-solid"
-															type="text"
-															value="Billah"></div>
-													</div>
+
 													<div class="form-group row">
 														<label class="col-xl-3 col-lg-3 col-form-label text-right">Area</label>
 														<div class="col-lg-9 col-xl-6">
 															<input
 																class="form-control form-control-lg form-control-solid"
 																type="text"
-																value="Moghbazar">
+																value="{{ $value->area }}">
 																<!-- <span class="form-text text-muted">If you want your invoices addressed to a
 																	company. Leave blank to use your full name.</span> -->
 															</div>
@@ -128,7 +125,7 @@
 																	<input
 																		type="text"
 																		class="form-control form-control-lg form-control-solid"
-																		value="+8801675708783"
+																		value="{{ $value->phone }}"
 																		placeholder="Phone"></div>
 																	<span class="form-text text-muted">We'll never share your email with anyone else.</span>
 																</div>
@@ -145,35 +142,36 @@
 																		<input
 																			type="text"
 																			class="form-control form-control-lg form-control-solid"
-																			value="maruf.billah@northsouth.edu"
+																			value=""
 																			placeholder="Email"></div>
 																	</div>
-																	
-																	
+
+
 																</div>
 																<div class="row">
 															<label class="col-xl-3"></label>
 															<div class="col-lg-9 col-xl-6">
 																<h5 class="font-weight-bold mt-10 mb-6">Password</h5>
 															</div>
-														</div>	
+														</div>
 																<div class="form-group row">
 																<label class="col-xl-3 col-lg-3 col-form-label text-right">Change Password</label>
 																<div class="col-lg-9 col-xl-6">
 																	<div class="input-group input-group-lg ">
-																		
+
 																		<a href="admin-change-password" class="btn btn-danger btn-shadow-hover font-weight-bold mr-2">Change Password</a></div>
 																	</div>
-																	
-																</div>																
+
+																</div>
 																<!--end::Body-->
 															</form>
+															@endforeach
 															<!--end::Form-->
 														</div>
-														
-													</div>																					
-												
-					
+
+													</div>
+
+
 					<!--end: Datatable-->
 
 				<!--end::Body-->
