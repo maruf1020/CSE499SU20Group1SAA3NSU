@@ -261,3 +261,9 @@ Route::get('/admin-institutions', function () {
 Route::get('/admin-verified-institutions', function () {
     return view('dashboard.admin.admin-verified-institutions');
 });
+Route::get('/admin-verified-institutions-insider', function () {
+    return view('dashboard.admin.admin-verified-institutions-insider');
+});
+Route::get('/admin-add-admin', function () {
+    return view('dashboard.admin.admin-add-admin');
+});

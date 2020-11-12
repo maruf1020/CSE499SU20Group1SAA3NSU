@@ -15,8 +15,8 @@
 				<!--begin::Header-->
 				<div class="card-header py-3">
 								<div class="card-title align-items-start flex-column">
-									<h3 class="card-label font-weight-bolder text-dark">Personal Information</h3>
-									<span class="text-muted font-weight-bold font-size-sm mt-1">Update your personal informaiton</span>
+									<h3 class="card-label font-weight-bolder text-dark">Admin Information</h3>
+									<span class="text-muted font-weight-bold font-size-sm mt-1">Admin and there power</span>
 								</div>
 								<div class="card-toolbar">		
 
@@ -28,7 +28,7 @@
 									class="btn btn-primary mr-2"
 									data-toggle="modal"
 									data-target="#exampleModalCenter">
-									Add New Institution
+									Add New Admin
 								</button>
 
 								<!-- Modal 1 add new modal:: start-->
@@ -50,17 +50,35 @@
 											</div>
 											<div class="modal-body">
 												<div class="form-group">
-													<label>Institution name</label>
+													<label>Admin name</label>
 													<input
 														type="email"
 														class="form-control form-control-lg"
-														placeholder="Write Institution name"></div>
+														placeholder="Write Admin Name"></div>
 													<div class="form-group">
-														<label>Institution EIN Number</label>
+														<label>Phone Number</label>
 														<input
 															type="email"
 															class="form-control form-control-lg"
-															placeholder="Write Institution EIN Number"></div>
+															placeholder="Write Phone Number "></div>
+															<div class="form-group">
+															<label>Email</label>
+															<input
+															type="email"
+															class="form-control form-control-lg"
+															placeholder="Write Email"></div>
+															<div class="form-group">
+															<label>Initial Password</label>
+															<input
+															type="email"
+															class="form-control form-control-lg"
+															placeholder="Write Initial password"></div>
+															<div class="form-group">
+															<label>Power</label>
+															<input
+															type="email"
+															class="form-control form-control-lg"
+															placeholder="Write admin power"></div>
 													</div>
 													<div class="modal-footer">
 														<button
@@ -95,17 +113,29 @@
 											</div>
 											<div class="modal-body">
 												<div class="form-group">
-													<label>Institution name</label>
+												<label>Admin name</label>
 													<input
 														type="email"
 														class="form-control form-control-lg"
-														placeholder="North South University"></div>
+														placeholder="MD. maruf Billah"></div>
 													<div class="form-group">
-														<label>Institution EIN Number</label>
+														<label>Email</label>
 														<input
 															type="email"
 															class="form-control form-control-lg"
-															placeholder="Write Institution EIN Number"></div>
+															placeholder="maruf.billah@northsouth.edu"></div>												
+															<div class="form-group">
+															<label>phone Number</label>
+															<input
+															type="email"
+															class="form-control form-control-lg"
+															placeholder="+8801675708783"></div>
+															<div class="form-group">
+															<label>Power</label>
+															<input
+															type="email"
+															class="form-control form-control-lg"
+															placeholder="1"></div>
 													</div>
 													<div class="modal-footer">
 														<button
@@ -144,35 +174,73 @@
 									<table class="table table-bordered mb-6">
 															<thead>
 																<tr>
-																	<th scope="col">#</th>
-																	<th scope="col">Institution name </th>
-																	<th scope="col">EIN ID</th>
-																	<th scope="col">Description</th>
+																	<th scope="col">Serial No</th>
+																	<th scope="col">Admin name </th>
+																	<th scope="col">Phone Number</th>
+																	<th scope="col">Email</th>
+																	<th scope="col">Power</th>
+																	<th scope="col">Status</th>
 																</tr>
 															</thead>
 															<tbody>
 																<tr>
 																	<th scope="row">1</th>
-																	<td>North South University</td>
-																	<td>5542</td>
+																	<td>Maruf Billah</td>
+																	<td>+8801675708783</td>
+																	<td>maruf.billah@northsouth.edu</td>
+																	<td>1</td>
 																	<td>
-																	<a href="admin-verified-institutions-insider" class="btn btn-light-success font-weight-bold mr-2">View</a>
+																		
+
+																<p>
+																	<a href="#" class="btn btn-icon btn-light-success btn-sm mr-2" data-toggle="modal" data-target="#exampleModalCenterEdit">
+																		<i class="flaticon2-pen text-warning"></i>
+																	</a>
+																	<a href="#" class="btn btn-icon btn-light-primary btn-sm mr-2">
+																		<i class="flaticon2-delete text-danger"></i>
+																	</a>
+																	
+																	
+																</p>
+
+
+
 																	</td>
 																</tr>
 																<tr>
 																	<th scope="row">2</th>
-																	<td>Dhanmondi Model School And College</td>
-																	<td>5584</td>
+																	<td>Barkatullah Hossain</td>
+																	<td>+8801685558993</td>
+																	<td>barkatullah@northsouth.edu</td>
+																	<td>1</td>
 																	<td>
-																	<a href="admin-verified-institutions-insider" class="btn btn-light-success font-weight-bold mr-2">View</a>
+																	<p>
+																	<a href="#" class="btn btn-icon btn-light-success btn-sm mr-2" data-toggle="modal" data-target="#exampleModalCenterEdit">
+																		<i class="flaticon2-pen text-warning"></i>
+																	</a>
+																	<a href="#" class="btn btn-icon btn-light-primary btn-sm mr-2">
+																		<i class="flaticon2-delete text-danger"></i>
+																	</a>
+																	
+																</p>
 																	</td>
 																</tr>
 																<tr>
-																	<th scope="row">3</th>
-																	<td>Abrakidabra Coaching Center</td>
-																	<td>8874</td>
+																<th scope="row">3</th>
+																	<td>Iftekharul Alam shuvo</td>
+																	<td>+8801754455420</td>
+																	<td>intekharul.alam@northsouth.edu</td>
+																	<td>3</td>
 																	<td>
-																	<a href="admin-verified-institutions-insider" class="btn btn-light-success font-weight-bold mr-2">View</a>
+																	<p>
+																	<a href="#" class="btn btn-icon btn-light-success btn-sm mr-2" data-toggle="modal" data-target="#exampleModalCenterEdit">
+																		<i class="flaticon2-pen text-warning"></i>
+																	</a>
+																	<a href="#" class="btn btn-icon btn-light-primary btn-sm mr-2">
+																		<i class="flaticon2-delete text-danger"></i>
+																	</a>
+																	
+																</p>
 																	</td>
 																</tr>
 															</tbody>
