@@ -35,7 +35,7 @@
 
 							<!--end::Header-->
 							<!--begin::Form-->
-							@foreach ($personalInfo as $key => $value)
+							@foreach ($user as $key => $value)
 							<form class="form">
 								<!--begin::Body-->
 								<div class="card-body">
@@ -90,7 +90,7 @@
 													<input
 														class="form-control form-control-lg form-control-solid"
 														type="text"
-														value="{{ $value->user->name }}"></div>
+														value="{{ $value->name }}"></div>
 
 
 
@@ -102,7 +102,7 @@
 															<input
 																class="form-control form-control-lg form-control-solid"
 																type="text"
-																value="{{ $value->area }}">
+																value="{{ $value->personal_info->area}}">
 																<!-- <span class="form-text text-muted">If you want your invoices addressed to a
 																	company. Leave blank to use your full name.</span> -->
 															</div>
@@ -125,7 +125,7 @@
 																	<input
 																		type="text"
 																		class="form-control form-control-lg form-control-solid"
-																		value="{{ $value->phone }}"
+																		value="0{{ $value->personal_info->phone }}"
 																		placeholder="Phone"></div>
 																	<span class="form-text text-muted">We'll never share your email with anyone else.</span>
 																</div>
@@ -142,7 +142,7 @@
 																		<input
 																			type="text"
 																			class="form-control form-control-lg form-control-solid"
-																			value=""
+																			value="{{ $value->email }}"
 																			placeholder="Email"></div>
 																	</div>
 

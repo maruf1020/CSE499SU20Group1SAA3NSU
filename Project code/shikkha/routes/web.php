@@ -22,8 +22,14 @@ Route::get('/home', 'HomeController@index');
 // Route::get('/mail', 'HomeController@test');
 Route::get('/mail', 'mailController@sendmail');
 
+//profile information
+// Route::get('/personal-infomation', 'personalInfoController@index')->name('personal-infomation');
+Route::resource('/personal-infomation','personalInformationController');
 
-Route::get('/personal-infomation', 'personalInfoController@index')->name('personal-infomation');
+//institution
+Route::resource('/institution','institutionController');
+// Route::resource('/unit','UnitController');
+
 
 
 

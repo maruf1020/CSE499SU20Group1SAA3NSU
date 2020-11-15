@@ -3,11 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\User;
 
-class personalInfo extends Model
+class institution extends Model
 {
     protected $guarded=[];
-
-    
 }
