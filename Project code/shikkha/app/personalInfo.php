@@ -9,5 +9,9 @@ class personalInfo extends Model
 {
     protected $guarded=[];
 
-    
+    public function user(){
+      return $this->belongsTo(user::class,'personal_id','personal_id');
+    }
+
+
 }

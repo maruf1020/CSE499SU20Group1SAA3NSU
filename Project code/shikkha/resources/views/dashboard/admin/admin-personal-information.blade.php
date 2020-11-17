@@ -13,13 +13,19 @@
 			<!--begin::Card-->
 			<div class="card card-custom">
 				<!--begin::Header-->
+
 				<div class="card-header py-3">
 								<div class="card-title align-items-start flex-column">
 									<h3 class="card-label font-weight-bolder text-dark">Personal Information</h3>
 									<span class="text-muted font-weight-bold font-size-sm mt-1">Update your personal informaiton</span>
 								</div>
 								<div class="card-toolbar">
-									<button type="reset" class="btn btn-success mr-2">Save Changes</button>
+									<!--begin::Form-->
+									@foreach ($user as $key => $value)
+									<form class="form" action="{{ route('personal-infomation.update',$value->personal_info->id) }}" method="POST">
+										@csrf
+										@method('PUT')
+									<button type="submit" class="btn btn-success mr-2">Save Changes</button>
 									<button type="reset" class="btn btn-secondary">Cancel</button>
 								</div>
 							</div>
@@ -34,9 +40,7 @@
 							<!--begin::Header-->
 
 							<!--end::Header-->
-							<!--begin::Form-->
-							@foreach ($user as $key => $value)
-							<form class="form">
+
 								<!--begin::Body-->
 								<div class="card-body">
 									<div class="row">
@@ -90,7 +94,7 @@
 													<input
 														class="form-control form-control-lg form-control-solid"
 														type="text"
-														value="{{ $value->name }}"></div>
+														value="{{ $value->name }}" name="name"></div>
 
 
 
@@ -102,7 +106,7 @@
 															<input
 																class="form-control form-control-lg form-control-solid"
 																type="text"
-																value="{{ $value->personal_info->area}}">
+																value="{{ $value->personal_info->area}}" name="area">
 																<!-- <span class="form-text text-muted">If you want your invoices addressed to a
 																	company. Leave blank to use your full name.</span> -->
 															</div>
@@ -126,7 +130,7 @@
 																		type="text"
 																		class="form-control form-control-lg form-control-solid"
 																		value="0{{ $value->personal_info->phone }}"
-																		placeholder="Phone"></div>
+																		placeholder="Phone" name="phone"></div>
 																	<span class="form-text text-muted">We'll never share your email with anyone else.</span>
 																</div>
 															</div>
@@ -143,7 +147,7 @@
 																			type="text"
 																			class="form-control form-control-lg form-control-solid"
 																			value="{{ $value->email }}"
-																			placeholder="Email"></div>
+																			placeholder="Email" name="email"></div>
 																	</div>
 
 

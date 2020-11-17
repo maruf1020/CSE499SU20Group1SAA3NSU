@@ -14,7 +14,11 @@ class institutionController extends Controller
      */
     public function index()
     {
-        return view('dashboard.admin.admin-institutions');
+        $instiutions=institution::all();
+        // dd($instiutions);
+        return view('dashboard.admin.admin-institutions',[
+          'instiutions'=>$instiutions,
+        ]);
     }
 
     /**
@@ -37,7 +41,7 @@ class institutionController extends Controller
     {
       $data= request()->validate([
         'name'=>'required|unique:institutions',
-        'ein-id'=>'required',
+        'ein'=>'required',
       ]);
       institution::create($data);
       // session()->flash('msg','Category Created Successfully');
@@ -61,9 +65,9 @@ class institutionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(institution $institution)
     {
-        //
+        return view('dashboard.admin.admin-institutions-edit')->with('institution', $institution);
     }
 
     /**
@@ -73,9 +77,16 @@ class institutionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,institution $institution)
     {
-        //
+      $data= request()->validate([
+        'name'=>'required|unique:institutions',
+        'ein'=>'required',
+      ]);
+      // dd($data);
+      $institution->update($data);
+      // session()->flash('msg','Category Updated Successfully');
+      return redirect(route('institution.index'));
     }
 
     /**

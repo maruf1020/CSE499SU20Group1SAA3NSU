@@ -46,7 +46,7 @@
 												<input type="text" class="form-control form-control-lg" placeholder="Write Institution name" name="name"></div>
 											<div class="form-group">
 												<label>Institution EIN Number</label>
-												<input type="text" class="form-control form-control-lg" placeholder="Write Institution EIN Number" name="ein-id"></div>
+												<input type="text" class="form-control form-control-lg" placeholder="Write Institution EIN Number" name="ein"></div>
 										</div>
 
 
@@ -125,15 +125,18 @@
 											</tr>
 										</thead>
 										<tbody>
+											@foreach ($instiutions as $key=>$value)
+
+
 											<tr>
-												<th scope="row">1</th>
-												<td>North South University</td>
-												<td>5542</td>
+												<th scope="row">{{ $key+1 }}</th>
+												<td>{{ $value->name }}</td>
+												<td>{{ $value->ein }}</td>
 												<td>
 
 
 													<p>
-														<a href="#" class="btn btn-icon btn-light-success btn-sm mr-2" data-toggle="modal" data-target="#exampleModalCenterEdit">
+														<a href="{{ route('institution.edit',$value->id) }}" class="btn btn-icon btn-light-success btn-sm mr-2">
 															<i class="flaticon2-pen text-warning"></i>
 														</a>
 														<a href="#" class="btn btn-icon btn-light-primary btn-sm mr-2">
@@ -149,42 +152,9 @@
 
 												</td>
 											</tr>
-											<tr>
-												<th scope="row">2</th>
-												<td>Dhanmondi Model School And College</td>
-												<td>5584</td>
-												<td>
-													<p>
-														<a href="#" class="btn btn-icon btn-light-success btn-sm mr-2" data-toggle="modal" data-target="#exampleModalCenterEdit">
-															<i class="flaticon2-pen text-warning"></i>
-														</a>
-														<a href="#" class="btn btn-icon btn-light-primary btn-sm mr-2">
-															<i class="flaticon2-delete text-danger"></i>
-														</a>
-														<a href="#" class="btn btn-icon btn-light-warning btn-sm mr-2">
-															<i class="flaticon2-open-text-book text-primary"></i>
-														</a>
-													</p>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">3</th>
-												<td>Abrakidabra Coaching Center</td>
-												<td>8874</td>
-												<td>
-													<p>
-														<a href="#" class="btn btn-icon btn-light-success btn-sm mr-2" data-toggle="modal" data-target="#exampleModalCenterEdit">
-															<i class="flaticon2-pen text-warning"></i>
-														</a>
-														<a href="#" class="btn btn-icon btn-light-primary btn-sm mr-2">
-															<i class="flaticon2-delete text-danger"></i>
-														</a>
-														<a href="#" class="btn btn-icon btn-light-warning btn-sm mr-2">
-															<i class="flaticon2-open-text-book text-primary"></i>
-														</a>
-													</p>
-												</td>
-											</tr>
+												@endforeach
+
+
 										</tbody>
 									</table>
 									<!-- table end  -->

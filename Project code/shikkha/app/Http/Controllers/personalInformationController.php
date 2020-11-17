@@ -75,9 +75,21 @@ class personalInformationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,personalInfo $personal_infomation)
     {
-        //
+      $data=request()->validate([
+        'phone'=>'required',
+        'area'=>'required',
+      ]);
+      $data1=request()->validate([
+        'name'=>'required',
+        'email'=>'required',
+      ]);
+      
+
+      $personal_infomation->update($data);
+      // session()->flash('msg','Category Updated Successfully');
+      return redirect(route('personal-infomation.index'));
     }
 
     /**
