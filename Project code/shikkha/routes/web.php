@@ -273,3 +273,125 @@ Route::get('/admin-verified-institutions-insider', function () {
 Route::get('/admin-add-admin', function () {
     return view('dashboard.admin.admin-add-admin');
 });
+
+
+// Institution
+Route::get('/institution-general-information', function () {
+    return view('dashboard.institution.general-information');
+});
+Route::get('/institution-personal-information', function () {
+    return view('dashboard.institution.personal-information');
+});
+Route::get('/institution-package', function () {
+    return view('dashboard.institution.package');
+});
+Route::get('/institution-change-password', function () {
+    return view('dashboard.institution.change-password');
+});
+
+Route::get('/institution-faculty', function () {
+    return view('dashboard.institution.faculty');
+});
+Route::get('/institution-student', function () {
+    return view('dashboard.institution.student');
+});
+Route::get('/institution-courses', function () {
+    return view('dashboard.institution.courses');
+});
+Route::get('/institution-student-course-requests', function () {
+    return view('dashboard.institution.student-course-requests');
+});
+
+Route::get('/institution-faculty-attendance', function () {
+    return view('dashboard.institution.faculty-attendance');
+});
+Route::get('/institution-student-attendance', function () {
+    return view('dashboard.institution.student-attendance');
+});
+Route::get('/institution-results', function () {
+    return view('dashboard.institution.results');
+});
+Route::get('/institution-view-evaluation', function () {
+    return view('dashboard.institution.view-evaluation');
+});
+
+Route::get('/institution-notifications', function () {
+    return view('dashboard.institution.notifications');
+});
+Route::get('/institution-message', function () {
+    return view('dashboard.institution.message');
+});
+Route::get('/institution-events', function () {
+    return view('dashboard.institution.events');
+});
+Route::get('/institution-notice', function () {
+    return view('dashboard.institution.notice');
+});
+
+Route::get('/institution-institution-rules', function () {
+    return view('dashboard.institution.institution-rules');
+});
+Route::get('/institution-add-role', function () {
+    return view('dashboard.institution.add-role');
+});
+Route::get('/institution-data-backup', function () {
+    return view('dashboard.institution.data-backup');
+});
+Route::get('/institution-result-backup', function () {
+    return view('dashboard.institution.result-backup');
+});
+Route::get('/institution-notice', function () {
+    return view('dashboard.institution.notice');
+});
+
+Route::get('/institution-calender', function () {
+    return view('dashboard.institution.calender');
+});
+Route::get('/institution-todo', function () {
+    return view('dashboard.institution.todo');
+});
+Route::get('/institution-notes', function () {
+    return view('dashboard.institution.notes');
+});
+
+Route::get('/institution-current-session-courses', function () {
+    return view('dashboard.institution.current-session-courses');
+});
+Route::get('/institution-add-new-courses', function () {
+    return view('dashboard.institution.add-new-courses');
+});
+Route::get('/institution-faculty-assign', function () {
+    return view('dashboard.institution.faculty-assign');
+});
+Route::get('/institution-request-courses', function () {
+    return view('dashboard.institution.request-courses');
+});
+Route::get('/institution-pre-advising-rules', function () {
+    return view('dashboard.institution.pre-advising-rules');
+});
+Route::get('/institution-advising-rules', function () {
+    return view('dashboard.institution.advising-rules');
+});
+
+
+Route::get('/institution-insider1', function () {
+    return view('dashboard.institution.insider1');
+});
+Route::get('/institution-insider2', function () {
+    return view('dashboard.institution.insider2');
+});
+Route::get('/institution-insider3', function () {
+    return view('dashboard.institution.insider3');
+});
+Route::get('/institution-insider4', function () {
+    return view('dashboard.institution.insider4');
+});
+Route::get('/institution-insider5', function () {
+    return view('dashboard.institution.insider5');
+});
+
+
+
+
+
+

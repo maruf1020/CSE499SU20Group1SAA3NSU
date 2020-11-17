@@ -365,6 +365,15 @@
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
+                                    <span class="menu-text">Institution Rules</span>
+                                </a>
+
+                            </li>
+                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                                <a href="javascript:;" class="menu-link menu-toggle">
+                                    <i class="menu-bullet menu-bullet-line">
+                                        <span></span>
+                                    </i>
                                     <span class="menu-text">Add role</span>
                                 </a>
 
@@ -506,7 +515,7 @@
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
-                                    <span class="menu-text">Offer Courses</span>
+                                    <span class="menu-text">Current Session Courses</span>
                                 </a>
 
                             </li>
@@ -515,7 +524,7 @@
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
-                                    <span class="menu-text">Assign Courses</span>
+                                    <span class="menu-text">Add New Courses</span>
                                 </a>
 
                             </li>
@@ -524,7 +533,7 @@
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
-                                    <span class="menu-text">View Courses</span>
+                                    <span class="menu-text">Faculty Assign</span>
                                 </a>
 
                             </li>
@@ -533,7 +542,7 @@
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
-                                    <span class="menu-text">Faculty Request Course</span>
+                                    <span class="menu-text">Request Course</span>
                                 </a>
 
                             </li>
