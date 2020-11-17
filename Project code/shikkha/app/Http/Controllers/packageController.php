@@ -3,16 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\institution;
+use App\package;
 
-class institutionController extends Controller
+class packageController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
      public function __construct()
      {
          $this->middleware('auth');
@@ -20,11 +19,9 @@ class institutionController extends Controller
 
     public function index()
     {
-        $instiutions=institution::all();
-        // dd($instiutions);
-        return view('dashboard.admin.admin-institutions',[
-          'instiutions'=>$instiutions,
-        ]);
+        $packages=package::all();
+        return view('dashboard.admin.admin-pricing')->with('packages',$packages);
+
     }
 
     /**
@@ -45,13 +42,7 @@ class institutionController extends Controller
      */
     public function store(Request $request)
     {
-      $data= request()->validate([
-        'name'=>'required|unique:institutions',
-        'ein'=>'required',
-      ]);
-      institution::create($data);
-      session()->flash('msg','Institution Created Successfully');
-      return redirect(route('institution.index'));
+        //
     }
 
     /**
@@ -60,9 +51,9 @@ class institutionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(institution $institution)
+    public function show($id)
     {
-      $institution->delete();
+        //
     }
 
     /**
@@ -71,9 +62,9 @@ class institutionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(institution $institution)
+    public function edit($id)
     {
-        return view('dashboard.admin.admin-institutions-edit')->with('institution', $institution);
+        //
     }
 
     /**
@@ -83,16 +74,9 @@ class institutionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,institution $institution)
+    public function update(Request $request, $id)
     {
-      $data= request()->validate([
-        'name'=>'required|unique:institutions',
-        'ein'=>'required',
-      ]);
-      // dd($data);
-      $institution->update($data);
-      session()->flash('msg','Institution Updated Successfully');
-      return redirect(route('institution.index'));
+        //
     }
 
     /**
@@ -101,10 +85,8 @@ class institutionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(institution $institution)
+    public function destroy($id)
     {
-
-
+        //
     }
-
 }

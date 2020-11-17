@@ -152,7 +152,7 @@
                         <ul class="menu-subnav">
 
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="admin-pricing" class="menu-link menu-toggle">
+                                <a href="{{ route('package.index') }}" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
@@ -168,7 +168,7 @@
                                 </a>
                             </li>
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="admin-verified-institutions" class="menu-link menu-toggle">
+                                <a href="{{ route('verify-institution.index') }}" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>

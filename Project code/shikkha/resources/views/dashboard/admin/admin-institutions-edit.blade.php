@@ -66,6 +66,13 @@
 														</button>
 													</div>
 													<div class="modal-body">
+														@if ($errors->any())
+														<div class="alert alert-danger">
+																@foreach ($errors->all() as $error)
+																<strong>{{ $error }} </br></strong>
+																@endforeach
+														</div>
+														@endif
 														<div class="form-group">
 															<label>Institution name</label>
 															<input type="text" class="form-control form-control-lg" placeholder="Write Institution name" name="name" value="{{ $institution->name }}"></div>

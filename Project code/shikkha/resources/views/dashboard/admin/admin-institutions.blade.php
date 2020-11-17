@@ -15,8 +15,8 @@
 				<!--begin::Header-->
 				<div class="card-header py-3">
 					<div class="card-title align-items-start flex-column">
-						<h3 class="card-label font-weight-bolder text-dark">Personal Information</h3>
-						<span class="text-muted font-weight-bold font-size-sm mt-1">Update your personal informaiton</span>
+						<h3 class="card-label font-weight-bolder text-dark">All Institution Information</h3>
+						<span class="text-muted font-weight-bold font-size-sm mt-1">Here is a list of institution</span>
 					</div>
 					<div class="card-toolbar">
 
@@ -36,11 +36,19 @@
 									<div class="modal-content">
 										<div class="modal-header">
 											<h5 class="modal-title" id="exampleModalLabel">Add New Institution</h5>
+
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<i aria-hidden="true" class="ki ki-close"></i>
 											</button>
 										</div>
 										<div class="modal-body">
+											@if ($errors->any())
+											<div class="alert alert-danger">
+													@foreach ($errors->all() as $error)
+													<strong>{{ $error }} </br></strong>
+													@endforeach
+											</div>
+											@endif
 											<div class="form-group">
 												<label>Institution name</label>
 												<input type="text" class="form-control form-control-lg" placeholder="Write Institution name" name="name"></div>
@@ -139,12 +147,10 @@
 														<a href="{{ route('institution.edit',$value->id) }}" class="btn btn-icon btn-light-success btn-sm mr-2">
 															<i class="flaticon2-pen text-warning"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-light-primary btn-sm mr-2">
+														<a href="javascript:void(0)" data-url="{{ route('institution.show',$value->id) }}" class="btn btn-icon btn-light-primary btn-sm mr-2 delete">
 															<i class="flaticon2-delete text-danger"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-light-warning btn-sm mr-2">
-															<i class="flaticon2-open-text-book text-primary"></i>
-														</a>
+
 
 													</p>
 

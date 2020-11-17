@@ -14,6 +14,11 @@ class personalInformationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+     public function __construct()
+     {
+         $this->middleware('auth');
+     }
+
     public function index()
     {
       $personal_id=Auth::user()->personal_id;
@@ -85,10 +90,10 @@ class personalInformationController extends Controller
         'name'=>'required',
         'email'=>'required',
       ]);
-      
+
 
       $personal_infomation->update($data);
-      // session()->flash('msg','Category Updated Successfully');
+      session()->flash('msg','Profile Updated Successfully');
       return redirect(route('personal-infomation.index'));
     }
 

@@ -20,8 +20,7 @@
 					</div>
 					<div class="card-title justify-content-between ">
 						<div class="card-toolbar">
-							<button type="reset" class="btn btn-success mr-2">Save Change</button>
-							<button type="reset" class="btn btn-secondary">Cancel</button>
+
 						</div>
 					</div>
 
@@ -32,16 +31,19 @@
 					<!--begin: Datatable-->
 					 <div class="card-body">
 										<div class="row justify-content-center text-center my-0 my-md-25">
+											@foreach ($packages as $key => $value)
+
+
 											<!-- begin: Pricing-->
 											<div class="col-md-4 col-xxl-3 bg-white rounded-left shadow-sm">
 												<div class="pt-25 pb-25 pb-md-10 px-4">
-													
-													<input type="text" class="form-control border-1 mb-15" name="name" placeholder="Basic">	
-													<input type="text" class="form-control border-1 px-7 py-3 font-size-h1 font-weight-bold d-inline-flex flex-center bg-primary-o-10 rounded-lg mb-15" name="type" placeholder="Free">	
-													
+
+													<input type="text" class="form-control border-1 mb-15" name="name" placeholder="Basic" value="{{ $value->name }}">
+													<input type="text" class="form-control border-1 px-7 py-3 font-size-h1 font-weight-bold d-inline-flex flex-center bg-primary-o-10 rounded-lg mb-15" name="type" placeholder="Free" value="{{ $value->cost }}">
+
 													<br>
-													
-													<textarea class="form-control border-1 mb-10 d-flex flex-column text-dark-50" name="memo" rows="4" placeholder="Lorem ipsum dolor sit amet adipiscing elitsed do eiusmod tempors"></textarea>
+
+													<textarea class="form-control border-1 mb-10 d-flex flex-column text-dark-50" name="memo" rows="4" placeholder="" >{{ $value->Description }}</textarea>
 													<br>
 													<div class="form-group mb-10">
 														<label>Powers</label>
@@ -79,98 +81,9 @@
 												</div>
 											</div>
 											<!-- end: Pricing-->
-											<!-- begin: Pricing-->
-											<div class="col-md-4 col-xxl-3 bg-primary my-md-n15 rounded shadow-sm">
-												<div class="pt-25 pt-md-37 pb-25 pb-md-10 py-md-28 px-4">
-												<input type="text" class="form-control border-1 mb-15" name="name" placeholder="Professional">	
-													<input type="text" class="form-control border-1 px-7 py-3 font-size-h1 font-weight-bold d-inline-flex flex-center bg-primary-o-10 rounded-lg mb-15" name="type" placeholder="৳1000">	
-													
-													<br>
-													
-													<textarea class="form-control border-1 mb-10 d-flex flex-column text-dark-50" name="memo" rows="4" placeholder="Lorem ipsum dolor sit amet adipiscing elitsed do eiusmod tempors"></textarea>
-													<br>
-													<div class="form-group mb-10">
-														<label>Powers</label>
-														<div class="checkbox-list">
-															<label class="checkbox checkbox-dark" >
-															<input type="checkbox" checked="checked" >Power 01
-															<span></span></label>
-															<label class="checkbox checkbox-dark">
-															<input type="checkbox"  checked="checked">Power 02
-															<span></span></label>
-															<label class="checkbox checkbox-dark">
-															<input type="checkbox" checked="checked">Power 03
-															<span></span></label>
-															<label class="checkbox checkbox-dark ">
-															<input type="checkbox" checked="checked">Power 04
-															<span></span></label>
-															<label class="checkbox checkbox-dark">
-															<input type="checkbox"  checked="checked">Power 05
-															<span></span></label>
-															<label class="checkbox checkbox-dark">
-															<input type="checkbox" checked="checked">Power 06
-															<span></span></label>
-															<label class="checkbox checkbox-dark">
-															<input type="checkbox" > Power 07
-															<span></span></label>
-															<label class="checkbox checkbox-dark">
-															<input type="checkbox"  >Power 08
-															<span></span></label>
-															<label class="checkbox checkbox-dark">
-															<input type="checkbox" >Power 09
-															<span></span></label>
-														</div>
-													</div>
-													<button type="button" class="btn btn-dark text-uppercase font-weight-bolder px-15 py-3">Update</button>
-												</div>
-											</div>
-											<!-- end: Pricing-->
-											<!-- begin: Pricing-->
-											<div class="col-md-4 col-xxl-3 bg-white rounded-right shadow-sm">
-												<div class="pt-25 pb-25 pb-md-10 px-4">
-												<input type="text" class="form-control border-1 mb-15" name="name" placeholder="Extended">	
-													<input type="text" class="form-control border-1 px-7 py-3 font-size-h1 font-weight-bold d-inline-flex flex-center bg-primary-o-10 rounded-lg mb-15" name="type" placeholder="৳5000">	
-													
-													<br>
-													
-													<textarea class="form-control border-1 mb-10 d-flex flex-column text-dark-50" name="memo" rows="4" placeholder="Lorem ipsum dolor sit amet adipiscing elitsed do eiusmod tempors"></textarea>
-													<br>
-													<div class="form-group mb-10">
-														<label>Powers</label>
-														<div class="checkbox-list">
-															<label class="checkbox" >
-															<input type="checkbox" checked="checked" >Power 01
-															<span></span></label>
-															<label class="checkbox">
-															<input type="checkbox"  checked="checked">Power 02
-															<span></span></label>
-															<label class="checkbox">
-															<input type="checkbox" checked="checked">Power 03
-															<span></span></label>
-															<label class="checkbox ">
-															<input type="checkbox" checked="checked">Power 04
-															<span></span></label>
-															<label class="checkbox">
-															<input type="checkbox"  checked="checked">Power 05
-															<span></span></label>
-															<label class="checkbox">
-															<input type="checkbox" checked="checked">Power 06
-															<span></span></label>
-															<label class="checkbox">
-															<input type="checkbox" checked="checked"> Power 07
-															<span></span></label>
-															<label class="checkbox">
-															<input type="checkbox"  checked="checked">Power 08
-															<span></span></label>
-															<label class="checkbox">
-															<input type="checkbox" checked="checked">Power 09
-															<span></span></label>
-														</div>
-													</div>
-													<button type="button" class="btn btn-primary text-uppercase font-weight-bolder px-15 py-3">Update</button>
-												</div>
-											</div>
-											<!-- end: Pricing-->
+												@endforeach
+
+
 										</div>
 									</div>
 					<!--end: Datatable-->

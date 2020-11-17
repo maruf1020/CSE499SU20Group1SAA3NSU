@@ -31,6 +31,8 @@
 	<!--begin::Custom css-->
 	<link href="{{ asset('assets/css/custom/mystyle.css') }}" rel="stylesheet" type="text/css" />
 	<!--begin::Custom css-->
+	<!-- SweetAlert2 -->
+	<link rel="stylesheet" href="{{asset('assets/css/custom/sweetalert2.min.css')}}">
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -116,6 +118,25 @@
 			<!--end::Aside-->
 			<!--begin::Wrapper-->
 			<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+
+				@if (session()->has('msg'))
+
+				<div class="container alert-pos">
+					<div class="alert alert-success alert-dismissible fade show" role="alert" style="width: 40%;
+    position: absolute;
+    z-index: 1;
+    right: -215px;
+    top: 100px;
+    transform: translate(-50%, -50%);">
+		
+						<p class="text-white">{{ session()->get('msg') }}</p>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				</div>
+
+				@endif
 				<!--begin::Header-->
 				<div id="kt_header" class="header header-fixed">
 					<!--begin::Container-->
@@ -231,13 +252,41 @@
 	<!--end::used by exam page-->
 	<!-- START::exam page karban board drag and drop js  -->
 	<script src="assets/js/custom/kanban.bundle.js"></script>
-	<script src="assets/js/custom/kanban-board.js">
-		< /script <!--End::exam page karban board drag and drop js-- >
+	<script src="assets/js/custom/kanban-board.js"></script>
+	<!-- SweetAlert2 -->
+	<script src="{{asset('assets/css/custom/sweetalert2.min.js')}}"> </script>
+
+	<script type="text/javascript">
+		$('.delete').on('click', function() {
+			var btn = this;
+			Swal.fire({
+				title: 'Are you sure?',
+				text: "You won't be able to revert this!",
+				type: 'warning',
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+				cancelButtonColor: '#d33',
+				confirmButtonText: 'Yes, delete it!'
+			}).then((result) => {
+				if (result.value) {
+					let url = $(this).attr('data-url');
+					$.get(url, function(result) {
+						Swal.fire(
+							'Deleted!',
+							'Record has been deleted.',
+							'success'
+						);
+						$(btn).closest('tr').fadeOut(1500);
+					});
+				}
+			})
+		});
+	</script>
 
 
 
 
 
-		<
-		/body> <!--end::Body-- > < /
+	< /body>
+		<!--end::Body-- > < /
 		html >

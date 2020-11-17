@@ -15,68 +15,16 @@
 				<!--begin::Header-->
 				<div class="card-header py-3">
 								<div class="card-title align-items-start flex-column">
-									<h3 class="card-label font-weight-bolder text-dark">Personal Information</h3>
-									<span class="text-muted font-weight-bold font-size-sm mt-1">Update your personal informaiton</span>
+									<h3 class="card-label font-weight-bolder text-dark">Pending Institution</h3>
+									<span class="text-muted font-weight-bold font-size-sm mt-1">Here all the list of pending institution waiting for approval</span>
 								</div>
-								<div class="card-toolbar">		
-
-
-								
-								<!-- Button trigger modal-->
-								<button
-									type="button"
-									class="btn btn-primary mr-2"
-									data-toggle="modal"
-									data-target="#exampleModalCenter">
-									Add New Institution
-								</button>
-
-								<!-- Modal 1 add new modal:: start-->
-								<div
-									class="modal fade"
-									id="exampleModalCenter"
-									data-backdrop="static"
-									tabindex="-1"
-									role="dialog"
-									aria-labelledby="staticBackdrop"
-									aria-hidden="true">
-									<div class="modal-dialog modal-dialog-centered" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLabel">Add New Institution</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<i aria-hidden="true" class="ki ki-close"></i>
-												</button>
-											</div>
-											<div class="modal-body">
-												<div class="form-group">
-													<label>Institution name</label>
-													<input
-														type="email"
-														class="form-control form-control-lg"
-														placeholder="Write Institution name"></div>
-													<div class="form-group">
-														<label>Institution EIN Number</label>
-														<input
-															type="email"
-															class="form-control form-control-lg"
-															placeholder="Write Institution EIN Number"></div>
-													</div>
-													<div class="modal-footer">
-														<button
-															type="button"
-															class="btn btn-light-danger font-weight-bold"
-															data-dismiss="modal">Cancel</button>
-														<button type="button" class="btn btn-success font-weight-bold">Add New</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal 1 add new modal: end-->
+								<div class="card-toolbar">
 
 
 
-										<!-- Modal 2 Edit modal:: start-->
+
+
+
 								<div
 									class="modal fade"
 									id="exampleModalCenterEdit"
@@ -118,23 +66,22 @@
 											</div>
 										</div>
 										<!-- Modal 2 Edit modal: end-->
-									
-																		
 
-									<button type="reset" class="btn btn-danger mr-2">Cancel</button>
+
+
 									<!-- <button type="reset" class="btn btn-success mr-2">Save Changes</button> -->
 								</div>
 							</div>
 				<!--end::Header-->
 				<!--begin::Body-->
 				<div class="">
-					<!--begin: Datatable-->				
-													
+					<!--begin: Datatable-->
+
 					<div class="flex-row-fluid">
 										<!--begin::Card-->
 						<div class="card card-custom card-stretch">
 							<!--begin::Header-->
-							
+
 							<!--end::Header-->
 							<!--begin::Form-->
 							<form class="form">
@@ -151,43 +98,32 @@
 																</tr>
 															</thead>
 															<tbody>
+																@foreach ($verifiyInstiution as $key=>$value)
+
+
 																<tr>
-																	<th scope="row">1</th>
-																	<td>North South University</td>
-																	<td>5542</td>
+																	<th scope="row">{{ $key+1 }}</th>
+																	<td>{{ $value->institution->name }}</td>
+																	<td>{{ $value->institution->ein }}</td>
 																	<td>
-																	<a href="admin-verified-institutions-insider" class="btn btn-light-success font-weight-bold mr-2">View</a>
+																	<a href="{{ route('verify-institution.show',$value->id) }}" class="btn btn-light-success font-weight-bold mr-2">View</a>
 																	</td>
 																</tr>
-																<tr>
-																	<th scope="row">2</th>
-																	<td>Dhanmondi Model School And College</td>
-																	<td>5584</td>
-																	<td>
-																	<a href="admin-verified-institutions-insider" class="btn btn-light-success font-weight-bold mr-2">View</a>
-																	</td>
-																</tr>
-																<tr>
-																	<th scope="row">3</th>
-																	<td>Abrakidabra Coaching Center</td>
-																	<td>8874</td>
-																	<td>
-																	<a href="admin-verified-institutions-insider" class="btn btn-light-success font-weight-bold mr-2">View</a>
-																	</td>
-																</tr>
+																@endforeach
+
 															</tbody>
 														</table>
 									<!-- table end  -->
-																	
-								</div>																
+
+								</div>
 								<!--end::Body-->
 							</form>
 							<!--end::Form-->
 														</div>
-														
-													</div>																					
-												
-					
+
+													</div>
+
+
 					<!--end: Datatable-->
 
 				<!--end::Body-->
