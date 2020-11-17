@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 // Auth::routes(['verify' => true]);
 Auth::routes();
 
-Route::get('/', 'Auth\LoginController@index')->name('home');
+Route::get('/', 'Auth\LoginController@index')->name('login-page');
 Route::get('/home', 'HomeController@index');
 // Route::get('/mail', 'HomeController@test');
 Route::get('/mail', 'mailController@sendmail');
@@ -28,7 +28,10 @@ Route::resource('/personal-infomation','personalInformationController');
 
 //institution
 Route::resource('/institution','institutionController');
-// Route::resource('/unit','UnitController');
+//verify institution
+Route::resource('/verify-institution','verifyInstitutionController');
+//Package
+Route::resource('/package','packageController');
 
 
 
