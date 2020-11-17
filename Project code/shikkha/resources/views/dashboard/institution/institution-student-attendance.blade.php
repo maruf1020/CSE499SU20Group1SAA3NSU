@@ -15,8 +15,8 @@
 				<!--begin::Header-->
 				<div class="card-header py-3">
 								<div class="card-title align-items-start flex-column">
-									<h3 class="card-label font-weight-bolder text-dark">Faculty Attendance</h3>
-									<span class="text-muted font-weight-bold font-size-sm mt-1">Faculty Attendance and the information</span>
+									<h3 class="card-label font-weight-bolder text-dark">Student Attendance</h3>
+									<span class="text-muted font-weight-bold font-size-sm mt-1">Student Attendance and the information</span>
 								</div>
 								<div class="card-toolbar">		
 
@@ -47,35 +47,26 @@
 								<div class="card-title align-items-start flex-column">									
 									<div class="form-group row fv-plugins-icon-container">
 																<div class="col-lg-3">
-																	<select class="form-control" id="exampleSelectd">
-																		<option>Name</option>
-																		<option>2224</option>
-																		<option>3221</option>
-																		<option>4001</option>
-																		<option>3222</option>
-																	</select>
+																	<input
+																		class="form-control form-control-lg form-control-solid"
+																		type="text"																		
+																		placeholder="Name">
 																<div class="fv-plugins-message-container"></div></div>
 																<div class="col-lg-3">
-																	<select class="form-control" id="exampleSelectd">
-																			<option>Session</option>
-																			<option>2</option>
-																			<option>3</option>
-																			<option>4</option>
-																			<option>5</option>
-																		</select>
+																	<input
+																			class="form-control form-control-lg form-control-solid"
+																			type="text"
+																			placeholder="Session">
 																<div class="fv-plugins-message-container"></div></div>
 																<div class="col-lg-3">
-																	<select class="form-control" id="exampleSelectd">
-																			<option>Course</option>
-																			<option>2</option>
-																			<option>3</option>
-																			<option>4</option>
-																			<option>5</option>
-																		</select>
+																	<input
+																			class="form-control form-control-lg form-control-solid"
+																			type="text"
+																			placeholder="Course">
 																<div class="fv-plugins-message-container"></div></div>
 																<div class="col-lg-3">
 																	
-																	<button type="reset" class="btn btn-primary mr-2">Search</button>
+																	<button type="reset" class="btn btn-primary mr-2 mt-1">Search</button>
 																<div class="fv-plugins-message-container"></div></div>
 																
 															</div>

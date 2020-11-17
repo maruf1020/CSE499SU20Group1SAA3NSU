@@ -15,8 +15,8 @@
 				<!--begin::Header-->
 				<div class="card-header py-3">
 								<div class="card-title align-items-start flex-column">
-									<h3 class="card-label font-weight-bolder text-dark">Faculty Attendance</h3>
-									<span class="text-muted font-weight-bold font-size-sm mt-1">Faculty Attendance and the information</span>
+									<h3 class="card-label font-weight-bolder text-dark">Faculty evaluation</h3>
+									<span class="text-muted font-weight-bold font-size-sm mt-1">Faculty evaluation and the information</span>
 								</div>
 								<div class="card-toolbar">		
 
@@ -47,35 +47,26 @@
 								<div class="card-title align-items-start flex-column">									
 									<div class="form-group row fv-plugins-icon-container">
 																<div class="col-lg-3">
-																	<select class="form-control" id="exampleSelectd">
-																		<option>Name</option>
-																		<option>2224</option>
-																		<option>3221</option>
-																		<option>4001</option>
-																		<option>3222</option>
-																	</select>
+																	<input
+																		class="form-control form-control-lg form-control-solid"
+																		type="text"																		
+																		placeholder="Name">
 																<div class="fv-plugins-message-container"></div></div>
 																<div class="col-lg-3">
-																	<select class="form-control" id="exampleSelectd">
-																			<option>Session</option>
-																			<option>2</option>
-																			<option>3</option>
-																			<option>4</option>
-																			<option>5</option>
-																		</select>
+																	<input
+																			class="form-control form-control-lg form-control-solid"
+																			type="text"
+																			placeholder="Session">
 																<div class="fv-plugins-message-container"></div></div>
 																<div class="col-lg-3">
-																	<select class="form-control" id="exampleSelectd">
-																			<option>Course</option>
-																			<option>2</option>
-																			<option>3</option>
-																			<option>4</option>
-																			<option>5</option>
-																		</select>
+																	<input
+																			class="form-control form-control-lg form-control-solid"
+																			type="text"
+																			placeholder="Course">
 																<div class="fv-plugins-message-container"></div></div>
 																<div class="col-lg-3">
 																	
-																	<button type="reset" class="btn btn-primary mr-2">Search</button>
+																	<button type="reset" class="btn btn-primary mr-2 mt-1">Search</button>
 																<div class="fv-plugins-message-container"></div></div>
 																
 															</div>
@@ -109,45 +100,55 @@
 				<div class="card-body">
 					<!--begin: Datatable-->
 					<div class="datatable-bordered datatable-head-custom">
-						<table class="table table-bordered">
+					<table class="table table-bordered">
 							<thead>
 								<tr>
-									<th scope="col">Lecture No#</th>
-									<th scope="col">Lecture Date</th>
-									<th scope="col">Attended</th>
+									<th scope="col">SL No#</th>
+									<th scope="col">Questions</th>
+									<th scope="col"></th>
+
 								</tr>
 
 							</thead>
 							<tbody>
 								<tr>
 									<th>1</th>
-									<td>2020-07-02 08:45:15</td>
-									<td><span class="label label-xl label-rounded label-success mr-2">Yes</span></td>
-
-
-								</tr>
-								<tr>
-									<th>2</th>
-									<td>2020-07-02 08:45:15</td>
-									<td><span class="label label-xl label-rounded label-success mr-2">Yes</span></td>
+									<td>Are this course efficient ?</td>
+									<td>
+										75%
+									</td>
 
 								</tr>
 								<tr>
 									<th>2</th>
-									<td>2020-07-02 08:45:15</td>
-									<td><span class="label label-xl label-rounded label-danger mr-2">No</span></td>
+									<td>Does the course properly arranged ?</td>
+									<td>
+										85%
+									</td>
 
 								</tr>
 								<tr>
-									<th>2</th>
-									<td>2020-07-02 08:45:15</td>
-									<td><span class="label label-xl label-rounded label-danger mr-2">No</span></td>
+									<th>3</th>
+									<td>The teacher is co-operative with the Students</td>
+									<td>
+										100%
+									</td>
+
+								</tr>
+								<tr>
+									<th>4</th>
+									<td>Does the course offers a great education cirteria ?</td>
+									<td>
+										95%
+									</td>
 
 								</tr>
 								<tr>
 									<th>5</th>
-									<td>2020-07-02 08:45:15</td>
-									<td><span class="label label-xl label-rounded label-success mr-2">Yes</span></td>
+									<td>All over expereience </td>
+									<td>
+										80%
+									</td>
 
 								</tr>
 							</tbody>

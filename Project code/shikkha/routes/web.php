@@ -309,7 +309,7 @@ Route::get('/institution-student-attendance', function () {
     return view('dashboard.institution.institution-student-attendance');
 });
 Route::get('/institution-results', function () {
-    return view('dashboard.institution.institution-results');
+    return view('dashboard.institution.institution-results1');
 });
 Route::get('/institution-view-evaluation', function () {
     return view('dashboard.institution.institution-view-evaluation');
