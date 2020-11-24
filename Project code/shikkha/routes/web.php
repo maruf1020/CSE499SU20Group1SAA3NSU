@@ -17,10 +17,11 @@ use Illuminate\Support\Facades\Route;
 // Login Route
 // Auth::routes(['verify' => true]);
 Auth::routes();
+Route::get('/home', 'admin\HomeController@index');
 Route::get('/', 'Auth\LoginController@index')->name('login-page');
 
 Route::group(['prefix'=>'admin','middleware'=>['auth']],function (){
-    Route::get('/dashboard', 'admin\HomeController@index');
+
 // Route::get('/mail', 'HomeController@test');
 //    Route::get('/mail', 'mailController@sendmail');
 
