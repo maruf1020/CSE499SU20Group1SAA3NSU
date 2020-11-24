@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,22 +17,26 @@ use Illuminate\Support\Facades\Route;
 // Login Route
 // Auth::routes(['verify' => true]);
 Auth::routes();
-
 Route::get('/', 'Auth\LoginController@index')->name('login-page');
-Route::get('/home', 'HomeController@index');
+
+Route::group(['prefix'=>'admin','middleware'=>['auth']],function (){
+    Route::get('/dashboard', 'admin\HomeController@index');
 // Route::get('/mail', 'HomeController@test');
-Route::get('/mail', 'mailController@sendmail');
+//    Route::get('/mail', 'mailController@sendmail');
 
 //profile information
 // Route::get('/personal-infomation', 'personalInfoController@index')->name('personal-infomation');
-Route::resource('/personal-infomation','personalInformationController');
+    Route::resource('/personal-infomation','admin\personalInformationController');
 
 //institution
-Route::resource('/institution','institutionController');
+    Route::resource('/institution','admin\institutionController');
 //verify institution
-Route::resource('/verify-institution','verifyInstitutionController');
+    Route::resource('/verify-institution','admin\verifyInstitutionController');
 //Package
-Route::resource('/package','packageController');
+    Route::resource('/package','admin\packageController');
+});
+
+
 
 
 

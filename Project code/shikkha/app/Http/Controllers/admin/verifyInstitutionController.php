@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
-use App\institution;
+use App\Http\Controllers\Controller;
+use App\verifiyInstiution;
 
-class institutionController extends Controller
+class verifyInstitutionController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
      public function __construct()
      {
          $this->middleware('auth');
@@ -20,11 +20,10 @@ class institutionController extends Controller
 
     public function index()
     {
-        $instiutions=institution::all();
-        // dd($instiutions);
-        return view('dashboard.admin.admin-institutions',[
-          'instiutions'=>$instiutions,
-        ]);
+      $verifiyInstiution=verifiyInstiution::where('status',0)->get();
+      return view('dashboard.admin.admin-verified-institutions',[
+        'verifiyInstiution'=>$verifiyInstiution,
+      ]);
     }
 
     /**
@@ -45,13 +44,7 @@ class institutionController extends Controller
      */
     public function store(Request $request)
     {
-      $data= request()->validate([
-        'name'=>'required|unique:institutions',
-        'ein'=>'required',
-      ]);
-      institution::create($data);
-      session()->flash('msg','Institution Created Successfully');
-      return redirect(route('institution.index'));
+        //
     }
 
     /**
@@ -60,9 +53,9 @@ class institutionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(institution $institution)
+    public function show(verifiyInstiution $verify_institution)
     {
-      $institution->delete();
+        return view('dashboard.admin.admin-verified-institutions-insider')->with('verify_institution', $verify_institution);
     }
 
     /**
@@ -71,9 +64,9 @@ class institutionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(institution $institution)
+    public function edit($id)
     {
-        return view('dashboard.admin.admin-institutions-edit')->with('institution', $institution);
+        //
     }
 
     /**
@@ -83,16 +76,12 @@ class institutionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,institution $institution)
+    public function update(Request $request, verifiyInstiution $verify_institution)
     {
-      $data= request()->validate([
-        'name'=>'required|unique:institutions',
-        'ein'=>'required',
-      ]);
-      // dd($data);
-      $institution->update($data);
-      session()->flash('msg','Institution Updated Successfully');
-      return redirect(route('institution.index'));
+        $verify_institution->status=1;
+        $verify_institution->update();
+        session()->flash('msg','Institution Approved Successfully');
+        return redirect(route('verify-institution.index'));
     }
 
     /**
@@ -101,10 +90,8 @@ class institutionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(institution $institution)
+    public function destroy($id)
     {
-
-
+        //
     }
-
 }
