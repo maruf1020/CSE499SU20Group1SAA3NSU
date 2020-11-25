@@ -9,8 +9,9 @@
 ##### Step 8: then write the command "php artisan key:generate"
 ##### Step 9: then write the command "php artisan cache:clear"
 ##### Step 10: then write the command "php artisan config:clear"
-##### Step 11: then write the command "php -S localhost:8000 -t public"
-##### Step 12: Open browser and open the url -> "localhost:8000" or "localhost:8000/dashboard"
+##### Step 11: then write the command "php artisan migrate"
+##### Step 12: then write the command "php -S localhost:8000 -t public"
+##### Step 13: Open browser and open the url -> "localhost:8000" or "localhost:8000/dashboard"
 
 
 
