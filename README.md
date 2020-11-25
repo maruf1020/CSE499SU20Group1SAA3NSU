@@ -3,7 +3,7 @@
 ##### Step 2: Download the project on your device. 
 ##### Step 3: Rename the file ".env.example" to ".env"
 ##### Step 4: Open "Shikkha" Folder from "project code" folder 
-##### Step 5: Run commmand line or git bash 
+##### Step 5: Open Xaamp and turn on databse then Run commmand line or git bash 
 ##### Step 6: write the command "composer update"
 ##### Step 7: write the command "composer dump-autoload" 
 ##### Step 8: then write the command "php artisan key:generate"
