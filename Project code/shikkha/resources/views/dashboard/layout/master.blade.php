@@ -33,6 +33,50 @@
 	<!--begin::Custom css-->
 	<!-- SweetAlert2 -->
 	<link rel="stylesheet" href="{{asset('assets/css/custom/sweetalert2.min.css')}}">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src='https://meet.jit.si/external_api.js'></script>
+	{{-- <script src="{{ asset('assets/js/config.js') }}"></script> --}}
+	<script src="{{ asset('assets/js/myapp1.js') }}"></script>
+
+	@php
+	$name=Auth::user()->name;
+
+	@endphp
+	<script type="text/javascript">
+		var name = "<?php echo $name; ?>";
+	</script>
+
+
+	<script>
+		function slug(meeting) {
+			var meeting = meeting;
+			StartMeeting(meeting, name);
+
+		}
+		// $(function(){
+		//
+		//
+		// 		$('#meeting').on('click',function(){
+		// 				StartMeeting(meeting,name);
+		// 		});
+		// });
+	</script>
+
+
+	{{-- <script>
+        $(function(){
+            var meeting='cse499B';
+            $('#meeting').on('click',function(){
+                StartMeeting(meeting);
+            });
+        });
+
+
+
+    </script> --}}
+
+
+
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -128,7 +172,7 @@
     right: -215px;
     top: 100px;
     transform: translate(-50%, -50%);">
-		
+
 						<p class="text-white">{{ session()->get('msg') }}</p>
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
@@ -282,6 +326,8 @@
 			})
 		});
 	</script>
+
+
 
 
 

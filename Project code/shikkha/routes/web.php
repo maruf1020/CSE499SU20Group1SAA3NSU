@@ -17,8 +17,12 @@ use Illuminate\Support\Facades\Route;
 // Login Route
 // Auth::routes(['verify' => true]);
 Auth::routes();
-Route::get('/home', 'admin\HomeController@index');
+Route::get('/home', 'admin\HomeController@index')->name('home');
 Route::get('/', 'Auth\LoginController@index')->name('login-page');
+Route::resource('/meeting','meetingController');
+Route::get('/meeting/{meeting} ','meetingController@status')->name('status');
+
+
 
 Route::group(['prefix'=>'admin','middleware'=>['auth']],function (){
 

@@ -11,4 +11,8 @@ class institution extends Model
     public function verifiyInstiution(){
       return $this->hasMany(verifiyInstiution::class);
     }
+
+    public function meeting(){
+        return $this->hasMany(meeting::class);
+    }
 }

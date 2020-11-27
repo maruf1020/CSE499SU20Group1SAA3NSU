@@ -187,7 +187,7 @@
                                     <span class="menu-text">Course</span>
                                 </a>
 
-                            </li>    
+                            </li>
 
                         </ul>
                     </div>
@@ -292,7 +292,7 @@
 
                             </li>
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="institution-message" class="menu-link menu-toggle">
+                                <a href="{{ route('chatify') }}" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
@@ -318,6 +318,16 @@
                                 </a>
 
                             </li>
+                            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                                <a href="{{ route('meeting.index') }}" class="menu-link menu-toggle">
+                                    <i class="menu-bullet menu-bullet-line">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">Admin Meeting</span>
+                                </a>
+
+                            </li>
+
 
 
 
