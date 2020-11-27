@@ -24,7 +24,7 @@
 						<button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#exampleModalCenter">
 							Add New Meetings
 						</button>
-						<button type="reset" class="btn btn-danger mr-2">Cancel</button>
+						<button type="reset" class="btn btn-danger mr-2">Back</button>
 
 
 
@@ -108,7 +108,7 @@
 									</div>
 									<div class="modal-body">
 										<div class="container">
-										
+
 
 											<div id='jitsi-meet-conf-container'></div>
 										</div>
