@@ -162,7 +162,7 @@
                           {{-- institution can add , edit , delete, and apporve faculty  and students--}}
 
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="institution-faculty" class="menu-link menu-toggle">
+                                <a href="{{ route('faculty.index') }}" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>

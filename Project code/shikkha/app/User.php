@@ -40,4 +40,7 @@ class User extends Authenticatable
     public function personal_info(){
       return $this->hasOne(personalInfo::class,'personal_id','personal_id');
     }
+    public function institution(){
+      return $this->belongsTo(institution::class);
+    }
 }

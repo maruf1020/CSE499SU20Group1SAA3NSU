@@ -42,7 +42,8 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']],function (){
 });
 
 
-
+//faculty route
+Route::resource('/faculty','institution\facultyController');
 
 
 
