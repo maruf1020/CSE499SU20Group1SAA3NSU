@@ -21,9 +21,10 @@ class CreateFacultiesTable extends Migration
             $table->string('phone')->unique();
             $table->string('address')->nullable();
             $table->string('photo')->nullable();
-            $table->string('initial')->nullable()->unique();
-            $table->string('dob')->nullable();
+            $table->string('initial')->unique();
+            $table->string('dob');
             $table->string('is_new')->default('0');
+            $table->string('is_verified')->default('0');
             $table->integer('institution_id');
             $table->integer('user_id')->nullable();
             $table->timestamps();

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\faculty;
 use App\institution;
+use App\verifiyInstiution;
 
 
 class facultyController extends Controller
@@ -17,9 +18,9 @@ class facultyController extends Controller
      */
     public function index()
     {
-      $faculty=faculty::all();
+      $faculties=faculty::orderBy('id', 'desc')->paginate(15);
       return view('dashboard.institution.institution-faculty',[
-        'faculty'=>$faculty,
+        'faculties'=>$faculties,
       ]);
     }
 
@@ -45,16 +46,25 @@ class facultyController extends Controller
         'name'=>'required',
         'initial'=>'required|unique:faculties',
         'phone'=>'required|unique:faculties',
-
+        'email'=>'required|unique:faculties',        
+        'user_id'=>'nullable',  
+        'address'=>'nullable',
+        'dob'=>'required', 
+        'photo'=>'nullable',       
       ]);
+      
       $id=Auth::user()->id;
+      $verifiyInstiution = verifiyInstiution::where('user_id',$id)->first();
+      $institutionId = $verifiyInstiution->institution->id;
 
-      $institution_id=$id->institution->id;
-      dd($institution_id->id);
-      $data['institution_id']=$institution_id->id;
+
+
+      $data['institution_id']=$institutionId;
+      // $data['user_id']=$id;
       faculty::create($data);
-      session()->flash('msg','Institution Created Successfully');
-      return redirect(route('institution.index'));
+
+      session()->flash('msg','Faculty Created Successfully');
+      return redirect(route('faculty.index'));
     }
 
     /**
