@@ -171,7 +171,61 @@
 
 
 						<!-- Modal 2 Edit modal:: start-->
+						<div class="modal fade" id="edit" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Add New Faculty</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<i aria-hidden="true" class="ki ki-close"></i>
+										</button>
+									</div>
+									<div class="modal-body">
+										@if ($errors->any())
+										<div class="alert alert-danger">
+												@foreach ($errors->all() as $error)
+												<strong>{{ $error }} </br></strong>
+												@endforeach
+										</div>
+										@endif
+										<form class="" action="{{ route('faculty.store') }}" method="post">
 
+											@csrf
+											<div class="form-group">
+												<label>Faculty name</label>
+												<input name="name" type="text" class="form-control form-control-lg" placeholder="Write Faculty Name"></div>
+											<div class="form-group">
+												<label>Phone Number</label>
+												<input name="phone" type="text" class="form-control form-control-lg" placeholder="Write Phone Number "></div>
+											<div class="form-group">
+												<label>Email</label>
+												<input name="email" type="email" class="form-control form-control-lg" placeholder="Write Email"></div>
+											<div class="form-group">
+												<label>Faculty Initial</label>
+												<input name="initial" type="text" class="form-control form-control-lg" placeholder="Write Faculty Initial">
+											</div>
+											<div class="form-group">
+												<label>Address</label>
+												<input name="address" type="text" class="form-control form-control-lg" placeholder="Write Addres">
+											</div>
+											<div class="form-group">
+												<label>Photo</label>
+												<input name="photo" type="file" class="form-control form-control-lg" placeholder="Write Initial password">
+											</div>
+											<div class="form-group">
+												<label>Date Of Birth</label>
+												<input name="dob" type="date" class="form-control form-control-lg" placeholder="Date of birth">
+											</div>
+
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Cancel</button>
+										<button type="submit" class="btn btn-success font-weight-bold">Add New</button>
+									</div>
+									</form>
+								</div>
+							</div>
+						</div>
 						<!-- Modal 2 Edit modal: end-->
 
 
@@ -219,7 +273,7 @@
 													<td>{{ $value->email }}</td>
 													<td>{{ $value->initial }}</td>
 													<td>
-														<a href="javascript:;" class="btn btn-sm btn-clean btn-icon mr-2" title="Edit details">
+														<a href="javascript:;" data-toggle="modal" data-target="#edit" class="btn btn-sm btn-clean btn-icon mr-2" title="Edit details">
 															 <span class="svg-icon svg-icon-md"> <svg xmlns="http://www.w3.org/2000/svg"
 																  xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
