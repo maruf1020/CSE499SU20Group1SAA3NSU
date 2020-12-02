@@ -18,7 +18,7 @@ class facultyController extends Controller
      */
     public function index()
     {
-      $faculties=faculty::orderBy('id', 'desc')->paginate(15);
+      $faculties=faculty::orderByDesc('id')->get();
       return view('dashboard.institution.institution-faculty',[
         'faculties'=>$faculties,
       ]);
@@ -46,13 +46,13 @@ class facultyController extends Controller
         'name'=>'required',
         'initial'=>'required|unique:faculties',
         'phone'=>'required|unique:faculties',
-        'email'=>'required|unique:faculties',        
-        'user_id'=>'nullable',  
+        'email'=>'required|unique:faculties',
+        'user_id'=>'nullable',
         'address'=>'nullable',
-        'dob'=>'required', 
-        'photo'=>'nullable',       
+        'dob'=>'required',
+        'photo'=>'nullable',
       ]);
-      
+
       $id=Auth::user()->id;
       $verifiyInstiution = verifiyInstiution::where('user_id',$id)->first();
       $institutionId = $verifiyInstiution->institution->id;
