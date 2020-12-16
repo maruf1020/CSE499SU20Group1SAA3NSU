@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\faculty;
+use Response;
 use App\institution;
 use App\verifiyInstiution;
 
@@ -49,7 +50,7 @@ class facultyController extends Controller
         'email'=>'required|unique:faculties',
         'user_id'=>'nullable',
         'address'=>'nullable',
-        'dob'=>'required',
+        'dob'=>'nullable',
         'photo'=>'nullable',
       ]);
 
@@ -84,9 +85,9 @@ class facultyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(faculty $faculty)
     {
-        //
+        $faculty->delete();
     }
 
     /**
@@ -96,9 +97,24 @@ class facultyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,faculty $faculty)
     {
-        //
+
+      $data= request()->validate([
+        'name'=>'required',
+        'initial'=>'required',
+        'phone'=>'required',
+        'email'=>'required',
+        'user_id'=>'nullable',
+        'address'=>'nullable',
+        'dob'=>'nullable',
+        'photo'=>'nullable',
+      ]);
+      // dd($data);
+      $faculty->update($data);
+
+      return Response::json($faculty);
+
     }
 
     /**
@@ -107,8 +123,12 @@ class facultyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(faculty $faculty)
     {
-        //
+        $faculty->delete();
+    }
+    public function test()
+    {
+        dd('hello world');
     }
 }

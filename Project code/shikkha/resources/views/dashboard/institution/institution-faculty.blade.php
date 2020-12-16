@@ -120,15 +120,16 @@
 											<i aria-hidden="true" class="ki ki-close"></i>
 										</button>
 									</div>
-									<div class="modal-body">
-										@if ($errors->any())
-										<div class="alert alert-danger">
+									<form class="" action="{{ route('faculty.store') }}" method="post">
+										<div class="modal-body">
+											@if ($errors->any())
+											<div class="alert alert-danger">
 												@foreach ($errors->all() as $error)
 												<strong>{{ $error }} </br></strong>
 												@endforeach
-										</div>
-										@endif
-										<form class="" action="{{ route('faculty.store') }}" method="post">
+											</div>
+											@endif
+
 
 											@csrf
 											<div class="form-group">
@@ -157,11 +158,11 @@
 												<input name="dob" type="date" class="form-control form-control-lg" placeholder="Date of birth">
 											</div>
 
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Cancel</button>
-										<button type="submit" class="btn btn-success font-weight-bold">Add New</button>
-									</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Cancel</button>
+											<button type="submit" class="btn btn-success font-weight-bold">Add New</button>
+										</div>
 									</form>
 								</div>
 							</div>
@@ -175,54 +176,65 @@
 							<div class="modal-dialog modal-dialog-centered" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel">Add New Faculty</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<h5 class="modal-title" id="exampleModalLabel">Update Faculty</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close" id='close'>
 											<i aria-hidden="true" class="ki ki-close"></i>
 										</button>
 									</div>
-									<div class="modal-body">
-										@if ($errors->any())
-										<div class="alert alert-danger">
+									<form id="update-form" action="" method="post">
+
+
+										<div class="modal-body">
+											@if ($errors->any())
+											<div class="alert alert-danger">
 												@foreach ($errors->all() as $error)
 												<strong>{{ $error }} </br></strong>
 												@endforeach
-										</div>
-										@endif
-										<form class="" action="{{ route('faculty.store') }}" method="post">
+											</div>
+											@endif
+
+
 
 											@csrf
+											@method('PUT')
+
+
+											<div class="form-group">
+												<input id="id" name="id" type="hidden" class="form-control form-control-lg" placeholder="Write Faculty Name" value=''>
+											</div>
 											<div class="form-group">
 												<label>Faculty name</label>
-												<input name="name" type="text" class="form-control form-control-lg" placeholder="Write Faculty Name"></div>
+												<input id="name" name="name" type="text" class="form-control form-control-lg" placeholder="Write Faculty Name" value=''>
+											</div>
 											<div class="form-group">
 												<label>Phone Number</label>
-												<input name="phone" type="text" class="form-control form-control-lg" placeholder="Write Phone Number "></div>
+												<input id="phone" name="phone" type="text" class="form-control form-control-lg" placeholder="Write Phone Number "></div>
 											<div class="form-group">
 												<label>Email</label>
-												<input name="email" type="email" class="form-control form-control-lg" placeholder="Write Email"></div>
+												<input id="email" name="email" type="email" class="form-control form-control-lg" placeholder="Write Email"></div>
 											<div class="form-group">
 												<label>Faculty Initial</label>
-												<input name="initial" type="text" class="form-control form-control-lg" placeholder="Write Faculty Initial">
+												<input id="initial" name="initial" type="text" class="form-control form-control-lg" placeholder="Write Faculty Initial">
 											</div>
 											<div class="form-group">
 												<label>Address</label>
-												<input name="address" type="text" class="form-control form-control-lg" placeholder="Write Addres">
+												<input id="address" name="address" type="text" class="form-control form-control-lg" placeholder="Write Addres">
 											</div>
 											<div class="form-group">
 												<label>Photo</label>
-												<input name="photo" type="file" class="form-control form-control-lg" placeholder="Write Initial password">
+												<input id="photo" name="photo" type="file" class="form-control form-control-lg" placeholder="Write Initial password">
 											</div>
 											<div class="form-group">
 												<label>Date Of Birth</label>
-												<input name="dob" type="date" class="form-control form-control-lg" placeholder="Date of birth">
+												<input id="dob" name="dob" type="date" class="form-control form-control-lg" placeholder="Date of birth">
 											</div>
-
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Cancel</button>
-										<button type="submit" class="btn btn-success font-weight-bold">Add New</button>
-									</div>
+										</div>
+										<div class="modal-footer footer-update">
+											<button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Cancel</button>
+											<button type="submit" class="btn btn-success font-weight-bold update">Update</button>
+										</div>
 									</form>
+
 								</div>
 							</div>
 						</div>
@@ -266,52 +278,23 @@
 											</thead>
 											<tbody>
 												@foreach ($faculties as $key=>$value)
-												<tr>
-													<th>{{ $key+1 }}</th>
+												<tr class='value{{ $value->id }}'>
+													<th id='serial'>{{ $key+1 }}</th>
 													<td>{{ $value->name }}</td>
 													<td>{{ $value->phone }}</td>
 													<td>{{ $value->email }}</td>
 													<td>{{ $value->initial }}</td>
 													<td>
-														<a href="javascript:;" data-toggle="modal" data-target="#edit" class="btn btn-sm btn-clean btn-icon mr-2" title="Edit details">
-															 <span class="svg-icon svg-icon-md"> <svg xmlns="http://www.w3.org/2000/svg"
-																  xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																		<rect x="0" y="0" width="24" height="24"></rect>
-																		<path
-																		  d="M8,17.9148182 L8,5.96685884 C8,5.56391781 8.16211443,5.17792052 8.44982609,4.89581508 L10.965708,2.42895648 C11.5426798,1.86322723 12.4640974,1.85620921 13.0496196,2.41308426 L15.5337377,4.77566479 C15.8314604,5.0588212 16,5.45170806 16,5.86258077 L16,17.9148182 C16,18.7432453 15.3284271,19.4148182 14.5,19.4148182 L9.5,19.4148182 C8.67157288,19.4148182 8,18.7432453 8,17.9148182 Z"
-																		  fill="#000000" fill-rule="nonzero" transform="translate(12.000000, 10.707409) rotate(-135.000000) translate(-12.000000, -10.707409) "></path>
-																		<rect fill="#000000" opacity="0.3" x="5" y="20" width="15" height="2" rx="1"></rect>
-																	</g>
-																</svg> </span>
+														<a href="javascript:;" data-toggle="modal" data-target="#edit" class="btn btn-sm btn-clean btn-icon mr-2 edit" title="Edit details" data-id='{{ $value->id }}' data-name='{{ $value->name }}'
+														  data-phone='{{ $value->phone }}' data-email='{{ $value->email }}' data-initial='{{ $value->initial }}' data-dob='{{ $value->dob }}' data-address='{{ $value->address }}'>
+															<i class="far fa-edit"></i>
 														</a>
-														<a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Delete">
-															 <span class="svg-icon svg-icon-md"> <svg xmlns="http://www.w3.org/2000/svg"
-																  xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																		<rect x="0" y="0" width="24" height="24"></rect>
-																		<path d="M6,8 L6,20.5 C6,21.3284271 6.67157288,22 7.5,22 L16.5,22 C17.3284271,22 18,21.3284271 18,20.5 L18,8 L6,8 Z" fill="#000000" fill-rule="nonzero"></path>
-																		<path
-																		  d="M14,4.5 L14,4 C14,3.44771525 13.5522847,3 13,3 L11,3 C10.4477153,3 10,3.44771525 10,4 L10,4.5 L5.5,4.5 C5.22385763,4.5 5,4.72385763 5,5 L5,5.5 C5,5.77614237 5.22385763,6 5.5,6 L18.5,6 C18.7761424,6 19,5.77614237 19,5.5 L19,5 C19,4.72385763 18.7761424,4.5 18.5,4.5 L14,4.5 Z"
-																		  fill="#000000" opacity="0.3"></path>
-																	</g>
-																</svg> </span>
+
+														<a href="javascript:void(0)" data-method="DELETE" data-token="{{csrf_token()}}"  data-url="{{ route('faculty.destroy',$value->id) }}" data-id="{{ $value->id }}" class="btn btn-sm btn-clean btn-icon delete" title="Delete">
+															<i class="fas fa-trash"></i>
 														</a>
-														<a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Delete">
-															<span class="svg-icon svg-icon-md">
-																<!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo2\dist/../src/media/svg/icons\Design\Difference.svg--><svg xmlns="http://www.w3.org/2000/svg"
-																  xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																		<rect x="0" y="0" width="24" height="24" />
-																		<path
-																		  d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z M17,16 L17,10 C17,8.34314575 15.6568542,7 14,7 L8,7 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L17,16 Z"
-																		  fill="#000000" fill-rule="nonzero" />
-																		<path
-																		  d="M9.27272727,9 L13.7272727,9 C14.5522847,9 15,9.44771525 15,10.2727273 L15,14.7272727 C15,15.5522847 14.5522847,16 13.7272727,16 L9.27272727,16 C8.44771525,16 8,15.5522847 8,14.7272727 L8,10.2727273 C8,9.44771525 8.44771525,9 9.27272727,9 Z"
-																		  fill="#000000" opacity="0.3" />
-																	</g>
-																</svg>
-																<!--end::Svg Icon--></span>
+														<a href="javascript:;"  class="btn btn-sm btn-clean btn-icon delete" title="Delete">
+															<i class="far fa-eye"></i>
 														</a>
 
 
@@ -348,9 +331,89 @@
 		<!--end::Entry-->
 	</div>
 	<!--end::Content-->
-	{{-- <script type="text/javascript">
-$(document).ready(function() {
-	$('#p').DataTable();
-} );
-</script> --}}
+
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			// function Edit POST
+			$(document).on('click', '.edit', function() {
+
+				// $('.modal-title').text('Post Edit');
+				$('#id').val($(this).data('id'));
+				var id = $(this).data('id');
+				$('#name').val($(this).data('name'));
+				$('#phone').val($(this).data('phone'));
+				$('#email').val($(this).data('email'));
+				$('#initial').val($(this).data('initial'));
+				$('#dob').val($(this).data('dob'));
+				$('#address').val($(this).data('address'));
+				// $('#update-form').attr('action',"/faculty/"+id);
+			});
+
+		});
+	</script>
+	<script type="text/javascript">
+		$('#update-form').on('submit', function(event) {
+			event.preventDefault();
+			var id = document.getElementById("id").value;
+			var serial = document.getElementById("serial").innerHTML;
+
+			$.ajax({
+				type: 'PUT',
+				url: "/faculty/" + id,
+				data: {
+					'_token': $('input[name=_token]').val(),
+					'id': $("#id").val(),
+					'name': $('#name').val(),
+					'phone': $('#phone').val(),
+					'email': $('#email').val(),
+					'initial': $('#initial').val(),
+					'address': $('#address').val(),
+
+
+				},
+				dataType: 'JSON',
+
+				success: function(data) {
+					$('.value' + data.id).replaceWith(" " +
+						"<tr class='value" + data.id + "'>" +
+						"<td>" + serial + "</td>" +
+						"<td>" + data.name + "</td>" +
+						"<td>" + data.phone + "</td>" +
+						"<td>" + data.email + "</td>" +
+						"<td>" + data.initial + "</td>" +
+						"<td><a href='javascript:;' data-toggle='modal' data-target='#edit' class='btn btn-sm btn-clean btn-icon mr-2 edit' title='Edit details' data-id='"+data.id+"' data-name='"+data.name+"' data-phone='"+data.phone+"' data-email='"+data.email+"' data-initial='"+data.initial+"' data-dob='"+data.dob+"' data-address='"+data.address+"'>"+
+						"<i class='far fa-edit'></i></a>"+
+						"<a href='javascript:;' data-toggle='modal' data-target='#edit' class='btn btn-sm btn-clean btn-icon mr-2 edit' title='Edit details' data-id='"+data.phone+"' data-phone='"+data.phone+"' data-email='"+data.email+"' data-initial='"+data.initial+"' data-dob='"+data.dob+"' data-address='"+data.address+"'>"+
+						"<i class='fas fa-trash'></i></a>"+
+						"<a href='javascript:;' data-toggle='modal' data-target='#edit' class='btn btn-sm btn-clean btn-icon mr-2 edit' title='Edit details' data-id='"+data.phone+"' data-phone='"+data.phone+"' data-email='"+data.email+"' data-initial='"+data.initial+"' data-dob='"+data.dob+"' data-address='"+data.address+"'>"+
+						"<i class='far fa-eye'></i></a>"+
+						"</td>" +
+						"</tr>");
+
+
+					Swal.fire({
+						title: "Success!",
+						text: "Faculty Updated Succesfully!",
+						icon: "success",
+						buttonsStyling: false,
+						confirmButtonText: "Close!",
+						customClass: {
+							confirmButton: "btn btn-primary"
+						}
+
+					});
+				}
+			});
+			document.getElementById('close').click();
+
+
+		});
+	</script>
 	@endsection
+	{{-- <a href='javascript:;' data-toggle='modal' data-target='#edit' class='btn btn-sm btn-clean btn-icon mr-2 edit' title='Edit details' data-id='"+data.phone+"' data-name='"+data.phone+"'
+		data-phone='"+data.phone+"' data-email='"+data.phone+"' data-initial='"+data.phone+"' data-dob='"+data.phone+"' data-address='"+data.phone+"'>
+		<i class='far fa-edit'></i>
+	</a> --}}

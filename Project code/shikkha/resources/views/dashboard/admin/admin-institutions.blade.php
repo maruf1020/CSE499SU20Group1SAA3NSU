@@ -147,7 +147,7 @@
 														<a href="{{ route('institution.edit',$value->id) }}" class="btn btn-icon btn-light-success btn-sm mr-2">
 															<i class="flaticon2-pen text-warning"></i>
 														</a>
-														<a href="javascript:void(0)" data-url="{{ route('institution.show',$value->id) }}" class="btn btn-icon btn-light-primary btn-sm mr-2 delete">
+														<a href="javascript:void(0)"  data-url="{{ route('institution.show',$value->id) }}" class="btn btn-icon btn-light-primary btn-sm mr-2 delete">
 															<i class="flaticon2-delete text-danger"></i>
 														</a>
 

@@ -89,4 +89,8 @@ class packageController extends Controller
     {
         //
     }
+    public function test()
+    {
+        //
+    }
 }

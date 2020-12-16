@@ -7,6 +7,7 @@
 	<title>Shikkhaa | Dashboard</title>
 	<meta name="description" content="Updates and statistics" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
 	<!--begin::Fonts-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 	<!--end::Fonts-->
@@ -37,7 +38,9 @@
 	<!--begin::Custom css-->
 	<!-- SweetAlert2 -->
 	<link rel="stylesheet" href="{{asset('assets/css/custom/sweetalert2.min.css')}}">
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	{{-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> --}}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 	<script src='https://meet.jit.si/external_api.js'></script>
 	{{-- <script src="{{ asset('assets/js/config.js') }}"></script> --}}
 	<script src="{{ asset('assets/js/myapp1.js') }}"></script>
@@ -185,6 +188,12 @@
 				</div>
 
 				@endif
+
+
+
+
+
+
 				<!--begin::Header-->
 				<div id="kt_header" class="header header-fixed">
 					<!--begin::Container-->
@@ -302,9 +311,12 @@
 	<script src="assets/js/custom/kanban.bundle.js"></script>
 	<script src="assets/js/custom/kanban-board.js"></script>
 	<!-- SweetAlert2 -->
-	<script src="{{asset('assets/css/custom/sweetalert2.min.js')}}"> </script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	{{-- <script src="{{asset('assets/css/custom/sweetalert2.min.js')}}"> </script> --}}
 
-	<script type="text/javascript">
+
+
+	{{-- <script type="text/javascript">
 		$('.delete').on('click', function() {
 			var btn = this;
 			Swal.fire({
@@ -329,7 +341,52 @@
 				}
 			})
 		});
+	</script> --}}
+	<script type="text/javascript">
+		$('.delete').on('click', function() {
+			var btn = this;
+			Swal.fire({
+				title: 'Are you sure?',
+				text: "You won't be able to revert this!",
+
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+				cancelButtonColor: '#d33',
+				confirmButtonText: 'Yes, delete it!'
+			}).then((result) => {
+				if (result.value) {
+
+						var id=$(this).attr('data-id');
+						var token=$(this).attr('data-token');
+						$.ajax({
+							type: "DELETE",
+							data: {
+								'id': id,
+								'_token':token
+							},
+							url: $(this).attr('data-url'),
+							success: function(data) {
+								Swal.fire(
+									'Deleted!',
+									'Record has been deleted.',
+									'success'
+								);
+								$(btn).closest('tr').fadeOut(1500);
+							},
+							error: function(data) {
+								Swal.fire("Cancelled", "Something error happend) ", " error ");
+							}
+						});
+
+
+
+
+				}
+			})
+		});
 	</script>
+
+
 
 	<!--begin ::For all responsive table::-->
 	<script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
