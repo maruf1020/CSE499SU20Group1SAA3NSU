@@ -241,6 +241,224 @@
 						<!-- Modal 2 Edit modal: end-->
 
 
+						<!-- Modal 3 view modal:: start-->
+						<div class="modal fade" id="view" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Faculty Information</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close" id='close'>
+											<i aria-hidden="true" class="ki ki-close"></i>
+										</button>
+									</div>
+
+
+
+
+										<div class="modal-body">
+										<!--begin::Content-->
+										<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+
+
+											<!--begin::Entry-->
+											<div class="d-flex flex-column-fluid">
+												<!--begin::Container-->
+												<div class="container">
+													<!--begin::Card-->
+													<div class="card card-custom">
+														<!-- begin::Header-->
+														<!-- <div class="card-header py-3">
+																		<div class="card-title align-items-start flex-column">
+																			<h3 class="card-label font-weight-bolder text-dark">General Information</h3>
+																			<span class="text-muted font-weight-bold font-size-sm mt-1">Update your general information</span>
+																		</div>
+																		<div class="card-toolbar">
+																			<button type="reset" class="btn btn-success mr-2">Save Changes</button>
+																			<button type="reset" class="btn btn-secondary">Cancel</button>
+																		</div>
+																	</div> -->
+														<!--end::Header -->
+														<!--begin::Body-->
+														<div class="">
+															<!--begin: Datatable-->
+
+															<div class="flex-row-fluid">
+																				<!--begin::Card-->
+																<div class="card card-custom card-stretch">
+																	<!--begin::Header-->
+
+																	<!--end::Header-->
+																	<!--begin::Form-->
+																	<form class="form">
+																		<!--begin::Body-->
+																		<div class="card-body">
+																			<div class="row">
+																				<label class="col-xl-3"></label>
+																				<div class="col-lg-9 col-xl-6">
+																					<h5 class="font-weight-bold mb-6">Faculty Info</h5>
+																				</div>
+																			</div>
+																			<div class="form-group row">
+																				<label class="col-xl-3 col-lg-3 col-form-label text-right">Avatar</label>
+																				<div class="col-lg-9 col-xl-6">
+																					<div
+																						class="image-input image-input-outline"
+																						id="kt_profile_avatar"
+																						style="background-image: url(assets/media/logos/nsu.jpg)">
+																						<div
+																							class="image-input-wrapper"
+																							style="background-image: url(assets/media/users/nsu.jpg)"></div>
+																						<label
+																							class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+																							data-action="change"
+																							data-toggle="tooltip"
+																							title=""
+																							data-original-title="Change avatar">
+																							<i class="fa fa-pen icon-sm text-muted"></i>
+																							<input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg" disabled>
+																								<input type="hidden" name="profile_avatar_remove"></label>
+																								<span
+																									class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+																									data-action="cancel"
+																									data-toggle="tooltip"
+																									title=""
+																									data-original-title="Cancel avatar">
+																									<i class="ki ki-bold-close icon-xs text-muted"></i>
+																								</span>
+																								<span
+																									class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+																									data-action="remove"
+																									data-toggle="tooltip"
+																									title=""
+																									data-original-title="Remove avatar">
+																									<i class="ki ki-bold-close icon-xs text-muted"></i>
+																								</span>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="form-group row">
+																						<label class="col-xl-3 col-lg-3 col-form-label text-right">Faculty Name</label>
+																						<div class="col-lg-9 col-xl-6">
+																							<input id="name1"
+																								class="form-control form-control-lg form-control-solid"
+																								type="text"
+																								 disabled></div>
+																						</div>
+																						<div class="form-group row">
+																							<label class="col-xl-3 col-lg-3 col-form-label text-right" disabled>Address</label>
+																							<div class="col-lg-9 col-xl-6">
+																								<input id="address1"
+																									class="form-control form-control-lg form-control-solid"
+																									type="text"
+																									></div>
+																							</div>
+																							<div class="form-group row">
+																								<label class="col-xl-3 col-lg-3 col-form-label text-right">Birth Date</label>
+																								<div class="col-lg-9 col-xl-6">
+																									<input id="dob1"
+																										class="form-control form-control-lg form-control-solid"
+																										type="1992"
+																										 disabled>
+
+																									</div>
+																								</div>
+																							<div class="form-group row">
+																								<label class="col-xl-3 col-lg-3 col-form-label text-right">Initial</label>
+																								<div class="col-lg-9 col-xl-6">
+																									<input id="initial1"
+																										class="form-control form-control-lg form-control-solid"
+																										type="1992"
+																										 disabled>
+																									</div>
+																								</div>
+																							<div class="form-group row">
+																								<label class="col-xl-3 col-lg-3 col-form-label text-right">Status</label>
+																								<div class="col-lg-9 col-xl-6">
+																									<input id="status"
+																										class="form-control form-control-lg form-control-solid"
+																										type="1992"
+																										 disabled>
+																									</div>
+																								</div>
+																							<div class="form-group row">
+																								<label class="col-xl-3 col-lg-3 col-form-label text-right">Assigned To</label>
+																								<div class="col-lg-9 col-xl-6">
+																									<input id="assigned"
+																										class="form-control form-control-lg form-control-solid"
+																										type="1992"
+																										value="Loop Inc." disabled>
+																									</div>
+																								</div>
+																								<div class="row">
+																									<label class="col-xl-3"></label>
+																									<div class="col-lg-9 col-xl-6">
+																										<h5 class="font-weight-bold mt-10 mb-6">Contact Info</h5>
+																									</div>
+																								</div>
+																								<div class="form-group row">
+																									<label class="col-xl-3 col-lg-3 col-form-label text-right">Contact Phone</label>
+																									<div class="col-lg-9 col-xl-6">
+																										<div class="input-group input-group-lg input-group-solid">
+																											<div class="input-group-prepend">
+																												<span class="input-group-text">
+																													<i class="la la-phone"></i>
+																												</span>
+																											</div>
+																											<input id="phone1"
+																												type="text"
+																												class="form-control form-control-lg form-control-solid"
+
+																												placeholder="Phone" disabled></div>
+																											<span class="form-text text-muted">We'll never share your email with anyone else.</span>
+																										</div>
+																									</div>
+																									<div class="form-group row">
+																										<label class="col-xl-3 col-lg-3 col-form-label text-right">Email Address</label>
+																										<div class="col-lg-9 col-xl-6">
+																											<div class="input-group input-group-lg input-group-solid">
+																												<div class="input-group-prepend">
+																													<span class="input-group-text">
+																														<i class="la la-at"></i>
+																													</span>
+																												</div>
+																												<input id="email1"
+																													type="text"
+																													class="form-control form-control-lg form-control-solid"
+
+																													placeholder="Email" disabled></div>
+																											</div>
+																										</div>
+
+																										</div>
+																										<!--end::Body-->
+																									</form>
+																									<!--end::Form-->
+																								</div>
+																							</div>
+
+
+															<!--end: Datatable-->
+
+														<!--end::Body-->
+													</div>
+													<!--end::Card-->
+												</div>
+												<!--end::Container-->
+											</div>
+											<!--end::Entry-->
+										</div>
+										<!--end::Content-->
+									</div>
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+						<!-- Modal 3 view modal: end-->
+
+
 
 						<!-- <button type="reset" class="btn btn-success mr-2">Save Changes</button> -->
 					</div>
@@ -277,6 +495,7 @@
 												</tr>
 											</thead>
 											<tbody>
+
 												@foreach ($faculties as $key=>$value)
 												<tr class='value{{ $value->id }}'>
 													<th id='serial'>{{ $key+1 }}</th>
@@ -293,7 +512,9 @@
 														<a href="javascript:void(0)" data-method="DELETE" data-token="{{csrf_token()}}"  data-url="{{ route('faculty.destroy',$value->id) }}" data-id="{{ $value->id }}" class="btn btn-sm btn-clean btn-icon delete" title="Delete">
 															<i class="fas fa-trash"></i>
 														</a>
-														<a href="javascript:;"  class="btn btn-sm btn-clean btn-icon delete" title="Delete">
+														<a href="javascript:;"  class="btn btn-sm btn-clean btn-icon view" title="View" data-toggle="modal" data-target="#view"
+														data-id='{{ $value->id }}' data-name='{{ $value->name }}'
+														  data-phone='{{ $value->phone }}' data-email='{{ $value->email }}' data-initial='{{ $value->initial }}' data-dob='{{ $value->dob }}' data-address='{{ $value->address }}' data-status='{{ $value->is_verified }}'>
 															<i class="far fa-eye"></i>
 														</a>
 
@@ -355,6 +576,33 @@
 		});
 	</script>
 	<script type="text/javascript">
+		$(document).ready(function() {
+
+			// function view  POST
+			$(document).on('click', '.view', function() {
+
+				// $('.modal-title').text('Post Edit');
+				$('#id').val($(this).data('id'));
+				var id = $(this).data('id');
+				$('#name1').val($(this).data('name'));
+				$('#phone1').val($(this).data('phone'));
+				$('#email1').val($(this).data('email'));
+				$('#initial1').val($(this).data('initial'));
+				$('#dob1').val($(this).data('dob'));
+				$('#address1').val($(this).data('address'));
+				var status=$(this).data('status');
+				if(status==0){
+					$('#status').val('Not Claimed');
+				}
+				else{
+					$('#status').val('Claimed');
+				}
+				// $('#update-form').attr('action',"/faculty/"+id);
+			});
+
+		});
+	</script>
+	<script type="text/javascript">
 		$('#update-form').on('submit', function(event) {
 			event.preventDefault();
 			var id = document.getElementById("id").value;
@@ -388,7 +636,7 @@
 						"<i class='far fa-edit'></i></a>"+
 						"<a href='javascript:;' data-toggle='modal' data-target='#edit' class='btn btn-sm btn-clean btn-icon mr-2 edit' title='Edit details' data-id='"+data.phone+"' data-phone='"+data.phone+"' data-email='"+data.email+"' data-initial='"+data.initial+"' data-dob='"+data.dob+"' data-address='"+data.address+"'>"+
 						"<i class='fas fa-trash'></i></a>"+
-						"<a href='javascript:;' data-toggle='modal' data-target='#edit' class='btn btn-sm btn-clean btn-icon mr-2 edit' title='Edit details' data-id='"+data.phone+"' data-phone='"+data.phone+"' data-email='"+data.email+"' data-initial='"+data.initial+"' data-dob='"+data.dob+"' data-address='"+data.address+"'>"+
+						"<a href='javascript:;' data-toggle='modal' data-target='#view' class='btn btn-sm btn-clean btn-icon mr-2 edit' title='Edit details' data-id='"+data.phone+"' data-phone='"+data.phone+"' data-email='"+data.email+"' data-initial='"+data.initial+"' data-dob='"+data.dob+"' data-address='"+data.address+"'>"+
 						"<i class='far fa-eye'></i></a>"+
 						"</td>" +
 						"</tr>");

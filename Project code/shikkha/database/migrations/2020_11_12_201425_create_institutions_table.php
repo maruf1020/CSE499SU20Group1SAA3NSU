@@ -17,7 +17,7 @@ class CreateInstitutionsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('ein');
-            $table->integer('user_id');
+            $table->integer('user_id')->nullable();
             $table->timestamps();
         });
     }
