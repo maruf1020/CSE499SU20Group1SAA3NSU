@@ -4,13 +4,12 @@ namespace App\Http\Controllers\institution;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\faculty;
+use App\student;
 use Response;
 use App\institution;
 use App\verifiyInstiution;
 
-
-class facultyController extends Controller
+class studentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,9 +18,9 @@ class facultyController extends Controller
      */
     public function index()
     {
-      $faculties=faculty::orderByDesc('id')->get();
-      return view('dashboard.institution.institution-faculty',[
-        'faculties'=>$faculties,
+      $students=student::orderByDesc('id')->get();
+      return view('dashboard.institution.institution-student',[
+        'students'=>$students,
       ]);
     }
 
@@ -45,7 +44,6 @@ class facultyController extends Controller
     {
       $data= request()->validate([
         'name'=>'required',
-        'initial'=>'required|unique:faculties',
         'phone'=>'required|unique:faculties',
         'email'=>'required|unique:faculties',
         'user_id'=>'nullable',
@@ -62,10 +60,10 @@ class facultyController extends Controller
 
       $data['institution_id']=$institutionId;
       // $data['user_id']=$id;
-      faculty::create($data);
+      student::create($data);
 
-      session()->flash('msg','Faculty Created Successfully');
-      return redirect(route('faculty.index'));
+      session()->flash('msg','Student Created Successfully');
+      return redirect(route('student.index'));
     }
 
     /**
@@ -85,9 +83,9 @@ class facultyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(faculty $faculty)
+    public function edit($id)
     {
-
+        //
     }
 
     /**
@@ -97,12 +95,10 @@ class facultyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,faculty $faculty)
+    public function update(Request $request,student $student)
     {
-
       $data= request()->validate([
         'name'=>'required',
-        'initial'=>'required',
         'phone'=>'required',
         'email'=>'required',
         'user_id'=>'nullable',
@@ -111,10 +107,9 @@ class facultyController extends Controller
         'photo'=>'nullable',
       ]);
       // dd($data);
-      $faculty->update($data);
+      $student->update($data);
 
-      return Response::json($faculty);
-
+      return Response::json($student);
     }
 
     /**
@@ -123,9 +118,8 @@ class facultyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(faculty $faculty)
+    public function destroy(student $student)
     {
-        $faculty->delete();
+      $student->delete();
     }
-  
 }

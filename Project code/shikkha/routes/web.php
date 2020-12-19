@@ -44,6 +44,8 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']],function (){
 
 //faculty route
 Route::resource('/faculty','institution\facultyController');
+//student route
+Route::resource('/student','institution\studentController');
 // Route::get('/sm','institution\facultyController@test');
 
 
