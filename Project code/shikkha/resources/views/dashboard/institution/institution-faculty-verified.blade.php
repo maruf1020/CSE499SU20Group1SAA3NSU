@@ -15,8 +15,8 @@
 				<!--begin::Header-->
 				<div class="card-header py-3">
 					<div class="card-title align-items-start flex-column">
-						<h3 class="card-label font-weight-bolder text-dark">Course Information</h3>
-						<span class="text-muted font-weight-bold font-size-sm mt-1">Course and there information</span>
+						<h3 class="card-label font-weight-bolder text-dark">Verified Faculty Information</h3>
+						<span class="text-muted font-weight-bold font-size-sm mt-1">Verified Faculty and there information</span>
 					</div>
 					<div class="card-toolbar">
 
@@ -24,7 +24,7 @@
 
 						<!-- Button trigger modal-->
 						<!--begin::Button-->
-						<a href="#" class="btn btn-primary font-weight-bolder mr-2" data-toggle="modal" data-target="#exampleModalCenter">
+						<a href="{{ url()->previous() }}" class="btn btn-danger font-weight-bolder mr-2">
 							<span class="svg-icon svg-icon-md">
 								<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Design/Flatten.svg-->
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -37,7 +37,7 @@
 									</g>
 								</svg>
 								<!--end::Svg Icon-->
-							</span>Add New course</a>
+							</span>Back</a>
 						<!--end::Button-->
 
 						<div class="dropdown dropdown-inline mr-2">
@@ -110,141 +110,7 @@
 
 
 
-						<!-- Modal 1 add new modal:: start-->
-						<div class="modal fade" id="exampleModalCenter" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel">Add New course</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<i aria-hidden="true" class="ki ki-close"></i>
-										</button>
-									</div>
-									<form class="" action="{{ route('course.store') }}" method="post">
-										<div class="modal-body">
-											@if ($errors->any())
-											<div class="alert alert-danger">
-												@foreach ($errors->all() as $error)
-												<strong>{{ $error }} </br></strong>
-												@endforeach
-											</div>
-											@endif
 
-
-											@csrf
-											<div class="form-group">
-												<label>Course name</label>
-												<input name="name" type="text" class="form-control form-control-lg" placeholder="Write course Name">
-											</div>
-
-											<div class="form-group">
-												<label>Course Initial</label>
-												<input name="initial" type="text" class="form-control form-control-lg" placeholder="Write course Initial">
-											</div>
-											<div class="form-group">
-												<label>Course Credit</label>
-												<input name="credit" type="number" class="form-control form-control-lg" placeholder="Write course Credit">
-											</div>
-
-											<div class="form-group">
-												<label>Choose Departement</label>
-												<select id="department_id" class="form-control form-control-lg" name="department_id">
-													<option value="">Select Deparment</option>
-													@foreach ($departments as $key => $value)
-
-													<option value="{{ $value->id }}">{{ $value->name }}</option>
-
-													@endforeach
-												</select>
-
-
-
-											</div>
-
-
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Cancel</button>
-											<button type="submit" class="btn btn-success font-weight-bold">Add New</button>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-						<!-- Modal 1 add new modal: end-->
-
-
-
-						<!-- Modal 2 Edit modal:: start-->
-						<div class="modal fade" id="edit" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel">Update Course</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close" id='close'>
-											<i aria-hidden="true" class="ki ki-close"></i>
-										</button>
-									</div>
-									<form id="update-form" action="" method="post">
-
-
-										<div class="modal-body">
-											@if ($errors->any())
-											<div class="alert alert-danger">
-												@foreach ($errors->all() as $error)
-												<strong>{{ $error }} </br></strong>
-												@endforeach
-											</div>
-											@endif
-
-
-
-											@csrf
-											@method('PUT')
-
-
-											<div class="form-group">
-												<input id="id" name="id" type="hidden" class="form-control form-control-lg" placeholder="Write course Name" value=''>
-											</div>
-											<div class="form-group">
-												<label>Course name</label>
-												<input id="name" name="name" type="text" class="form-control form-control-lg" placeholder="Write course Name" value=''>
-											</div>
-
-											<div class="form-group">
-												<label>Course Initial</label>
-												<input id="initial" name="initial" type="text" class="form-control form-control-lg" placeholder="Write course Initial">
-											</div>
-											<div class="form-group">
-												<label>Course Credit</label>
-												<input id="credit" name="credit" type="number" class="form-control form-control-lg" placeholder="Write Credit">
-											</div>
-											<div class="form-group">
-												<label>Choose Departement</label>
-												<select class="form-control form-control-lg" name="department_id" id="department">
-													<option >Select Deparment</option>
-													@foreach ($departments as $key => $value)
-
-													<option value="{{ $value->id }}">{{ $value->name }}</option>
-
-													@endforeach
-												</select>
-
-
-
-											</div>
-
-										</div>
-										<div class="modal-footer footer-update">
-											<button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Cancel</button>
-											<button type="submit" class="btn btn-success font-weight-bold update">Update</button>
-										</div>
-									</form>
-
-								</div>
-							</div>
-						</div>
-						<!-- Modal 2 Edit modal: end-->
 
 
 
@@ -276,36 +142,24 @@
 											<thead>
 												<tr>
 													<th scope="col">Serial No</th>
-													<th scope="col">Course name </th>
+													<th scope="col">Faculty name </th>
+													<th scope="col">Phone Number</th>
+													<th scope="col">Email</th>
 													<th scope="col">Initial</th>
-													<th scope="col">Department</th>
-													<th scope="col">Actions</th>
 
 
 												</tr>
 											</thead>
 											<tbody>
 
-												@foreach ($courses as $key=>$value)
+												@foreach ($faculties as $key=>$value)
 												<tr class='value{{ $value->id }}'>
 													<th id='serial'>{{ $key+1 }}</th>
 													<td>{{ $value->name }}</td>
+													<td>{{ $value->phone }}</td>
+													<td>{{ $value->email }}</td>
 													<td>{{ $value->initial }}</td>
-													<td>{{ $value->department->name }}</td>
-													<td>
-														<a href="javascript:;" data-toggle="modal" data-target="#edit" class="btn btn-sm btn-clean btn-icon mr-2 edit" title="Edit details" data-id='{{ $value->id }}' data-name='{{ $value->name }}'
-														  data-phone='{{ $value->phone }}' data-email='{{ $value->email }}' data-initial='{{ $value->initial }}' data-dob='{{ $value->dob }}' data-credit='{{ $value->credit }}' data-department-id='{{ $value->department->id }}'>
-															<i class="far fa-edit"></i>
-														</a>
 
-														<a href="javascript:void(0)" data-method="DELETE" data-token="{{csrf_token()}}" data-url="{{ route('course.destroy',$value->id) }}" data-id="{{ $value->id }}"
-														  class="btn btn-sm btn-clean btn-icon delete" title="Delete">
-															<i class="fas fa-trash"></i>
-														</a>
-													
-
-
-													</td>
 												</tr>
 												@endforeach
 											</tbody>
@@ -351,15 +205,42 @@
 				$('#id').val($(this).data('id'));
 				var id = $(this).data('id');
 				$('#name').val($(this).data('name'));
+				$('#phone').val($(this).data('phone'));
+				$('#email').val($(this).data('email'));
 				$('#initial').val($(this).data('initial'));
-
-				$('#credit').val($(this).data('credit'));
-				// $('#update-form').attr('action',"/course/"+id);
+				$('#dob').val($(this).data('dob'));
+				$('#address').val($(this).data('address'));
+				// $('#update-form').attr('action',"/faculty/"+id);
 			});
 
 		});
 	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
 
+			// function view  POST
+			$(document).on('click', '.view', function() {
+
+				// $('.modal-title').text('Post Edit');
+				$('#id').val($(this).data('id'));
+				var id = $(this).data('id');
+				$('#name1').val($(this).data('name'));
+				$('#phone1').val($(this).data('phone'));
+				$('#email1').val($(this).data('email'));
+				$('#initial1').val($(this).data('initial'));
+				$('#dob1').val($(this).data('dob'));
+				$('#address1').val($(this).data('address'));
+				var status = $(this).data('status');
+				if (status == 0) {
+					$('#status').val('Not Claimed');
+				} else {
+					$('#status').val('Claimed');
+				}
+				// $('#update-form').attr('action',"/faculty/"+id);
+			});
+
+		});
+	</script>
 	<script type="text/javascript">
 		$('#update-form').on('submit', function(event) {
 			event.preventDefault();
@@ -368,14 +249,15 @@
 
 			$.ajax({
 				type: 'PUT',
-				url: "/course/" + id,
+				url: "/faculty/" + id,
 				data: {
 					'_token': $('input[name=_token]').val(),
 					'id': $("#id").val(),
 					'name': $('#name').val(),
+					'phone': $('#phone').val(),
+					'email': $('#email').val(),
 					'initial': $('#initial').val(),
-					'credit': $('#credit').val(),
-					'department_id': $('#department').val(),
+					'address': $('#address').val(),
 
 
 				},
@@ -386,21 +268,25 @@
 						"<tr class='value" + data.id + "'>" +
 						"<td>" + serial + "</td>" +
 						"<td>" + data.name + "</td>" +
+						"<td>" + data.phone + "</td>" +
+						"<td>" + data.email + "</td>" +
 						"<td>" + data.initial + "</td>" +
-						"<td>" + data.department_id + "</td>" +
 						"<td><a href='javascript:;' data-toggle='modal' data-target='#edit' class='btn btn-sm btn-clean btn-icon mr-2 edit' title='Edit details' data-id='" + data.id + "' data-name='" + data.name + "' data-phone='" +
-						data.phone + "' data-email='" + data.email + "' data-initial='" + data.initial + "' data-dob='" + data.dob + "' data-department_id='" + data.address + "'>" +
+						data.phone + "' data-email='" + data.email + "' data-initial='" + data.initial + "' data-dob='" + data.dob + "' data-address='" + data.address + "'>" +
 						"<i class='far fa-edit'></i></a>" +
 						"<a href='javascript:;' data-toggle='modal' data-target='#edit' class='btn btn-sm btn-clean btn-icon mr-2 edit' title='Edit details' data-id='" + data.phone + "' data-phone='" + data.phone +
 						"' data-email='" + data.email + "' data-initial='" + data.initial + "' data-dob='" + data.dob + "' data-address='" + data.address + "'>" +
 						"<i class='fas fa-trash'></i></a>" +
+						"<a href='javascript:;' data-toggle='modal' data-target='#view' class='btn btn-sm btn-clean btn-icon mr-2 edit' title='Edit details' data-id='" + data.phone + "' data-phone='" + data.phone +
+						"' data-email='" + data.email + "' data-initial='" + data.initial + "' data-dob='" + data.dob + "' data-address='" + data.address + "'>" +
+						"<i class='far fa-eye'></i></a>" +
 						"</td>" +
 						"</tr>");
 
 
 					Swal.fire({
 						title: "Success!",
-						text: "Course Updated Succesfully!",
+						text: "Faculty Updated Succesfully!",
 						icon: "success",
 						buttonsStyling: false,
 						confirmButtonText: "Close!",

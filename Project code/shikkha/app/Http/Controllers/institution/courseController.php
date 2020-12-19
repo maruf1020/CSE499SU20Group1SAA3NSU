@@ -4,6 +4,12 @@ namespace App\Http\Controllers\institution;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\course;
+use App\department;
+use Response;
+use App\institution;
+use App\verifiyInstiution;
 
 class courseController extends Controller
 {
@@ -14,7 +20,13 @@ class courseController extends Controller
      */
     public function index()
     {
-        //
+      $courses=course::orderByDesc('id')->get();
+      $departments=department::orderByDesc('name')->get();
+      return view('dashboard.institution.institution-courses',[
+        'courses'=>$courses,
+        'departments'=>$departments,
+
+      ]);
     }
 
     /**
@@ -35,7 +47,25 @@ class courseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $data= request()->validate([
+        'name'=>'required',
+        'initial'=>'required|unique:courses',
+        'department_id'=>'required',
+        'credit'=>'required',
+      ]);
+        //pick institution
+      $id=Auth::user()->id;
+      $verifiyInstiution = verifiyInstiution::where('user_id',$id)->first();
+      $institutionId = $verifiyInstiution->institution->id;
+
+
+
+      $data['institution_id']=$institutionId;
+      // $data['user_id']=$id;
+      course::create($data);
+
+      session()->flash('msg','Course Created Successfully');
+      return redirect(route('course.index'));
     }
 
     /**
@@ -67,9 +97,19 @@ class courseController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,course $course)
     {
-        //
+      $data= request()->validate([
+        'name'=>'required',
+        'initial'=>'required',
+        'credit'=>'required',
+        'department_id'=>'required',
+
+      ]);
+
+      $course->update($data);
+
+      return Response::json($course);
     }
 
     /**
@@ -78,8 +118,8 @@ class courseController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(course $course)
     {
-        //
+        $course->delete();
     }
 }

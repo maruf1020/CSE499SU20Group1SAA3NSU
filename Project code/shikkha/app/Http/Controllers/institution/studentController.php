@@ -44,8 +44,8 @@ class studentController extends Controller
     {
       $data= request()->validate([
         'name'=>'required',
-        'phone'=>'required|unique:faculties',
-        'email'=>'required|unique:faculties',
+        'phone'=>'required|unique:users',
+        'email'=>'required|unique:users',
         'user_id'=>'nullable',
         'address'=>'nullable',
         'dob'=>'nullable',

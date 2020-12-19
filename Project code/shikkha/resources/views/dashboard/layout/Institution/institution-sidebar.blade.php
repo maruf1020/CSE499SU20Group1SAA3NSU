@@ -180,7 +180,7 @@
 
                             </li>
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="institution-courses" class="menu-link menu-toggle">
+                                <a href="{{ route('department.index') }}" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
@@ -189,7 +189,7 @@
 
                             </li>
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="institution-courses" class="menu-link menu-toggle">
+                                <a href="{{ route('course.index') }}" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>

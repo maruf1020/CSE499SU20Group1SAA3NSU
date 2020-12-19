@@ -5,13 +5,12 @@ namespace App\Http\Controllers\institution;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\faculty;
+use App\department;
 use Response;
 use App\institution;
 use App\verifiyInstiution;
 
-
-class facultyController extends Controller
+class departmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,9 +19,9 @@ class facultyController extends Controller
      */
     public function index()
     {
-      $faculties=faculty::orderByDesc('id')->get();
-      return view('dashboard.institution.institution-faculty',[
-        'faculties'=>$faculties,
+      $departments=department::orderByDesc('id')->get();
+      return view('dashboard.institution.institution-department',[
+        'departments'=>$departments,
       ]);
     }
 
@@ -45,14 +44,7 @@ class facultyController extends Controller
     public function store(Request $request)
     {
       $data= request()->validate([
-        'name'=>'required',
-        'initial'=>'required|unique:faculties',
-        'phone'=>'required|unique:faculties',
-        'email'=>'required|unique:faculties',
-        'user_id'=>'nullable',
-        'address'=>'nullable',
-        'dob'=>'nullable',
-        'photo'=>'nullable',
+        'name'=>'required|unique:departments',
       ]);
 
       $id=Auth::user()->id;
@@ -63,10 +55,10 @@ class facultyController extends Controller
 
       $data['institution_id']=$institutionId;
       // $data['user_id']=$id;
-      faculty::create($data);
+      department::create($data);
 
-      session()->flash('msg','Faculty Created Successfully');
-      return redirect(route('faculty.index'));
+      session()->flash('msg','Departments Created Successfully');
+      return redirect(route('department.index'));
     }
 
     /**
@@ -86,9 +78,9 @@ class facultyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(faculty $faculty)
+    public function edit($id)
     {
-
+        //
     }
 
     /**
@@ -98,24 +90,15 @@ class facultyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,faculty $faculty)
+    public function update(Request $request,department $department)
     {
-
       $data= request()->validate([
         'name'=>'required',
-        'initial'=>'required',
-        'phone'=>'required',
-        'email'=>'required',
-        'user_id'=>'nullable',
-        'address'=>'nullable',
-        'dob'=>'nullable',
-        'photo'=>'nullable',
       ]);
       // dd($data);
-      $faculty->update($data);
+      $department->update($data);
 
-      return Response::json($faculty);
-
+      return Response::json($department);
     }
 
     /**
@@ -124,17 +107,8 @@ class facultyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(faculty $faculty)
+    public function destroy(department $department)
     {
-        $faculty->delete();
+          $department->delete();
     }
-    public function verifiedFaculties()
-    {
-        $faculties=faculty::where('is_verified',1)->orderByDesc('id')->get();
-        return view('dashboard.institution.institution-faculty-verified',[
-          'faculties'=>$faculties,
-        ]);
-        dd($faculties);
-    }
-
 }

@@ -44,9 +44,13 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']],function (){
 
 //faculty route
 Route::resource('/faculty','institution\facultyController');
+Route::get('/verified-faculties','institution\facultyController@verifiedFaculties')->name('verified-faculties');
 //student route
 Route::resource('/student','institution\studentController');
-// Route::get('/sm','institution\facultyController@test');
+//department route
+Route::resource('/department','institution\departmentController');
+//course route
+Route::resource('/course','institution\courseController');
 
 
 
@@ -176,94 +180,94 @@ Route::resource('/student','institution\studentController');
 
 
 
-// // faculty route start
-// Route::get('/faculty-stream', function () {
-//     return view('dashboard.faculty.faculty-stream');
-// });
-// Route::get('/faculty-stream-home', function () {
-//     return view('dashboard.faculty.faculty-stream-home');
-// });
-// Route::get('/faculty-assigned-course', function () {
-//     return view('dashboard.faculty.faculty-assigned-course');
-// });
-// Route::get('/faculty-class-time', function () {
-//     return view('dashboard.faculty.faculty-class-time');
-// });
-// Route::get('/faculty-attendence', function () {
-//     return view('dashboard.faculty.faculty-attendence');
-// });
-// Route::get('/faculty-calendar', function () {
-//     return view('dashboard.faculty.faculty-calendar');
-// });
-// Route::get('/faculty-todo', function () {
-//     return view('dashboard.faculty.faculty-todo');
-// });
-// Route::get('/faculty-conference', function () {
-//     return view('dashboard.faculty.faculty-conference');
-// });
-// Route::get('/faculty-message', function () {
-//     return view('dashboard.faculty.faculty-message');
-// });
-// Route::get('/faculty-notifications', function () {
-//     return view('dashboard.faculty.faculty-notifications');
-// });
-// Route::get('/faculty-personal-information', function () {
-//     return view('dashboard.faculty.faculty-personal-information');
-// });
-// Route::get('/faculty-make-question', function () {
-//     return view('dashboard.faculty.faculty-make-question');
-// });
-// Route::get('/faculty-class-work', function () {
-//     return view('dashboard.faculty.faculty-class-work');
-// });
-// Route::get('/faculty-class-work-all-task', function () {
-//     return view('dashboard.faculty.faculty-class-work-all-task');
-// });
-// Route::get('/faculty-class-work-all-student-task', function () {
-//     return view('dashboard.faculty.faculty-class-work-all-student-task');
-// });
-// Route::get('/faculty-class-work-task-view', function () {
-//     return view('dashboard.faculty.faculty-class-work-task-view');
-// });
-// Route::get('/faculty-class-work-task-view', function () {
-//     return view('dashboard.faculty.faculty-class-work-task-view');
-// });
-// Route::get('/faculty-course-resource-home', function () {
-//     return view('dashboard.faculty.faculty-course-resource-home');
-// });
-// Route::get('/faculty-course-resource', function () {
-//     return view('dashboard.faculty.faculty-course-resource');
-// });
-// Route::get('/faculty-offer-courses', function () {
-//     return view('dashboard.faculty.faculty-offer-courses');
-// });
-// Route::get('/faculty-pre-course-request', function () {
-//     return view('dashboard.faculty.faculty-pre-course-request');
-// });
-// Route::get('/faculty-course-request', function () {
-//     return view('dashboard.faculty.faculty-course-request');
-// });
-// Route::get('/faculty-grade', function () {
-//     return view('dashboard.faculty.faculty-grade');
-// });
-// Route::get('/faculty-individual-grade', function () {
-//     return view('dashboard.faculty.faculty-individual-grade');
-// });
-// Route::get('/faculty-check-cgpa', function () {
-//     return view('dashboard.faculty.faculty-check-cgpa');
-// });
-// Route::get('/faculty-individual-cgpa', function () {
-//     return view('dashboard.faculty.faculty-individual-cgpa');
-// });
-// Route::get('/faculty-evaluation', function () {
-//     return view('dashboard.faculty.faculty-evaluation');
-// });
-// Route::get('/faculty-evaluation-course-list', function () {
-//     return view('dashboard.faculty.faculty-evaluation-course-list');
-// });
-// Route::get('/faculty-view-evaluation-internal', function () {
-//     return view('dashboard.faculty.faculty-view-evaluation-internal');
-// });
+// faculty route start
+Route::get('/faculty-stream', function () {
+    return view('dashboard.faculty.faculty-stream');
+});
+Route::get('/faculty-stream-home', function () {
+    return view('dashboard.faculty.faculty-stream-home');
+});
+Route::get('/faculty-assigned-course', function () {
+    return view('dashboard.faculty.faculty-assigned-course');
+});
+Route::get('/faculty-class-time', function () {
+    return view('dashboard.faculty.faculty-class-time');
+});
+Route::get('/faculty-attendence', function () {
+    return view('dashboard.faculty.faculty-attendence');
+});
+Route::get('/faculty-calendar', function () {
+    return view('dashboard.faculty.faculty-calendar');
+});
+Route::get('/faculty-todo', function () {
+    return view('dashboard.faculty.faculty-todo');
+});
+Route::get('/faculty-conference', function () {
+    return view('dashboard.faculty.faculty-conference');
+});
+Route::get('/faculty-message', function () {
+    return view('dashboard.faculty.faculty-message');
+});
+Route::get('/faculty-notifications', function () {
+    return view('dashboard.faculty.faculty-notifications');
+});
+Route::get('/faculty-personal-information', function () {
+    return view('dashboard.faculty.faculty-personal-information');
+});
+Route::get('/faculty-make-question', function () {
+    return view('dashboard.faculty.faculty-make-question');
+});
+Route::get('/faculty-class-work', function () {
+    return view('dashboard.faculty.faculty-class-work');
+});
+Route::get('/faculty-class-work-all-task', function () {
+    return view('dashboard.faculty.faculty-class-work-all-task');
+});
+Route::get('/faculty-class-work-all-student-task', function () {
+    return view('dashboard.faculty.faculty-class-work-all-student-task');
+});
+Route::get('/faculty-class-work-task-view', function () {
+    return view('dashboard.faculty.faculty-class-work-task-view');
+});
+Route::get('/faculty-class-work-task-view', function () {
+    return view('dashboard.faculty.faculty-class-work-task-view');
+});
+Route::get('/faculty-course-resource-home', function () {
+    return view('dashboard.faculty.faculty-course-resource-home');
+});
+Route::get('/faculty-course-resource', function () {
+    return view('dashboard.faculty.faculty-course-resource');
+});
+Route::get('/faculty-offer-courses', function () {
+    return view('dashboard.faculty.faculty-offer-courses');
+});
+Route::get('/faculty-pre-course-request', function () {
+    return view('dashboard.faculty.faculty-pre-course-request');
+});
+Route::get('/faculty-course-request', function () {
+    return view('dashboard.faculty.faculty-course-request');
+});
+Route::get('/faculty-grade', function () {
+    return view('dashboard.faculty.faculty-grade');
+});
+Route::get('/faculty-individual-grade', function () {
+    return view('dashboard.faculty.faculty-individual-grade');
+});
+Route::get('/faculty-check-cgpa', function () {
+    return view('dashboard.faculty.faculty-check-cgpa');
+});
+Route::get('/faculty-individual-cgpa', function () {
+    return view('dashboard.faculty.faculty-individual-cgpa');
+});
+Route::get('/faculty-evaluation', function () {
+    return view('dashboard.faculty.faculty-evaluation');
+});
+Route::get('/faculty-evaluation-course-list', function () {
+    return view('dashboard.faculty.faculty-evaluation-course-list');
+});
+Route::get('/faculty-view-evaluation-internal', function () {
+    return view('dashboard.faculty.faculty-view-evaluation-internal');
+});
 
 
 
