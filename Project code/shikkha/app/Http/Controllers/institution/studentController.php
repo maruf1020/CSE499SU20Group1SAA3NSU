@@ -18,7 +18,13 @@ class studentController extends Controller
      */
     public function index()
     {
-      $students=student::orderByDesc('id')->get();
+
+      // Getting institutio id
+      $id=Auth::user()->id;
+      $verifiyInstiution = verifiyInstiution::where('user_id',$id)->first();
+      $institutionId = $verifiyInstiution->institution->id;
+
+      $students=student::where('institution_id',$institutionId)->orderByDesc('id')->get();
       return view('dashboard.institution.institution-student',[
         'students'=>$students,
       ]);
@@ -44,8 +50,8 @@ class studentController extends Controller
     {
       $data= request()->validate([
         'name'=>'required',
-        'phone'=>'required|unique:users',
-        'email'=>'required|unique:users',
+        'phone'=>'required|unique:students',
+        'email'=>'required|unique:students',
         'user_id'=>'nullable',
         'address'=>'nullable',
         'dob'=>'nullable',

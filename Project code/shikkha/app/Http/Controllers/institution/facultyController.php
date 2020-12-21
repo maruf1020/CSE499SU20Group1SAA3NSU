@@ -20,7 +20,12 @@ class facultyController extends Controller
      */
     public function index()
     {
-      $faculties=faculty::orderByDesc('id')->get();
+      // Getting institutio id
+      $id=Auth::user()->id;
+      $verifiyInstiution = verifiyInstiution::where('user_id',$id)->first();
+      $institutionId = $verifiyInstiution->institution->id;
+
+      $faculties=faculty::where('institution_id',$institutionId)->orderByDesc('id')->get();
       return view('dashboard.institution.institution-faculty',[
         'faculties'=>$faculties,
       ]);

@@ -163,7 +163,7 @@
 											</div>
 											<div class="form-group">
 												<label>Session Status</label>
-												<select  class="form-control form-control-lg" name="status">
+												<select class="form-control form-control-lg" name="status">
 													<option value="">Select Status</option>
 
 													<option value="1">Active</option>
@@ -171,6 +171,7 @@
 
 												</select>
 											</div>
+											
 											{{-- <div class="form-group row">
 												<label class="col-3 col-form-label">Session Status</label>
 												<div class="col-3">
@@ -237,6 +238,7 @@
 												<label>Session End</label>
 												<input id="end" name="end" type="date" class="form-control form-control-lg" placeholder="Write Email">
 											</div>
+
 											<div class="form-group">
 												<label>Session Status</label>
 												<select id="status" class="form-control form-control-lg" name="status">
@@ -256,6 +258,9 @@
 
 												</select>
 											</div>
+
+
+
 										</div>
 										<div class="modal-footer footer-update">
 											<button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Cancel</button>

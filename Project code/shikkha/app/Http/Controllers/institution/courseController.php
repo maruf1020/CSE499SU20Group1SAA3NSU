@@ -20,7 +20,12 @@ class courseController extends Controller
      */
     public function index()
     {
-      $courses=course::orderByDesc('id')->get();
+      // Getting institutio id
+      $id=Auth::user()->id;
+      $verifiyInstiution = verifiyInstiution::where('user_id',$id)->first();
+      $institutionId = $verifiyInstiution->institution->id;
+
+      $courses=course::where('institution_id',$institutionId)->orderByDesc('id')->get();
       $departments=department::orderByDesc('name')->get();
       return view('dashboard.institution.institution-courses',[
         'courses'=>$courses,

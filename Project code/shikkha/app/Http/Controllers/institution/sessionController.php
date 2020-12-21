@@ -19,6 +19,11 @@ class sessionController extends Controller
      */
     public function index()
     {
+      // Getting institutio id
+      $id=Auth::user()->id;
+      $verifiyInstiution = verifiyInstiution::where('user_id',$id)->first();
+      $institutionId = $verifiyInstiution->institution->id;
+
       $session=session::where('stop','')->orderByDesc('id')->get();
       return view('dashboard.institution.institution-session',[
         'session'=>$session,
