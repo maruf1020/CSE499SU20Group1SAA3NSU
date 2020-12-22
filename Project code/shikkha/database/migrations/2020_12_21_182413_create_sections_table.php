@@ -15,6 +15,14 @@ class CreateSectionsTable extends Migration
     {
         Schema::create('sections', function (Blueprint $table) {
             $table->id();
+            $table->string('section_number');
+            $table->string('start')->nullable();
+            $table->string('end')->nullable();
+            $table->string('session')->nullable();
+            $table->integer('capacity')->nullable();
+            $table->string('random');
+            $table->integer('institution_id');
+            $table->integer('course_id');
             $table->timestamps();
         });
     }

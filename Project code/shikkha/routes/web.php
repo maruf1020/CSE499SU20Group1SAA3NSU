@@ -54,6 +54,10 @@ Route::resource('/course','institution\courseController');
 //session route
 Route::resource('/session','institution\sessionController');
 Route::get('/previous-session','institution\sessionController@previousSession')->name('previous-session');
+//timing route
+Route::resource('/timing','institution\timingController');
+//section route
+Route::resource('/section','institution\sectionController');
 
 
 
