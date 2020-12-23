@@ -9,6 +9,7 @@ use App\post;
 use App\resource;
 use App\sectionDetail;
 use App\session;
+use App\student;
 use App\verifiyInstiution;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -25,19 +26,37 @@ class streamController extends Controller
         // Getting institutio id
         $id=Auth::user();
         $user_id=Auth::user()->id;
+        if($id->role==2){
+            $institutionId = $id->personal_info->institution_id;
+            $faculties=faculty::where('institution_id',$institutionId)->where('user_id', $user_id)->orderByDesc('id')->first();
+            $facultyId=$faculties->id;
+            // faculty_id paisi
 
-        $institutionId = $id->personal_info->institution_id;
-        $faculties=faculty::where('institution_id',$institutionId)->where('user_id', $user_id)->orderByDesc('id')->first();
-        $facultyId=$faculties->id;
-        // faculty_id paisi
-
-        $session=session::where('institution_id',$institutionId)->where('status', 1)->first();
-        $sectionDetail=sectionDetail::where('faculty_id', $facultyId)->where('session_id', $session->id)->orderByDesc('id')->get();
+            $session=session::where('institution_id',$institutionId)->where('status', 1)->first();
+            $sectionDetail=sectionDetail::where('faculty_id', $facultyId)->where('session_id', $session->id)->orderByDesc('id')->get();
 
 
-        return view('dashboard.faculty.faculty-stream',[
-            'sectionDetail'=>$sectionDetail
-        ]);
+            return view('dashboard.faculty.faculty-stream',[
+                'sectionDetail'=>$sectionDetail
+            ]);
+        }
+        elseif ($id->role==1){
+            $institutionId = $id->personal_info->institution_id;
+
+            $student=student::where('institution_id',$institutionId)->where('user_id', $user_id)->orderByDesc('id')->first();
+            $studentsId=$student->id;
+            // student_id paisi
+
+            $session=session::where('institution_id',$institutionId)->where('status', 1)->first();
+//            dd($session);
+            $sectionDetail=sectionDetail::where('student_id', $studentsId)->where('session_id', $session->id)->orderByDesc('id')->get();
+
+
+            return view('dashboard.faculty.faculty-stream',[
+                'sectionDetail'=>$sectionDetail
+            ]);
+        }
+
     }
 
     /**

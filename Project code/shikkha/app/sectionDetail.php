@@ -10,6 +10,9 @@ class sectionDetail extends Model
     public function faculty(){
         return $this->belongsTo(faculty::class);
     }
+    public function student(){
+        return $this->belongsTo(student::class);
+    }
     public function section(){
         return $this->belongsTo(section::class);
     }
