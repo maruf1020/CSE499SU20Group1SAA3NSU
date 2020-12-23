@@ -173,18 +173,33 @@
                                                         @endforeach
                                                     </select>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label>Choose Student</label>
-                                                    <select id="" class="form-control form-control-lg" name="student_id">
-                                                        <option value="">Select Student</option>
-                                                        <option value="2">EEE Department</option>
+{{--                                                <div class="form-group">--}}
+{{--                                                    <label>Choose Student</label>--}}
+{{--                                                    <select id="" class="form-control form-control-lg" name="student_id">--}}
+{{--                                                        <option value="">Select Student</option>--}}
+{{--                                                        <option value="2">EEE Department</option>--}}
 
-                                                    </select>
+{{--                                                    </select>--}}
+{{--                                                </div>--}}
+                                                <div class="form-group " >
+                                                    <label>Choose Student</label>
+                                                    <div class="col-lg-12" style="width: 33rem;">
+                                                        <select class="form-control form-control-lg select2" id="kt_select2_3" name="student_id[]" multiple="multiple" data-mce-placeholder="Select students">
+{{--                                                            <option value="" selected>Select Student</option>--}}
+                                                            <option value="Search and add"></option>
+                                                            @foreach ($student as $key=>$value)
+                                                                <option value="{{ $value->id }}">{{ $value->name }}</option>
+                                                            @endforeach
+
+
+
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Choose Start Time</label>
                                                     <select id="" class="form-control form-control-lg" name="start">
-                                                        <option value="">Select Start Time</option>
+                                                        <option value="" >Select Start Time</option>
                                                         @foreach ($timings as $key=>$value)
                                                             <option value="{{ $value->start }}">{{ $value->start }}</option>
                                                         @endforeach
@@ -360,13 +375,21 @@
 												</tr>
 											</thead>
 											<tbody>
-
+                                            <?php
+                                            $check =0;
+                                            ?>
 												@foreach ($sections as $key=>$value)
+                                                    <?php
+                                                    $chekdoublevalue = $value->section_number;
+
+                                                    if($chekdoublevalue != $check)
+                                                    {
+                                                    ?>
 												<tr class='value{{ $value->id }}'>
 													<th id='serial'>{{ $key+1 }}</th>
 													<td>Section: {{ $value->section_number }}</td>
 													<td>{{ $value->name }}</td>
-													<td></td>
+													<td>.</td>
 													<td>
                                                         <?php
                                                         $start=$value->start;
@@ -413,19 +436,20 @@
                                                     </td>
 													<td>{{ $value->capacity }}</td>
 													<td>
-														<a href="javascript:;" data-toggle="modal" data-target="#edit" class="btn btn-sm btn-clean btn-icon mr-2 edit" title="Edit details" data-id='{{ $value->id }}' data-facultyid='{{ $value->name }}'
+														<a href="javascript:;" data-toggle="modal" data-target="#edit" class="btn btn-sm btn-clean btn-icon mr-2 edit" title="Edit details" data-id='{{ $value->section_id }}' data-facultyid='{{ $value->name }}'
 														  data-sectionid='{{ $value->section_number }}' data-start='{{ $value->start }}' data-end='{{ $value->end }}' data-capacity='{{ $value->capacity }}' data-session='{{ $value->session }}'>
 															<i class="far fa-edit"></i>
 														</a>
 
-														<a href="javascript:void(0)" data-method="DELETE" data-token="{{csrf_token()}}"  data-url="{{ route('section.destroy',$value->id) }}" data-id="{{ $value->id }}" class="btn btn-sm btn-clean btn-icon delete" title="Delete">
+														<a href="javascript:void(0)" data-method="DELETE" data-token="{{csrf_token()}}"  data-url="{{ route('section.destroy',$value->section_id) }}" data-id="{{ $value->section_id }}" class="btn btn-sm btn-clean btn-icon delete" title="Delete">
 															<i class="fas fa-trash"></i>
 														</a>
-
-
-
 													</td>
 												</tr>
+                                                    <?php
+                                                     }
+                                                    $check = $chekdoublevalue;
+                                                     ?>
 												@endforeach
 											</tbody>
 										</table>
@@ -510,8 +534,8 @@
 						"<tr class='value" + data.id + "'>" +
 						"<td>" + serial + "</td>" +
 						"<td> Section: " + data.section_number + "</td>" +
-						"<td>" + data.faculty + "</td>" +
-						"<td>" + data.faculty + "</td>" +
+						"<td>" + data.faculty_id + "</td>" +
+						"<td>" + data.faculty_id + "</td>" +
 						"<td>" + data.start + "</td>" +
 						"<td>" + data.end + "</td>" +
 						"<td>" + data.capacity + "</td>" +
@@ -542,6 +566,198 @@
 
 		});
 	</script>
+    <script>
+        // Class definition
+        var KTSelect2 = function() {
+            // Private functions
+            var demos = function() {
+                // basic
+                $('#kt_select2_1').select2({
+                    placeholder: "Select a state"
+                });
+
+                // nested
+                $('#kt_select2_2').select2({
+                    placeholder: "Select a state"
+                });
+
+                // multi select
+                $('#kt_select2_3').select2({
+                    placeholder: "Select a state",
+                });
+
+                // basic
+                $('#kt_select2_4').select2({
+                    placeholder: "Select a state",
+                    allowClear: true
+                });
+
+                // loading data from array
+                var data = [{
+                    id: 0,
+                    text: 'Enhancement'
+                }, {
+                    id: 1,
+                    text: 'Bug'
+                }, {
+                    id: 2,
+                    text: 'Duplicate'
+                }, {
+                    id: 3,
+                    text: 'Invalid'
+                }, {
+                    id: 4,
+                    text: 'Wontfix'
+                }];
+
+                $('#kt_select2_5').select2({
+                    placeholder: "Select a value",
+                    data: data
+                });
+
+                // loading remote data
+
+                function formatRepo(repo) {
+                    if (repo.loading) return repo.text;
+                    var markup = "<div class='select2-result-repository clearfix'>" +
+                        "<div class='select2-result-repository__meta'>" +
+                        "<div class='select2-result-repository__title'>" + repo.full_name + "</div>";
+                    if (repo.description) {
+                        markup += "<div class='select2-result-repository__description'>" + repo.description + "</div>";
+                    }
+                    markup += "<div class='select2-result-repository__statistics'>" +
+                        "<div class='select2-result-repository__forks'><i class='fa fa-flash'></i> " + repo.forks_count + " Forks</div>" +
+                        "<div class='select2-result-repository__stargazers'><i class='fa fa-star'></i> " + repo.stargazers_count + " Stars</div>" +
+                        "<div class='select2-result-repository__watchers'><i class='fa fa-eye'></i> " + repo.watchers_count + " Watchers</div>" +
+                        "</div>" +
+                        "</div></div>";
+                    return markup;
+                }
+
+                function formatRepoSelection(repo) {
+                    return repo.full_name || repo.text;
+                }
+
+                $("#kt_select2_6").select2({
+                    placeholder: "Search for git repositories",
+                    allowClear: true,
+                    ajax: {
+                        url: "https://api.github.com/search/repositories",
+                        dataType: 'json',
+                        delay: 250,
+                        data: function(params) {
+                            return {
+                                q: params.term, // search term
+                                page: params.page
+                            };
+                        },
+                        processResults: function(data, params) {
+                            // parse the results into the format expected by Select2
+                            // since we are using custom formatting functions we do not need to
+                            // alter the remote JSON data, except to indicate that infinite
+                            // scrolling can be used
+                            params.page = params.page || 1;
+
+                            return {
+                                results: data.items,
+                                pagination: {
+                                    more: (params.page * 30) < data.total_count
+                                }
+                            };
+                        },
+                        cache: true
+                    },
+                    escapeMarkup: function(markup) {
+                        return markup;
+                    }, // let our custom formatter work
+                    minimumInputLength: 1,
+                    templateResult: formatRepo, // omitted for brevity, see the source of this page
+                    templateSelection: formatRepoSelection // omitted for brevity, see the source of this page
+                });
+
+                // custom styles
+
+                // tagging support
+                $('#kt_select2_12_1, #kt_select2_12_2, #kt_select2_12_3, #kt_select2_12_4').select2({
+                    placeholder: "Select an option",
+                });
+
+                // disabled mode
+                $('#kt_select2_7').select2({
+                    placeholder: "Select an option"
+                });
+
+                // disabled results
+                $('#kt_select2_8').select2({
+                    placeholder: "Select an option"
+                });
+
+                // limiting the number of selections
+                $('#kt_select2_9').select2({
+                    placeholder: "Select an option",
+                    maximumSelectionLength: 2
+                });
+
+                // hiding the search box
+                $('#kt_select2_10').select2({
+                    placeholder: "Select an option",
+                    minimumResultsForSearch: Infinity
+                });
+
+                // tagging support
+                $('#kt_select2_11').select2({
+                    placeholder: "Add a tag",
+                    tags: true
+                });
+
+                // disabled results
+                $('.kt-select2-general').select2({
+                    placeholder: "Select an option"
+                });
+            }
+
+            var modalDemos = function() {
+                $('#kt_select2_modal').on('shown.bs.modal', function () {
+                    // basic
+                    $('#kt_select2_1_modal').select2({
+                        placeholder: "Select a state"
+                    });
+
+                    // nested
+                    $('#kt_select2_2_modal').select2({
+                        placeholder: "Select a state"
+                    });
+
+                    // multi select
+                    $('#kt_select2_3_modal').select2({
+                        placeholder: "Select a state",
+                    });
+
+                    // basic
+                    $('#kt_select2_4_modal').select2({
+                        placeholder: "Select a state",
+                        allowClear: true
+                    });
+                });
+            }
+
+            // Public functions
+            return {
+                init: function() {
+                    demos();
+                    modalDemos();
+                }
+            };
+        }();
+
+        // Initialization
+        jQuery(document).ready(function() {
+            KTSelect2.init();
+        });
+
+
+
+    </script>
 	@endsection
 	{{-- <a href='javascript:;' data-toggle='modal' data-target='#edit' class='btn btn-sm btn-clean btn-icon mr-2 edit' title='Edit details' data-id='"+data.phone+"' data-name='"+data.phone+"'
 		data-phone='"+data.phone+"' data-email='"+data.phone+"' data-initial='"+data.phone+"' data-dob='"+data.phone+"' data-address='"+data.phone+"'>

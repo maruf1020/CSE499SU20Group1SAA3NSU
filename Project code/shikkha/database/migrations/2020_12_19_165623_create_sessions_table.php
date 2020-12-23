@@ -22,6 +22,7 @@ class CreateSessionsTable extends Migration
           $table->string('status')->default('0');
           $table->integer('stop')->default('0');
           $table->integer('institution_id');
+          $table->integer('course_id');
           $table->timestamps();
         });
     }

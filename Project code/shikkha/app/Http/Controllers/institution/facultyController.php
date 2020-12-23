@@ -67,6 +67,7 @@ class facultyController extends Controller
 
 
       $data['institution_id']=$institutionId;
+//      dd($data);
       // $data['user_id']=$id;
       faculty::create($data);
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSectionDetailsTable extends Migration
+class CreatePostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateSectionDetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('section_details', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->integer('institution_id');
-            $table->integer('faculty_id')->nullable();
-            $table->integer('student_id')->nullable();
+            $table->string('author');
+            $table->string('description');
+            $table->string('random')->nullable();
             $table->integer('section_id');
-            $table->integer('course_id');
-            $table->integer('session_id');
+            $table->integer('resource_id')->nullable();
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ class CreateSectionDetailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('section_details');
+        Schema::dropIfExists('posts');
     }
 }

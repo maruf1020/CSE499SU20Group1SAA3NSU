@@ -10,7 +10,14 @@ class section extends Model
     public function course(){
         return $this->belongsTo(course::class);
     }
-    public function sectiondetail(){
-        return $this->hasOne(sectionDetail::class);
+    public function sectionDetail(){
+        return $this->hasMany(sectionDetail::class);
     }
+    public function session(){
+        return $this->belongsTo(session::class);
+    }
+    public function resource(){
+        return $this->hasMany(resource::class);
+    }
+
 }

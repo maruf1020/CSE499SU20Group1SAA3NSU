@@ -13,5 +13,13 @@ class sectionDetail extends Model
     public function section(){
         return $this->belongsTo(section::class);
     }
+    public function course(){
+        return $this->belongsTo(course::class);
+    }
+    public function session(){
+        return $this->belongsTo(session::class);
+    }
+
+
 
 }

@@ -82,17 +82,26 @@ class sectionController extends Controller
         $data1= request()->validate([
             'faculty_id'=>'nullable',
             'student_id'=>'nullable',
+            'course_id'=>'required',
 
         ]);
         $data1['institution_id']=$institutionId;
         $data1['section_id']=$section_id;
+        $data1['session_id']=$data['session'];
+//        dd($data1['student_id']);
+//       $student_id= $data1['student_id'];
+//        $count=count($student_id);
+        $studentsname = $data1['student_id'];
+
+
+        foreach ($studentsname as $key =>$value){
+            $studentname = $studentsname[$key];
+            $data1['student_id']=$studentname;
+            sectionDetail::create($data1);
+        }
 
 
 
-
-        // $data['user_id']=$id;
-
-        sectionDetail::create($data1);
 
         session()->flash('msg','Section Created Successfully');
         return back();
@@ -113,13 +122,17 @@ class sectionController extends Controller
 
         $faculties=faculty::where('institution_id',$institutionId)->orderBy('name')->get();
         $timings=timing::where('institution_id',$institutionId)->orderBy('start')->get();
-        $session=session::where('institution_id',$institutionId)->orderBy('name')->get();
+        $session=session::where('institution_id',$institutionId)->where('status',1)->orderBy('name')->get();
+        $student=student::where('institution_id',$institutionId)->where('is_verified',1)->orderBy('name')->get();
+        $sectionDetail=sectionDetail::where('institution_id',$institutionId)->where('section_id',$section->id)->orderBy('id')->get();
 //        $sections=section::where('institution_id',$institutionId)->orderBy('name')->get();
         $sections = DB::table('sections')
             ->join('section_details', 'section_details.section_id', '=', 'sections.id')
             ->join('faculties', 'faculties.id', '=', 'section_details.faculty_id')
             ->where('sections.institution_id', '=', $institutionId)
             ->get();
+
+//        dd($sections);
 
 
 
@@ -129,6 +142,9 @@ class sectionController extends Controller
             'timings'=>$timings,
             'session'=>$session,
             'sections'=>$sections,
+            'student'=>$student,
+            'sectionDetail'=>$sectionDetail,
+
         ]);
     }
 
@@ -194,9 +210,10 @@ class sectionController extends Controller
 
 
         $sectionId=$section->id;
-        $getsection = section::where('id',$sectionId)->first();
 
+        $getsection = section::where('id',$sectionId)->first();
         $section_id=$getsection->id;
+
         $sectionDetail=sectionDetail::where('section_id',$section_id)->first();
         $sectionDetail->delete();
         $section->delete();

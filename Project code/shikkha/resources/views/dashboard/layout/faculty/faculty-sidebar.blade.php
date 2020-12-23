@@ -164,7 +164,7 @@
 
 
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="faculty-stream" class="menu-link menu-toggle">
+                                <a href="{{ route('faculty-stream.index') }}" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
@@ -174,7 +174,7 @@
                             </li>
 
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="faculty-assigned-course" class="menu-link menu-toggle">
+                                <a href="{{ route('course-list.index') }}" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>
@@ -202,7 +202,7 @@
 
                             </li>
                             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="faculty-course-resource-home" class="menu-link menu-toggle">
+                                <a href="{{ route('resource.index') }}" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
                                         <span></span>
                                     </i>

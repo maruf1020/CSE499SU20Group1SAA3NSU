@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSectionDetailsTable extends Migration
+class CreateResourcesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,18 @@ class CreateSectionDetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('section_details', function (Blueprint $table) {
+        Schema::create('resources', function (Blueprint $table) {
             $table->id();
+            $table->string('file_name');
+            $table->string('original_file_name');
+            $table->string('extension');
             $table->integer('institution_id');
-            $table->integer('faculty_id')->nullable();
-            $table->integer('student_id')->nullable();
+            $table->integer('faculty_id');
             $table->integer('section_id');
             $table->integer('course_id');
             $table->integer('session_id');
+            $table->integer('is_public');
+            $table->string('random')->nullable();
             $table->timestamps();
         });
     }
@@ -32,6 +36,6 @@ class CreateSectionDetailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('section_details');
+        Schema::dropIfExists('resources');
     }
 }

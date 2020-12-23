@@ -1,5 +1,6 @@
 <?php
 
+use App\course;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -61,7 +62,24 @@ Route::resource('/section','institution\sectionController');
 
 
 
+//faculty or teacher route define
+//course list
+Route::resource('/course-list','faculty\courseListController');
+//stream list
+Route::resource('/faculty-stream','faculty\streamController');
+//stream list
+Route::resource('/resource','faculty\resourceController');
+Route::Post('/data','faculty\resourceController@fetch')->name('data.fetch');
+//post list
+Route::resource('/post','postController');
+//comment list
+Route::resource('/comment','commentController');
 
+
+Route::get('/test',function(){
+    $course=course::find(5);
+    dd($course->section[0]->sectiondetail[0]->faculty);
+});
 
 
 
@@ -188,12 +206,12 @@ Route::resource('/section','institution\sectionController');
 
 
 // faculty route start
-Route::get('/faculty-stream', function () {
-    return view('dashboard.faculty.faculty-stream');
-});
-Route::get('/faculty-stream-home', function () {
-    return view('dashboard.faculty.faculty-stream-home');
-});
+//Route::get('/faculty-stream', function () {
+//    return view('dashboard.faculty.faculty-stream');
+//});
+//Route::get('/faculty-stream-home', function () {
+//    return view('dashboard.faculty.faculty-stream-home');
+//});
 Route::get('/faculty-assigned-course', function () {
     return view('dashboard.faculty.faculty-assigned-course');
 });
@@ -239,12 +257,12 @@ Route::get('/faculty-class-work-task-view', function () {
 Route::get('/faculty-class-work-task-view', function () {
     return view('dashboard.faculty.faculty-class-work-task-view');
 });
-Route::get('/faculty-course-resource-home', function () {
-    return view('dashboard.faculty.faculty-course-resource-home');
-});
-Route::get('/faculty-course-resource', function () {
-    return view('dashboard.faculty.faculty-course-resource');
-});
+//Route::get('/faculty-course-resource-home', function () {
+//    return view('dashboard.faculty.faculty-course-resource-home');
+//});
+//Route::get('/faculty-course-resource', function () {
+//    return view('dashboard.faculty.faculty-course-resource');
+//});
 Route::get('/faculty-offer-courses', function () {
     return view('dashboard.faculty.faculty-offer-courses');
 });
