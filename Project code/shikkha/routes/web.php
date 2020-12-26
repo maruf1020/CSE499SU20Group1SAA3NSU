@@ -67,6 +67,8 @@ Route::resource('/section','institution\sectionController');
 Route::resource('/course-list','faculty\courseListController');
 //stream list
 Route::resource('/faculty-stream','faculty\streamController');
+//exam route
+Route::resource('/create-exam','faculty\createQuizController');
 //stream list
 Route::resource('/resource','faculty\resourceController');
 Route::Post('/data','faculty\resourceController@fetch')->name('data.fetch');
@@ -80,6 +82,12 @@ Route::get('/test',function(){
     $course=course::find(5);
     dd($course->section[0]->sectiondetail[0]->faculty);
 });
+Route::get('/exam',function(){
+  return view('create_exam');
+});
+// Route::get('/question',function(){
+//   return view('create_question');
+// });
 
 
 
@@ -183,9 +191,9 @@ Route::get('/test',function(){
 // Route::get('/class-work-view', function () {
 //     return view('dashboard.student.class-work-view');
 // });
-// Route::get('/exam', function () {
-//     return view('dashboard.student.exam');
-// });
+Route::get('/exam1', function () {
+    return view('dashboard.student.exam');
+});
 // Route::get('/change-password', function () {
 //     return view('dashboard.student.change-password');
 // });
