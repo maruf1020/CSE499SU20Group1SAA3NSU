@@ -115,22 +115,29 @@ class sectionController extends Controller
      */
     public function show(Course $section)
     {
+
         // Getting institutio id
         $id=Auth::user()->id;
         $verifiyInstiution = verifiyInstiution::where('user_id',$id)->first();
-        $institutionId = $verifiyInstiution->institution->id;
+        $institutionId = $verifiyInstiution->institution->id; //institution id paisi
 
         $faculties=faculty::where('institution_id',$institutionId)->orderBy('name')->get();
         $timings=timing::where('institution_id',$institutionId)->orderBy('start')->get();
         $session=session::where('institution_id',$institutionId)->where('status',1)->orderBy('name')->get();
         $student=student::where('institution_id',$institutionId)->where('is_verified',1)->orderBy('name')->get();
-        $sectionDetail=sectionDetail::where('institution_id',$institutionId)->where('section_id',$section->id)->orderBy('id')->get();
-//        $sections=section::where('institution_id',$institutionId)->orderBy('name')->get();
-        $sections = DB::table('sections')
-            ->join('section_details', 'section_details.section_id', '=', 'sections.id')
-            ->join('faculties', 'faculties.id', '=', 'section_details.faculty_id')
-            ->where('sections.institution_id', '=', $institutionId)
-            ->get();
+
+
+
+        $sectionDetail=sectionDetail::where('institution_id',$institutionId)
+            ->where('course_id',$section->id)
+            ->orderBy('id')->get()->unique('section_id');
+
+//        dd($sectionDetail);
+//        $sections = DB::table('sections')
+//            ->join('section_details', 'section_details.section_id', '=', 'sections.id')
+//            ->join('faculties', 'faculties.id', '=', 'section_details.faculty_id')
+//            ->where('sections.institution_id', '=', $institutionId)
+//            ->get();
 
 //        dd($sections);
 
@@ -141,7 +148,6 @@ class sectionController extends Controller
             'faculties'=>$faculties,
             'timings'=>$timings,
             'session'=>$session,
-            'sections'=>$sections,
             'student'=>$student,
             'sectionDetail'=>$sectionDetail,
 

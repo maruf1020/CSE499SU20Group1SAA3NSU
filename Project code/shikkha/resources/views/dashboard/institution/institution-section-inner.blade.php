@@ -375,24 +375,24 @@
 												</tr>
 											</thead>
 											<tbody>
-                                            <?php
+                                            {{-- <?php
                                             $check =0;
-                                            ?>
-												@foreach ($sections as $key=>$value)
-                                                    <?php
+                                            ?> --}}
+												@foreach ($sectionDetail as $key=>$value)
+                                                    {{--<?php
                                                     $chekdoublevalue = $value->section_number;
 
                                                     if($chekdoublevalue != $check)
                                                     {
-                                                    ?>
+                                                    ?> --}}
 												<tr class='value{{ $value->id }}'>
 													<th id='serial'>{{ $key+1 }}</th>
-													<td>Section: {{ $value->section_number }}</td>
-													<td>{{ $value->name }}</td>
-													<td>.</td>
+													<td>Section: {{ $value->section->section_number }}</td>
+													<td>{{ $value->faculty->name }}</td>
+													<td><button type="button" class="btn btn-success mr-2">view student</button></td>
 													<td>
                                                         <?php
-                                                        $start=$value->start;
+                                                        $start=$value->section->start;
                                                         $start= explode(":",$start);
                                                         $hours = $start[0];
 
@@ -415,7 +415,7 @@
                                                     </td>
 													<td>
                                                         <?php
-                                                        $end=$value->end;
+                                                        $end=$value->section->end;
                                                         $end= explode(":",$end);
                                                         $hours = $end[0];
                                                         $minutes = $end[1];
@@ -434,7 +434,7 @@
 
                                                         ?>
                                                     </td>
-													<td>{{ $value->capacity }}</td>
+													<td>{{ $value->section->capacity }}</td>
 													<td>
 														<a href="javascript:;" data-toggle="modal" data-target="#edit" class="btn btn-sm btn-clean btn-icon mr-2 edit" title="Edit details" data-id='{{ $value->section_id }}' data-facultyid='{{ $value->name }}'
 														  data-sectionid='{{ $value->section_number }}' data-start='{{ $value->start }}' data-end='{{ $value->end }}' data-capacity='{{ $value->capacity }}' data-session='{{ $value->session }}'>
@@ -446,10 +446,10 @@
 														</a>
 													</td>
 												</tr>
-                                                    <?php
+                                                    {{--<?php
                                                      }
                                                     $check = $chekdoublevalue;
-                                                     ?>
+                                                     ?> --}}
 												@endforeach
 											</tbody>
 										</table>

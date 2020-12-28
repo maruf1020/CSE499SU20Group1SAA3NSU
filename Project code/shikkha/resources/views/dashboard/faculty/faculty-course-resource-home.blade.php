@@ -80,7 +80,7 @@
                                                 <option value="">Select Course</option>
                                                 @foreach ($sectionDetail as $key=>$value)
                                                     <option
-                                                        value="{{ $value->course->id }}">{{ $value->course->initial }}</option>
+                                                        value="{{ $value->course->id }}">{{ $value->course->name }} ({{ $value->course->initial }})</option>
                                                 @endforeach
                                             </select>
                                         </div>

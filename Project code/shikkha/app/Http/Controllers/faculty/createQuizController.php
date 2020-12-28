@@ -24,7 +24,22 @@ class createQuizController extends Controller
      */
     public function index()
     {
-        return view('create_question');
+        // Getting institution id
+        $id=Auth::user();
+        $user_id=Auth::user()->id;
+
+        $institutionId = $id->personal_info->institution_id;
+        $faculties=faculty::where('institution_id',$institutionId)->where('user_id', $user_id)->orderByDesc('id')->first();
+        $facultyId=$faculties->id; // faculty_id paisi
+        $session_id=session::where('institution_id',$institutionId)->where('status',1)->first();
+        // session_id paisi
+
+
+//        $quiz=quiz::where('institution_id',$institutionId)->where('faculty_id',$facultyId);
+        $quiz=quiz::where('institution_id',$institutionId)->where('faculty_id',$facultyId)->get();
+        return view('dashboard.faculty.faculty-all-question',[
+            'quiz'=>$quiz
+        ]);
     }
 
     /**
@@ -34,7 +49,7 @@ class createQuizController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.faculty.faculty-create-question');
     }
 
     /**

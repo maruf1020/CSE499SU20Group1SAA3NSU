@@ -76,15 +76,17 @@ Route::Post('/data','faculty\resourceController@fetch')->name('data.fetch');
 Route::resource('/post','postController');
 //comment list
 Route::resource('/comment','commentController');
+//comment list
+Route::resource('/assign-work','faculty\assignExamController');
 
 
-Route::get('/test',function(){
-    $course=course::find(5);
-    dd($course->section[0]->sectiondetail[0]->faculty);
-});
-Route::get('/exam',function(){
-  return view('create_exam');
-});
+//Route::get('/test',function(){
+//    $course=course::find(5);
+//    dd($course->section[0]->sectiondetail[0]->faculty);
+//});
+//Route::get('/exam',function(){
+//  return view('dashboard.faculty.faculty-all-question');
+//});
 // Route::get('/question',function(){
 //   return view('create_question');
 // });

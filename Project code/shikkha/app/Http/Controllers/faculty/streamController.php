@@ -33,7 +33,9 @@ class streamController extends Controller
             // faculty_id paisi
 
             $session=session::where('institution_id',$institutionId)->where('status', 1)->first();
-            $sectionDetail=sectionDetail::where('faculty_id', $facultyId)->where('session_id', $session->id)->orderByDesc('id')->get();
+            $sectionDetail=sectionDetail::where('faculty_id', $facultyId)
+                ->where('session_id', $session->id)
+                ->orderByDesc('id')->get()->unique('section_id');
 
 
             return view('dashboard.faculty.faculty-stream',[
@@ -49,7 +51,9 @@ class streamController extends Controller
 
             $session=session::where('institution_id',$institutionId)->where('status', 1)->first();
 //            dd($session);
-            $sectionDetail=sectionDetail::where('student_id', $studentsId)->where('session_id', $session->id)->orderByDesc('id')->get();
+            $sectionDetail=sectionDetail::where('student_id', $studentsId)
+                ->where('session_id', $session->id)
+                ->orderByDesc('id')->get()->unique('section_id');
 
 
             return view('dashboard.faculty.faculty-stream',[

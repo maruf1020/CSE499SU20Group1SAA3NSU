@@ -171,7 +171,7 @@
 
 												</select>
 											</div>
-											
+
 											{{-- <div class="form-group row">
 												<label class="col-3 col-form-label">Session Status</label>
 												<div class="col-3">
@@ -327,7 +327,7 @@
 														echo '<button type="button" class="btn btn-success mr-2">Active</button>';
 														}
 														else{
-														echo '<button type="button" class="btn btn-alert">Inactive</button>';
+														echo '<button type="button" class="btn btn-danger">Inactive</button>';
 														}
 														@endphp
 

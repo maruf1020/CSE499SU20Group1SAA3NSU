@@ -167,7 +167,11 @@ class resourceController extends Controller
             ->join('sections', 'sections.id', '=', 'section_details.section_id')
             ->where('section_details.course_id', $value)
             ->where('section_details.faculty_id', $fid)
-            ->get();
+            ->get()->unique('section_id');
+
+//        foreach ($data as $data){
+//            if($data['section_number'])
+//        }
 
         $output = '<option value="">Select '.ucfirst($dependent).'</option>';
         foreach($data as $row)
