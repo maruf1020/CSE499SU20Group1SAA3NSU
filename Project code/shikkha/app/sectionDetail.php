@@ -22,6 +22,9 @@ class sectionDetail extends Model
     public function session(){
         return $this->belongsTo(session::class);
     }
+    public function task(){
+        return $this->belongsTo(task::class,'section_id','section_id');
+    }
 
 
 

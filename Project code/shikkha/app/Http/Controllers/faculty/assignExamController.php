@@ -39,6 +39,7 @@ class assignExamController extends Controller
 
         $tasks=task::where('institution_id',$institutionId)
             ->where('session_id', $session_id->id)
+            ->where('faculty_id', $facultyId)
             ->orderByDesc('id')->get();
 
 //        $sectionDetail=DB::table('section_details')

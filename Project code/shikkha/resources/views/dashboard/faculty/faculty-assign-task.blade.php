@@ -410,15 +410,33 @@
 
 
                                                             $diff=date_diff($date1,$date2);
-                                                            echo $diff->format('%d day (%h h : %i m )')."<br>";
+
+                                                            $da= $diff->format('%d');
+                                                            if($da>0){
+                                                                echo $diff->format('%d day ');
+
+                                                            }
+                                                            echo $diff->format(' (%h h :  %i m )')."<br>";
 //                                                            echo $diff->format('%s Seconds %i Minutes %h Hours %d days %m Months %y Year')."<br>";
 
                                                             ?>
                                                         </td>
                                                         <td>{{ $value->marks }}</td>
                                                         <td>
-                                                            <button type="button" class="btn btn-success mr-2">Active
-                                                            </button>
+                                                            <?php
+//                                                            $today = date("Y-m-d H:i:s");
+//                                                            $contractDateBegin = $date1;
+//                                                            $contractDateEnd = $date2;
+//                                                            echo $contractDateBegin;
+//
+//                                                            if($today > $contractDateBegin && $today < $contractDateEnd) {
+//                                                                echo "<button type=\"button\" class=\"btn btn-success mr-2\">Active
+//                                                            </button>";
+//                                                            } else {
+//                                                                echo "NO GO!";
+//                                                            }
+                                                            ?>
+
                                                         </td>
                                                         <td>
                                                             <a href="javascript:;" data-toggle="modal"
@@ -472,6 +490,35 @@
     </div>
     <!--end::Content-->
     <script src="{{ asset('assets/js/createquiz.js') }}"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.dynamic').change(function () {
+                if ($(this).val() != '') {
+                    var select = $(this).attr("id");
+                    var value = $(this).val();
+                    var dependent = $(this).data('dependent');
+                    var fid = $(this).data('fid');
+                    var _token = $('input[name="_token"]').val();
+                    $.ajax({
+                        url: "{{ route('data.fetch') }}",
+                        method: "POST",
+                        data: {select: select, value: value, _token: _token, dependent: dependent, fid: fid},
+                        success: function (result) {
+                            $('#' + dependent).html(result);
+                        }
+
+                    })
+                }
+            });
+
+            $('#course').change(function () {
+                $('#section').val('');
+            });
+
+
+        });
+    </script>
     <script>
         $(document).ready(function () {
 

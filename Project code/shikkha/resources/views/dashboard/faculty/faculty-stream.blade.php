@@ -6,6 +6,8 @@
         <div class="container">
 
             <div class="row">
+
+
                 @foreach($sectionDetail as $value)
                     <div class="col-lg-4 mt-10">
                         <div class="card card-custom">
@@ -199,7 +201,7 @@
             </div>
         </div>
     </div>
-  
+
 
     <!-- Modal add new institution: end-->
 

@@ -1,15 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\student;
 
-use App\comment;
-use App\faculty;
-use App\post;
-use App\session;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
-class commentController extends Controller
+class submitTaskController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -39,21 +35,8 @@ class commentController extends Controller
      */
     public function store(Request $request)
     {
-        $id=Auth::user();
-
-            //post table data inserting
-            $data = request()->validate([
-                'description' => 'required',
-                'post_id' => 'required',
-
-            ]);
-            $data['author'] = $id->name;
-            comment::create($data);
-            session()->flash('msg', 'Comment Added Successfully');
-            return back();
-        }
-
-
+        //
+    }
 
     /**
      * Display the specified resource.

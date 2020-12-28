@@ -59,6 +59,7 @@ Route::get('/previous-session','institution\sessionController@previousSession')-
 Route::resource('/timing','institution\timingController');
 //section route
 Route::resource('/section','institution\sectionController');
+Route::get('/section-student','institution\sectionController@student');
 
 
 
@@ -79,13 +80,19 @@ Route::resource('/comment','commentController');
 //comment list
 Route::resource('/assign-work','faculty\assignExamController');
 
+//student or student route define
+//student list
+Route::resource('/student-task','student\studentTaskController');
+//Route::get('/student-task/{course_id}/{section_id}/{quiz_id}','student\studentTaskController@question')->name('question.show');
+
+
 
 //Route::get('/test',function(){
 //    $course=course::find(5);
 //    dd($course->section[0]->sectiondetail[0]->faculty);
 //});
 //Route::get('/exam',function(){
-//  return view('dashboard.faculty.faculty-all-question');
+//  return view('dashboard.student.exam');
 //});
 // Route::get('/question',function(){
 //   return view('create_question');

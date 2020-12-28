@@ -115,7 +115,7 @@ class sectionController extends Controller
      */
     public function show(Course $section)
     {
-
+//                dd($section);
         // Getting institutio id
         $id=Auth::user()->id;
         $verifiyInstiution = verifiyInstiution::where('user_id',$id)->first();
@@ -131,15 +131,6 @@ class sectionController extends Controller
         $sectionDetail=sectionDetail::where('institution_id',$institutionId)
             ->where('course_id',$section->id)
             ->orderBy('id')->get()->unique('section_id');
-
-//        dd($sectionDetail);
-//        $sections = DB::table('sections')
-//            ->join('section_details', 'section_details.section_id', '=', 'sections.id')
-//            ->join('faculties', 'faculties.id', '=', 'section_details.faculty_id')
-//            ->where('sections.institution_id', '=', $institutionId)
-//            ->get();
-
-//        dd($sections);
 
 
 
@@ -225,6 +216,19 @@ class sectionController extends Controller
         $section->delete();
 
 
+
+    }
+
+    public function student(Request $request)
+    {
+
+        $sectionDetail=sectionDetail::where('institution_id',$request->institution)
+            ->where('course_id',$request->course)
+            ->where('faculty_id',$request->faculty)
+            ->where('section_id',$request->section)
+            ->orderBy('id')->get();
+        dd($sectionDetail);
+        return Response::json($sectionDetail);
 
     }
 }

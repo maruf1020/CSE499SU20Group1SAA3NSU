@@ -23,4 +23,7 @@ class task extends Model
     public function institution(){
         return $this->belongsTo(institution::class);
     }
+    public function sectionDetail(){
+        return $this->hasMany(sectionDetail::class,'section_id','section_id');
+    }
 }
