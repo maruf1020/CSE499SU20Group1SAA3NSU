@@ -82,7 +82,7 @@ Route::resource('/assign-work','faculty\assignExamController');
 
 //student or student route define
 //student list
-Route::resource('/student-task','student\studentTaskController');
+Route::resource('/student-task','student\studentTaskController')->middleware('student');
 //Route::get('/student-task/{course_id}/{section_id}/{quiz_id}','student\studentTaskController@question')->name('question.show');
 
 

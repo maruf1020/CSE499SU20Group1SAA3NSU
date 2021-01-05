@@ -146,12 +146,12 @@
                                         }
                                         ?>
                                     @endforeach
-
-
+                                    
                                     <div style="text-align: left;">
                                         <h1 style=" margin-top:50px;   font-size: 20px;margin-bottom: 20px;text-decoration: underline;">
                                             Descriptive Question Answer:</h1>
                                     </div>
+
                                     @foreach($quiz as $key=> $value)
 
                                         <?php

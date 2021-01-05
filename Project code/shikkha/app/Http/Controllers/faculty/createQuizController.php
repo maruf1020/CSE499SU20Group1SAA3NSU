@@ -36,7 +36,7 @@ class createQuizController extends Controller
 
 
 //        $quiz=quiz::where('institution_id',$institutionId)->where('faculty_id',$facultyId);
-        $quiz=quiz::where('institution_id',$institutionId)->where('faculty_id',$facultyId)->get();
+        $quiz=quiz::where('institution_id',$institutionId)->where('faculty_id',$facultyId)->get()->unique('exam_name');
         return view('dashboard.faculty.faculty-all-question',[
             'quiz'=>$quiz
         ]);
