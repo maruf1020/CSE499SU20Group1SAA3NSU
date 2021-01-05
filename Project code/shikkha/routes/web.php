@@ -113,7 +113,7 @@ Route::resource('/student-task','student\studentTaskController')->middleware('st
 // Route::get('/dashboard', function () {
 //     return view('dashboard.dashboard');
 // });
- 
+
 // Route::get('/stream', function () {
 //     return view('dashboard.student.stream');
 // });

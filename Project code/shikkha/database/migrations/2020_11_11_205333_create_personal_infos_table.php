@@ -17,6 +17,7 @@ class CreatePersonalInfosTable extends Migration
             $table->id();
             $table->string('area')->nullable();
             $table->integer('phone')->nullable();
+            $table->integer('institution_id')->nullable();
             $table->string('personal_id')->nullable();
             $table->timestamps();
 
