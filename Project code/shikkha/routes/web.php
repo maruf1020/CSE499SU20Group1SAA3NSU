@@ -113,9 +113,7 @@ Route::resource('/student-task','student\studentTaskController')->middleware('st
 // Route::get('/dashboard', function () {
 //     return view('dashboard.dashboard');
 // });
-// Route::get('/attendence', function () {
-//     return view('dashboard.faculty.attendence');
-// });
+ 
 // Route::get('/stream', function () {
 //     return view('dashboard.student.stream');
 // });
@@ -134,66 +132,66 @@ Route::resource('/student-task','student\studentTaskController')->middleware('st
 // Route::get('/course-resource-home', function () {
 //     return view('dashboard.student.course-resource-home');
 // });
-// Route::get('/attendence', function () {
-//     return view('dashboard.student.attendence-home');
-// });
-// Route::get('/attendence-internal', function () {
-//     return view('dashboard.student.attendence-internal');
-// });
-// Route::get('/faculty-evaluation', function () {
-//     return view('dashboard.student.faculty-evaluation-home');
-// });
-// Route::get('/faculty-evaluation-internal', function () {
-//     return view('dashboard.student.faculty-evaluation-internal');
-// });
-// Route::get('/results', function () {
-//     return view('dashboard.student.result');
-// });
+ Route::get('/attendence', function () {
+     return view('dashboard.student.attendence-home');
+ });
+ Route::get('/attendence-internal', function () {
+     return view('dashboard.student.attendence-internal');
+ });
+ Route::get('/faculty-evaluation', function () {
+     return view('dashboard.student.faculty-evaluation-home');
+ });
+ Route::get('/faculty-evaluation-internal', function () {
+     return view('dashboard.student.faculty-evaluation-internal');
+ });
+ Route::get('/results', function () {
+     return view('dashboard.student.result');
+ });
 // Route::get('/notifications', function () {
 //     return view('dashboard.student.notifications');
 // });
 // Route::get('/message', function () {
 //     return view('dashboard.student.message');
 // });
-// Route::get('/course-mate', function () {
-//     return view('dashboard.student.course-mate');
-// });
-// Route::get('/course-mate-internal', function () {
-//     return view('dashboard.student.course-mate-internal');
-// });
-// Route::get('/friends-home', function () {
-//     return view('dashboard.student.friends-home');
-// });
-// Route::get('/add-friends', function () {
-//     return view('dashboard.student.add-friends');
-// });
-// Route::get('/all-friends', function () {
-//     return view('dashboard.student.all-friends');
-// });
-// Route::get('/friends-request', function () {
-//     return view('dashboard.student.friends-request');
-// });
-// Route::get('/calendar', function () {
-//     return view('dashboard.student.calendar');
-// });
-// Route::get('/todo', function () {
-//     return view('dashboard.student.todo');
-// });
-// Route::get('/notes', function () {
-//     return view('dashboard.student.notes');
-// });
-// Route::get('/offer-course', function () {
-//     return view('dashboard.student.offer-course');
-// });
-// Route::get('/pre-advising', function () {
-//     return view('dashboard.student.pre-advising');
-// });
-// Route::get('/advising', function () {
-//     return view('dashboard.student.advising');
-// });
-// Route::get('/request-course', function () {
-//     return view('dashboard.student.request-course');
-// });
+ Route::get('/course-mate', function () {
+     return view('dashboard.student.course-mate');
+ });
+ Route::get('/course-mate-internal', function () {
+     return view('dashboard.student.course-mate-internal');
+ });
+ Route::get('/friends-home', function () {
+     return view('dashboard.student.friends-home');
+ });
+ Route::get('/add-friends', function () {
+     return view('dashboard.student.add-friends');
+ });
+ Route::get('/all-friends', function () {
+     return view('dashboard.student.all-friends');
+ });
+ Route::get('/friends-request', function () {
+     return view('dashboard.student.friends-request');
+ });
+ Route::get('/calendar', function () {
+     return view('dashboard.student.calendar');
+ });
+ Route::get('/todo', function () {
+     return view('dashboard.student.todo');
+ });
+ Route::get('/notes', function () {
+     return view('dashboard.student.notes');
+ });
+ Route::get('/offer-course', function () {
+     return view('dashboard.student.offer-course');
+ });
+ Route::get('/pre-advising', function () {
+     return view('dashboard.student.pre-advising');
+ });
+ Route::get('/advising', function () {
+     return view('dashboard.student.advising');
+ });
+ Route::get('/request-course', function () {
+     return view('dashboard.student.request-course');
+ });
 // Route::get('/stream-home', function () {
 //     return view('dashboard.student.stream-home');
 // });
@@ -203,21 +201,19 @@ Route::resource('/student-task','student\studentTaskController')->middleware('st
 Route::get('/exam1', function () {
     return view('dashboard.student.exam');
 });
-// Route::get('/change-password', function () {
-//     return view('dashboard.student.change-password');
-// });
+
 // Route::get('/recovery-password', function () {
 //     return view('dashboard.student.recovery-password');
 // });
 // Route::get('/recovery-password-send-mail', function () {
 //     return view('dashboard.student.recovery-password-send-mail');
 // });
-// Route::get('/personal-information', function () {
-//     return view('dashboard.student.personal-information');
-// });
-// Route::get('/personal-information', function () {
-//     return view('dashboard.student.personal-information');
-// });
+ Route::get('/personal-information', function () {
+     return view('dashboard.student.personal-information');
+ });
+Route::get('/change-password', function () {
+    return view('dashboard.student.change-password');
+});
 
 
 
@@ -256,24 +252,24 @@ Route::get('/faculty-notifications', function () {
 Route::get('/faculty-personal-information', function () {
     return view('dashboard.faculty.faculty-personal-information');
 });
-Route::get('/faculty-make-question', function () {
-    return view('dashboard.faculty.faculty-make-question');
-});
-Route::get('/faculty-class-work', function () {
-    return view('dashboard.faculty.faculty-class-work');
-});
-Route::get('/faculty-class-work-all-task', function () {
-    return view('dashboard.faculty.faculty-class-work-all-task');
-});
-Route::get('/faculty-class-work-all-student-task', function () {
-    return view('dashboard.faculty.faculty-class-work-all-student-task');
-});
-Route::get('/faculty-class-work-task-view', function () {
-    return view('dashboard.faculty.faculty-class-work-task-view');
-});
-Route::get('/faculty-class-work-task-view', function () {
-    return view('dashboard.faculty.faculty-class-work-task-view');
-});
+//Route::get('/faculty-make-question', function () {
+//    return view('dashboard.faculty.faculty-make-question');
+//});
+//Route::get('/faculty-class-work', function () {
+//    return view('dashboard.faculty.faculty-class-work');
+//});
+//Route::get('/faculty-class-work-all-task', function () {
+//    return view('dashboard.faculty.faculty-class-work-all-task');
+//});
+//Route::get('/faculty-class-work-all-student-task', function () {
+//    return view('dashboard.faculty.faculty-class-work-all-student-task');
+//});
+//Route::get('/faculty-class-work-task-view', function () {
+//    return view('dashboard.faculty.faculty-class-work-task-view');
+//});
+//Route::get('/faculty-class-work-task-view', function () {
+//    return view('dashboard.faculty.faculty-class-work-task-view');
+//});
 //Route::get('/faculty-course-resource-home', function () {
 //    return view('dashboard.faculty.faculty-course-resource-home');
 //});
