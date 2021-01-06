@@ -7,6 +7,7 @@
 	<title>Shikkhaa | Dashboard</title>
 	<meta name="description" content="Updates and statistics" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
 	<!--begin::Fonts-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 	<!--end::Fonts-->
@@ -23,6 +24,10 @@
 	<link href="{{ asset('assets/css/themes/layout/header/menu/light.css') }}" rel="stylesheet" type="text/css" />
 	<link href="{{ asset('assets/css/themes/layout/brand/dark.css') }}" rel="stylesheet" type="text/css" />
 	<link href="{{ asset('assets/css/themes/layout/aside/dark.css') }}" rel="stylesheet" type="text/css" />
+	<!--begin::Page Vendors Styles(used by this page)-->
+	<link href="{{ asset('assets/plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css" />
+	<!--end::Page Vendors Styles-->
+
 	<!--end::Layout Themes-->
 	<link rel="shortcut icon" href="{{ asset('assets/media/logos/favicon.png') }}" />
 	<!-- Start::exam page karban board drag and drop css  -->
@@ -31,6 +36,54 @@
 	<!--begin::Custom css-->
 	<link href="{{ asset('assets/css/custom/mystyle.css') }}" rel="stylesheet" type="text/css" />
 	<!--begin::Custom css-->
+	<!-- SweetAlert2 -->
+	<link rel="stylesheet" href="{{asset('assets/css/custom/sweetalert2.min.css')}}">
+	{{-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> --}}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src='https://meet.jit.si/external_api.js'></script>
+	{{-- <script src="{{ asset('assets/js/config.js') }}"></script> --}}
+	<script src="{{ asset('assets/js/myapp1.js') }}"></script>
+
+	@php
+	$name=Auth::user()->name;
+
+	@endphp
+	<script type="text/javascript">
+		var name = "<?php echo $name; ?>";
+	</script>
+
+
+	<script>
+		function slug(meeting) {
+			var meeting = meeting;
+			StartMeeting(meeting, name);
+
+		}
+		// $(function(){
+		//
+		//
+		// 		$('#meeting').on('click',function(){
+		// 				StartMeeting(meeting,name);
+		// 		});
+		// });
+	</script>
+
+
+	{{-- <script>
+        $(function(){
+            var meeting='cse499B';
+            $('#meeting').on('click',function(){
+                StartMeeting(meeting);
+            });
+        });
+
+
+
+    </script> --}}
+
+
+
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -81,8 +134,8 @@
 		<!--begin::Page-->
 		<div class="d-flex flex-row flex-column-fluid page">
 			<!--begin::Aside-->
-			@php
-			
+			{{-- @php
+
 			$access=session()->get('user');
 			@endphp
 			@if ($access==1)
@@ -95,10 +148,52 @@
 			@include('dashboard.layout.admin.admin-sidebar')
 			@else
 			@include('dashboard.layout.student.student-sidebar')
+			@endif --}}
+
+			@php
+			$role=Auth::user()->role;
+			@endphp
+			@if ($role==1)
+			@include('dashboard.layout.student.student-sidebar')
+			@elseif ($role==2)
+			@include('dashboard.layout.faculty.faculty-sidebar')
+			@elseif ($role==3)
+			@include('dashboard.layout.institution.institution-sidebar')
+			@elseif ($role==0)
+			@include('dashboard.layout.admin.admin-sidebar')
+			@else
+			@include('dashboard.layout.student.student-sidebar')
 			@endif
+
+
 			<!--end::Aside-->
 			<!--begin::Wrapper-->
 			<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+
+				@if (session()->has('msg'))
+
+				<div class="container alert-pos">
+					<div class="alert alert-success alert-dismissible fade show" role="alert" style="width: 40%;
+    position: absolute;
+    z-index: 1;
+    right: -215px;
+    top: 100px;
+    transform: translate(-50%, -50%);">
+
+						<p class="text-white">{{ session()->get('msg') }}</p>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				</div>
+
+				@endif
+
+
+
+
+
+
 				<!--begin::Header-->
 				<div id="kt_header" class="header header-fixed">
 					<!--begin::Container-->
@@ -214,13 +309,167 @@
 	<!--end::used by exam page-->
 	<!-- START::exam page karban board drag and drop js  -->
 	<script src="assets/js/custom/kanban.bundle.js"></script>
-	<script src="assets/js/custom/kanban-board.js">
-		< /script <!--End::exam page karban board drag and drop js-- >
+	<script src="assets/js/custom/kanban-board.js"></script>
+	<!-- SweetAlert2 -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	{{-- <script src="{{asset('assets/css/custom/sweetalert2.min.js')}}"> </script> --}}
+
+
+
+	{{-- <script type="text/javascript">
+		$('.delete').on('click', function() {
+			var btn = this;
+			Swal.fire({
+				title: 'Are you sure?',
+				text: "You won't be able to revert this!",
+				type: 'warning',
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+				cancelButtonColor: '#d33',
+				confirmButtonText: 'Yes, delete it!'
+			}).then((result) => {
+				if (result.value) {
+					let url = $(this).attr('data-url');
+					$.get(url, function(result) {
+						Swal.fire(
+							'Deleted!',
+							'Record has been deleted.',
+							'success'
+						);
+						$(btn).closest('tr').fadeOut(1500);
+					});
+				}
+			})
+		});
+	</script> --}}
+	<script type="text/javascript">
+		$('.delete').on('click', function() {
+			var btn = this;
+			Swal.fire({
+				title: 'Are you sure?',
+				text: "You won't be able to revert this!",
+
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+				cancelButtonColor: '#d33',
+				confirmButtonText: 'Yes, delete it!'
+			}).then((result) => {
+				if (result.value) {
+
+						var id=$(this).attr('data-id');
+						var token=$(this).attr('data-token');
+						$.ajax({
+							type: "DELETE",
+							data: {
+								'id': id,
+								'_token':token
+							},
+							url: $(this).attr('data-url'),
+							success: function(data) {
+								Swal.fire(
+									'Deleted!',
+									'Record has been deleted.',
+									'success'
+								);
+								$(btn).closest('tr').fadeOut(1500);
+							},
+							error: function(data) {
+								Swal.fire("Cancelled", "Something error happend) ", " error ");
+							}
+						});
+
+
+
+
+				}
+			})
+		});
+	</script>
+
+
+
+	<!--begin ::For all responsive table::-->
+	<script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+	<!--end::Page Vendors-->
+	<script src="assets/js/pages/crud/datatables/basic/paginations.js"></script>
+	<!--end::Page Scripts-->
+
+	<script>
+		var HOST_URL = "https://keenthemes.com/metronic/tools/preview";
+	</script>
+	<!--begin::Global Config(global config for global JS scripts)-->
+	<!--end::Demo Panel-->
+	<script>
+		var HOST_URL = "https://keenthemes.com/metronic/tools/preview";
+	</script>
+	<!--begin::Global Config(global config for global JS scripts)-->
+	<script>
+		var KTAppSettings = {
+			"breakpoints": {
+				"sm": 576,
+				"md": 768,
+				"lg": 992,
+				"xl": 1200,
+				"xxl": 1200
+			},
+			"colors": {
+				"theme": {
+					"base": {
+						"white": "#ffffff",
+						"primary": "#6993FF",
+						"secondary": "#E5EAEE",
+						"success": "#1BC5BD",
+						"info": "#8950FC",
+						"warning": "#FFA800",
+						"danger": "#F64E60",
+						"light": "#F3F6F9",
+						"dark": "#212121"
+					},
+					"light": {
+						"white": "#ffffff",
+						"primary": "#E1E9FF",
+						"secondary": "#ECF0F3",
+						"success": "#C9F7F5",
+						"info": "#EEE5FF",
+						"warning": "#FFF4DE",
+						"danger": "#FFE2E5",
+						"light": "#F3F6F9",
+						"dark": "#D6D6E0"
+					},
+					"inverse": {
+						"white": "#ffffff",
+						"primary": "#ffffff",
+						"secondary": "#212121",
+						"success": "#ffffff",
+						"info": "#ffffff",
+						"warning": "#ffffff",
+						"danger": "#ffffff",
+						"light": "#464E5F",
+						"dark": "#ffffff"
+					}
+				},
+				"gray": {
+					"gray-100": "#F3F6F9",
+					"gray-200": "#ECF0F3",
+					"gray-300": "#E5EAEE",
+					"gray-400": "#D6D6E0",
+					"gray-500": "#B5B5C3",
+					"gray-600": "#80808F",
+					"gray-700": "#464E5F",
+					"gray-800": "#1B283F",
+					"gray-900": "#212121"
+				}
+			},
+			"font-family": "Poppins"
+		};
+	</script>
+	<!--end::Global Config-->
+	<!--end::For all responsive table::-->
 
 
 
 
 
-		<
-		/body> <!--end::Body-- > < /
-		html >
+</body>
+<!--end::Body-- >
+		</html >
